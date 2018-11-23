@@ -1,0 +1,7 @@
+including device/generic/mini-emulator-arm64/vendorsetup.sh
+including device/generic/mini-emulator-armv7-a-neon/vendorsetup.sh
+including device/generic/mini-emulator-x86_64/vendorsetup.sh
+including device/generic/mini-emulator-x86/vendorsetup.sh
+including device/qcom/common/vendorsetup.sh
+including vendor/qcom/proprietary/common/vendorsetup.sh
+including sdk/bash_completion/adb.bash
