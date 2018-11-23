@@ -1,0 +1,2071 @@
+including device/generic/car/vendorsetup.sh
+including device/generic/mini-emulator-arm64/vendorsetup.sh
+including device/generic/mini-emulator-armv7-a-neon/vendorsetup.sh
+including device/generic/mini-emulator-x86_64/vendorsetup.sh
+including device/generic/mini-emulator-x86/vendorsetup.sh
+including device/generic/uml/vendorsetup.sh
+including device/qcom/common/vendorsetup.sh
+including vendor/qcom/proprietary/common/vendorsetup.sh
+including sdk/bash_completion/adb.bash
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.1.0
+TARGET_PRODUCT=msm8996
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_PLATFORM_VERSION=OPM1
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=kryo
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.15.0-20-generic-x86_64-with-Ubuntu-18.04-bionic
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=OPM1.171019.026
+OUT_DIR=out
+AUX_OS_VARIANT_LIST=
+============================================
+
+INFO: Removing entire out dir. . .
+
+
+[0;32m#### build completed successfully (1 seconds) ####[00m
+
+
+INFO: Setting CCACHE with 10 GB
+
+Cleared cache
+Set cache size limit to 10.0 Gbytes
+
+INFO: Build Android tree for msm8996
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.1.0
+TARGET_PRODUCT=msm8996
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=kryo
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.15.0-20-generic-x86_64-with-Ubuntu-18.04-bionic
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=OPM1.171019.026
+OUT_DIR=out
+============================================
+[1/44] compile out/soong/.bootstrap/blueprint-deptools/pkg/github.com/google/blueprint/deptools.a
+[2/44] compile out/soong/.bootstrap/gotestmain/obj/gotestmain.a
+[3/44] compile out/soong/.bootstrap/blueprint-proptools/pkg/github.com/google/blueprint/proptools.a
+[4/44] compile out/soong/.bootstrap/blueprint-pathtools/test/github.com/google/blueprint/pathtools.a
+[5/44] compile out/soong/.bootstrap/gotestmain-tests/test/github.com/google/blueprint/gotestmain.a
+[6/44] compile out/soong/.bootstrap/blueprint-pathtools/pkg/github.com/google/blueprint/pathtools.a
+[7/44] compile out/soong/.bootstrap/gotestmain-tests/pkg/github.com/google/blueprint/gotestmain.a
+[8/44] compile out/soong/.bootstrap/gotestrunner/obj/gotestrunner.a
+[9/44] compile out/soong/.bootstrap/blueprint-parser/pkg/github.com/google/blueprint/parser.a
+[10/44] compile out/soong/.bootstrap/blueprint-parser/test/github.com/google/blueprint/parser.a
+[11/44] compile out/soong/.bootstrap/blueprint-proptools/test/github.com/google/blueprint/proptools.a
+[12/44] link out/soong/.bootstrap/gotestmain/obj/a.out
+[13/44] cp out/soong/.bootstrap/bin/gotestmain
+[14/44] link out/soong/.bootstrap/gotestrunner/obj/a.out
+[15/44] gotestmain out/soong/.bootstrap/blueprint/test/test.go
+[16/44] gotestmain out/soong/.bootstrap/blueprint-parser/test/test.go
+[17/44] gotestmain out/soong/.bootstrap/blueprint-proptools/test/test.go
+[18/44] gotestmain out/soong/.bootstrap/blueprint-pathtools/test/test.go
+[19/44] gotestmain out/soong/.bootstrap/gotestmain-tests/test/test.go
+[20/44] compile out/soong/.bootstrap/blueprint-parser/test/test.a
+[21/44] compile out/soong/.bootstrap/gotestmain-tests/test/test.a
+[22/44] compile out/soong/.bootstrap/blueprint-pathtools/test/test.a
+[23/44] compile out/soong/.bootstrap/blueprint-proptools/test/test.a
+[24/44] link out/soong/.bootstrap/gotestmain-tests/test/test
+[25/44] cp out/soong/.bootstrap/bin/gotestrunner
+[26/44] link out/soong/.bootstrap/blueprint-proptools/test/test
+[27/44] link out/soong/.bootstrap/blueprint-parser/test/test
+[28/44] test github.com/google/blueprint/gotestmain
+[29/44] test github.com/google/blueprint/proptools
+[30/44] link out/soong/.bootstrap/blueprint-pathtools/test/test
+[31/44] test github.com/google/blueprint/parser
+[32/44] test github.com/google/blueprint/pathtools
+[33/44] compile out/soong/.bootstrap/blueprint/pkg/github.com/google/blueprint.a
+[34/44] compile out/soong/.bootstrap/blueprint/test/github.com/google/blueprint.a
+[35/44] compile out/soong/.bootstrap/blueprint-bootstrap-bpdoc/pkg/github.com/google/blueprint/bootstrap/bpdoc.a
+[36/44] compile out/soong/.bootstrap/blueprint/test/test.a
+[37/44] compile out/soong/.bootstrap/blueprint-bootstrap/pkg/github.com/google/blueprint/bootstrap.a
+[38/44] compile out/soong/.bootstrap/minibp/obj/minibp.a
+[39/44] link out/soong/.bootstrap/blueprint/test/test
+[40/44] test github.com/google/blueprint
+[41/44] link out/soong/.bootstrap/minibp/obj/a.out
+[42/44] cp out/soong/.bootstrap/bin/minibp
+[43/44] out/soong/.bootstrap/bin/minibp out/soong/.minibootstrap/build.ninja.in
+[44/44] bootstrap out/soong/.minibootstrap/build.ninja.in
+[1/4] compile out/soong/.bootstrap/bpglob/obj/bpglob.a
+[2/4] link out/soong/.bootstrap/bpglob/obj/a.out
+[3/4] cp out/soong/.bootstrap/bin/bpglob
+[4/4] out/soong/.bootstrap/bin/minibp out/soong/.bootstrap/build.ninja
+[1/996] glob art/runtime/openjdkjvmti/Android.bp
+[2/996] glob art/runtime/simulator/Android.bp
+[3/996] glob art/Android.bp
+[4/996] glob art/benchmark/Android.bp
+[5/996] glob art/build/Android.bp
+[6/996] glob art/cmdline/Android.bp
+[7/996] glob art/compiler/Android.bp
+[8/996] glob art/dex2oat/Android.bp
+[9/996] glob art/dalvikvm/Android.bp
+[10/996] glob art/dexdump/Android.bp
+[11/996] glob art/dexlayout/Android.bp
+[12/996] glob art/dexlist/Android.bp
+[13/996] glob art/dexoptanalyzer/Android.bp
+[14/996] glob art/disassembler/Android.bp
+[15/996] glob art/imgdiag/Android.bp
+[16/996] glob art/oatdump/Android.bp
+[17/996] glob art/patchoat/Android.bp
+[18/996] glob art/profman/Android.bp
+[19/996] glob art/runtime/Android.bp
+[20/996] glob art/runtime/openjdkjvm/Android.bp
+[21/996] glob frameworks/base/native/android/Android.bp
+[22/996] glob frameworks/base/tools/*/Android.bp
+[23/996] glob frameworks/base/native/graphics/jni/Android.bp
+[24/996] glob frameworks/compile/*/Android.bp
+[25/996] glob art/sigchainlib/Android.bp
+[26/996] glob art/test/Android.bp
+[27/996] glob art/tools/cpp-define-generator/Android.bp
+[28/996] glob art/tools/dmtracedump/Android.bp
+[29/996] glob bionic/Android.bp
+[30/996] glob bionic/*/Android.bp
+[31/996] glob bionic/libc/*/Android.bp
+[32/996] glob bionic/tests/libs/Android.bp
+[33/996] glob bionic/tools/*/Android.bp
+[34/996] glob bionic/tools/versioner/src/Android.bp
+[35/996] glob bootable/recovery/Android.bp
+[36/996] glob bootable/recovery/bootloader_message/Android.bp
+[37/996] glob bootable/recovery/otautil/Android.bp
+[38/996] glob build/kati/Android.bp
+[39/996] glob build/blueprint/Blueprints
+[40/996] glob build/soong/Android.bp
+[41/996] glob build/soong/androidmk/Android.bp
+[42/996] glob build/soong/bpfix/Android.bp
+[43/996] glob build/soong/cmd/*/Android.bp
+[44/996] glob build/soong/third_party/zip/Android.bp
+[45/996] glob build/soong/ui/*/Android.bp
+[46/996] glob build/tools/*/Android.bp
+[47/996] glob dalvik/Android.bp
+[48/996] glob development/*/Android.bp
+[49/996] glob development/vndk/tools/Android.bp
+[50/996] glob development/vndk/tools/header-checker/Android.bp
+[51/996] glob device/*/*/Android.bp
+[52/996] glob development/vndk/tools/vtable-dumper/Android.bp
+[53/996] glob device/google/contexthub/lib/Android.bp
+[54/996] glob external/*/Android.bp
+[55/996] glob external/boringssl/sources.bp
+[56/996] glob external/clang/lib/Android.bp
+[57/996] glob external/clang/lib/StaticAnalyzer/Checkers/MPI-Checker/Android.bp
+[58/996] glob external/clang/lib/Frontend/Rewrite/Android.bp
+[59/996] glob external/clang/lib/StaticAnalyzer/*/Android.bp
+[60/996] glob external/clang/lib/Tooling/Core/Android.bp
+[61/996] glob external/clang/lib/*/Android.bp
+[62/996] glob external/clang/tools/clang-format/Android.bp
+[63/996] glob external/clang/soong/Android.bp
+[64/996] glob external/clang/tools/clang-check/Android.bp
+[65/996] glob external/clang/tools/driver/Android.bp
+[66/996] glob external/clang/tools/libclang/Android.bp
+[67/996] glob external/clang/utils/TableGen/Android.bp
+[68/996] glob external/compiler-rt/lib/sanitizer_common/tests/Android.bp
+[69/996] glob external/compiler-rt/lib/*/Android.bp
+[70/996] glob external/dtc/libfdt/Android.bp
+[71/996] glob external/e2fsprogs/contrib/Android.bp
+[72/996] glob external/e2fsprogs/contrib/android/Android.bp
+[73/996] glob external/e2fsprogs/lib/Android.bp
+[74/996] glob external/e2fsprogs/debugfs/Android.bp
+[75/996] glob external/e2fsprogs/e2fsck/Android.bp
+[76/996] glob external/e2fsprogs/lib/*/Android.bp
+[77/996] glob external/e2fsprogs/misc/Android.bp
+[78/996] glob external/e2fsprogs/resize/Android.bp
+[79/996] glob frameworks/av/media/libstagefright/omx/tests/Android.bp
+[80/996] glob frameworks/av/media/libstagefright/rtsp/Android.bp
+[81/996] glob frameworks/av/media/libstagefright/tests/Android.bp
+[82/996] glob frameworks/av/media/libstagefright/timedtext/Android.bp
+[83/996] glob frameworks/av/media/libstagefright/webm/Android.bp
+[84/996] glob external/eigen/blas/Android.bp
+[85/996] glob external/elfutils/libelf/Android.bp
+[86/996] glob external/flac/libFLAC/Android.bp
+[87/996] glob external/gemmlowp/eight_bit_int_gemm/Android.bp
+[88/996] glob external/googletest/googlemock/Android.bp
+[89/996] glob external/googletest/googletest/Android.bp
+[90/996] glob external/icu/android_utils/Android.bp
+[91/996] glob external/icu/icu4c/source/Android.bp
+[92/996] glob external/icu/icu4c/source/common/Android.bp
+[93/996] glob external/icu/icu4c/source/i18n/Android.bp
+[94/996] glob external/libavc/test/Android.bp
+[95/996] glob external/libconstrainedcrypto/test/Android.bp
+[96/996] glob external/libese/apps/Android.bp
+[97/996] glob external/libese/apps/boot/Android.bp
+[98/996] glob external/libese/apps/boot/tests/Android.bp
+[99/996] glob external/libese/esed/Android.bp
+[100/996] glob external/libese/apps/weaver/Android.bp
+[101/996] glob external/libese/examples/Android.bp
+[102/996] glob external/libese/libapdu/Android.bp
+[103/996] glob external/libese/libapdu/tests/Android.bp
+[104/996] glob external/libese/libese-cpp/Android.bp
+[105/996] glob external/libese/libese-hw/Android.bp
+[106/996] glob external/libese/libese-hw/nxp/Android.bp
+[107/996] glob external/libese/libese-hw/tests/Android.bp
+[108/996] glob external/libese/libese-sysdeps/Android.bp
+[109/996] glob external/libese/libese-teq1/Android.bp
+[110/996] glob external/libese/libese-teq1/tests/Android.bp
+[111/996] glob external/libese/libese/Android.bp
+[112/996] glob external/libese/libese/tests/Android.bp
+[113/996] glob external/libese/third_party/Android.bp
+[114/996] glob external/libese/third_party/NXPNFC_P61_JCOP_Kit/Android.bp
+[115/996] glob external/libese/tools/ese_ls_provision/Android.bp
+[116/996] glob external/libese/tools/Android.bp
+[117/996] glob external/libese/tools/ese_relay/Android.bp
+[118/996] glob external/libmpeg2/test/Android.bp
+[119/996] glob external/libese/tools/ese_replay/Android.bp
+[120/996] glob external/libvpx/libwebm/Android.bp
+[121/996] glob external/libyuv/files/Android.bp
+[122/996] glob external/llvm/lib/Android.bp
+[123/996] glob external/llvm/lib/DebugInfo/*/Android.bp
+[124/996] glob external/llvm/lib/Bitcode/*/Android.bp
+[125/996] glob external/llvm/lib/CodeGen/*/Android.bp
+[126/996] glob external/llvm/lib/ExecutionEngine/*/Android.bp
+[127/996] glob external/llvm/lib/MC/*/Android.bp
+[128/996] glob external/llvm/lib/ProfileData/*/Android.bp
+[129/996] glob external/llvm/lib/Target/AArch64/*/Android.bp
+[130/996] glob external/llvm/lib/Target/ARM/*/Android.bp
+[131/996] glob external/llvm/lib/Target/Mips/*/Android.bp
+[132/996] glob external/llvm/lib/Target/X86/*/Android.bp
+[133/996] glob external/llvm/lib/Target/*/Android.bp
+[134/996] glob external/llvm/lib/Transforms/*/Android.bp
+[135/996] glob external/llvm/lib/*/Android.bp
+[136/996] glob external/llvm/soong/Android.bp
+[137/996] glob external/llvm/tools/*/Android.bp
+[138/996] glob external/llvm/tools/lli/ChildTarget/Android.bp
+[139/996] glob external/llvm/utils/*/Android.bp
+[140/996] glob frameworks/minikin/tests/Android.bp
+[141/996] glob frameworks/minikin/tests/perftests/Android.bp
+[142/996] glob frameworks/minikin/tests/stresstest/Android.bp
+[143/996] glob external/ltp/gen.bp
+[144/996] glob external/lz4/lib/Android.bp
+[145/996] glob external/lz4/programs/Android.bp
+[146/996] glob external/lzma/C/Android.bp
+[147/996] glob external/pdfium/pdfium.bp
+[148/996] glob external/pdfium/pdfiumfdrm.bp
+[149/996] glob external/pdfium/pdfiumformfiller.bp
+[150/996] glob external/pdfium/pdfiumfpdfapi.bp
+[151/996] glob external/pdfium/pdfiumfpdftext.bp
+[152/996] glob external/pdfium/pdfiumfpdfdoc.bp
+[153/996] glob external/pdfium/pdfiumfxcodec.bp
+[154/996] glob external/pdfium/pdfiumfxcrt.bp
+[155/996] glob external/pdfium/pdfiumfxedit.bp
+[156/996] glob external/pdfium/pdfiumfxge.bp
+[157/996] glob external/pdfium/pdfiumjavascript.bp
+[158/996] glob external/pdfium/pdfiumpdfwindow.bp
+[159/996] glob external/pdfium/third_party/Android.bp
+[160/996] glob external/pdfium/third_party/pdfiumagg23.bp
+[161/996] glob external/pdfium/third_party/pdfiumbigint.bp
+[162/996] glob external/pdfium/third_party/pdfiumjpeg.bp
+[163/996] glob external/pdfium/third_party/pdfiumlcms.bp
+[164/996] glob external/pdfium/third_party/pdfiumopenjpeg.bp
+[165/996] glob external/scrypt/sources.bp
+[166/996] glob external/pdfium/third_party/pdfiumzlib.bp
+[167/996] glob external/selinux/checkpolicy/Android.bp
+[168/996] glob external/selinux/libselinux/Android.bp
+[169/996] glob external/selinux/libsepol/Android.bp
+[170/996] glob external/selinux/secilc/Android.bp
+[171/996] glob external/sonivox/arm-wt-22k/Android.bp
+[172/996] glob external/spirv-llvm/lib/SPIRV/Android.bp
+[173/996] glob external/spirv-llvm/tools/llvm-spirv/Android.bp
+[174/996] glob external/sqlite/android/Android.bp
+[175/996] glob external/sqlite/dist/Android.bp
+[176/996] glob external/vulkan-validation-layers/libs/cjson/Android.bp
+[177/996] glob external/webp/*/Android.bp
+[178/996] glob external/vulkan-validation-layers/libs/vkjson/Android.bp
+[179/996] glob frameworks/*/Android.bp
+[180/996] glob frameworks/av/camera/Android.bp
+[181/996] glob frameworks/av/camera/ndk/Android.bp
+[182/996] glob frameworks/av/drm/*/Android.bp
+[183/996] glob frameworks/av/drm/libdrmframework/plugins/common/util/Android.bp
+[184/996] glob frameworks/av/drm/libdrmframework/plugins/*/Android.bp
+[185/996] glob frameworks/av/drm/libdrmframework/plugins/forward-lock/internal-format/Android.bp
+[186/996] glob frameworks/av/drm/libdrmframework/plugins/forward-lock/FwdLockEngine/Android.bp
+[187/996] glob frameworks/av/drm/libdrmframework/plugins/forward-lock/internal-format/common/Android.bp
+[188/996] glob frameworks/av/drm/libdrmframework/plugins/forward-lock/internal-format/converter/Android.bp
+[189/996] glob frameworks/av/drm/libdrmframework/plugins/forward-lock/internal-format/decoder/Android.bp
+[190/996] glob frameworks/av/drm/mediadrm/plugins/*/Android.bp
+[191/996] glob frameworks/av/drm/mediadrm/plugins/clearkey/tests/Android.bp
+[192/996] glob frameworks/av/media/*/Android.bp
+[193/996] glob frameworks/av/media/libeffects/config/Android.bp
+[194/996] glob frameworks/av/media/libeffects/factory/Android.bp
+[195/996] glob frameworks/av/media/libstagefright/codecs/*/Android.bp
+[196/996] glob frameworks/av/media/libstagefright/codecs/amrnb/*/Android.bp
+[197/996] glob frameworks/av/media/libstagefright/codecs/amrwbenc/SampleCode/Android.bp
+[198/996] glob frameworks/av/media/libstagefright/codecs/flac/*/Android.bp
+[199/996] glob frameworks/av/media/libstagefright/codecs/g711/*/Android.bp
+[200/996] glob frameworks/av/media/libstagefright/codecs/gsm/*/Android.bp
+[201/996] glob frameworks/av/media/libstagefright/codecs/on2/*/Android.bp
+[202/996] glob frameworks/av/media/libstagefright/codecs/m4v_h263/*/Android.bp
+[203/996] glob frameworks/av/media/libstagefright/codecs/vorbis/*/Android.bp
+[204/996] glob frameworks/av/media/libstagefright/colorconversion/Android.bp
+[205/996] glob frameworks/av/media/libstagefright/codecs/opus/*/Android.bp
+[206/996] glob frameworks/av/media/libstagefright/filters/Android.bp
+[207/996] glob frameworks/av/media/libstagefright/flac/dec/Android.bp
+[208/996] glob frameworks/av/media/libstagefright/foundation/Android.bp
+[209/996] glob frameworks/av/media/libstagefright/http/Android.bp
+[210/996] glob frameworks/av/media/libstagefright/httplive/Android.bp
+[211/996] glob frameworks/av/media/libstagefright/id3/Android.bp
+[212/996] glob frameworks/av/media/libstagefright/matroska/Android.bp
+[213/996] glob frameworks/av/media/libstagefright/mpeg2ts/Android.bp
+[214/996] glob hardware/interfaces/tests/inheritance/1.0/default/Android.bp
+[215/996] glob frameworks/av/media/libstagefright/omx/Android.bp
+[216/996] glob hardware/interfaces/tests/inheritance/1.0/Android.bp
+[217/996] glob hardware/interfaces/tests/libhwbinder/1.0/Android.bp
+[218/996] glob hardware/interfaces/tests/libhwbinder/1.0/default/Android.bp
+[219/996] glob hardware/interfaces/tests/libhwbinder/aidl/Android.bp
+[220/996] glob hardware/interfaces/tests/msgq/1.0/Android.bp
+[221/996] glob hardware/interfaces/tests/memory/1.0/Android.bp
+[222/996] glob hardware/interfaces/tests/memory/1.0/default/Android.bp
+[223/996] glob hardware/interfaces/tests/msgq/1.0/default/Android.bp
+[224/996] glob hardware/interfaces/tests/multithread/1.0/default/Android.bp
+[225/996] glob hardware/interfaces/tests/multithread/1.0/Android.bp
+[226/996] glob frameworks/av/media/libstagefright/wifi-display/Android.bp
+[227/996] glob frameworks/av/soundtrigger/Android.bp
+[228/996] glob frameworks/av/media/libstagefright/xmlparser/Android.bp
+[229/996] glob frameworks/av/media/mtp/tests/Android.bp
+[230/996] glob frameworks/base/core/tests/utiltests/jni/Android.bp
+[231/996] glob frameworks/base/core/jni/Android.bp
+[232/996] glob frameworks/base/libs/*/Android.bp
+[233/996] glob frameworks/base/media/*/Android.bp
+[234/996] glob frameworks/base/media/jni/audioeffect/Android.bp
+[235/996] glob frameworks/base/media/jni/soundpool/Android.bp
+[236/996] glob frameworks/base/media/native/*/Android.bp
+[237/996] glob test/vts-testcase/fuzz/func_fuzzer/audio/effect/V2_0/Android.bp
+[238/996] glob test/vts-testcase/fuzz/func_fuzzer/automotive/evs/V1_0/Android.bp
+[239/996] glob test/vts-testcase/fuzz/func_fuzzer/automotive/vehicle/V2_0/Android.bp
+[240/996] glob test/vts-testcase/fuzz/func_fuzzer/bluetooth/V1_0/Android.bp
+[241/996] glob test/vts-testcase/fuzz/func_fuzzer/broadcastradio/V1_0/Android.bp
+[242/996] glob test/vts-testcase/fuzz/func_fuzzer/biometrics/fingerprint/V2_1/Android.bp
+[243/996] glob test/vts-testcase/fuzz/func_fuzzer/boot/V1_0/Android.bp
+[244/996] glob test/vts-testcase/fuzz/func_fuzzer/broadcastradio/V1_1/Android.bp
+[245/996] glob frameworks/compile/libbcc/bcinfo/Android.bp
+[246/996] glob frameworks/compile/libbcc/bcinfo/BitReader_2_7/Android.bp
+[247/996] glob frameworks/compile/libbcc/bcinfo/BitReader_3_0/Android.bp
+[248/996] glob frameworks/compile/libbcc/bcinfo/Wrap/Android.bp
+[249/996] glob frameworks/compile/libbcc/bcinfo/tools/Android.bp
+[250/996] glob frameworks/compile/libbcc/lib/Android.bp
+[251/996] glob frameworks/compile/libbcc/tools/Android.bp
+[252/996] glob frameworks/compile/libbcc/tools/bcc/Android.bp
+[253/996] glob frameworks/compile/libbcc/tools/bcc_compat/Android.bp
+[254/996] glob frameworks/compile/libbcc/tools/bcc_strip_attr/Android.bp
+[255/996] glob frameworks/compile/mclinker/lib/Android.bp
+[256/996] glob frameworks/compile/mclinker/lib/Target/AArch64/TargetInfo/Android.bp
+[257/996] glob frameworks/compile/mclinker/lib/Target/AArch64/Android.bp
+[258/996] glob frameworks/compile/mclinker/lib/Target/ARM/TargetInfo/Android.bp
+[259/996] glob frameworks/compile/mclinker/lib/Target/Mips/TargetInfo/Android.bp
+[260/996] glob frameworks/compile/mclinker/lib/Target/Mips/Android.bp
+[261/996] glob frameworks/compile/mclinker/lib/Target/X86/TargetInfo/Android.bp
+[262/996] glob frameworks/compile/mclinker/lib/Target/ARM/Android.bp
+[263/996] glob frameworks/compile/mclinker/lib/Target/X86/Android.bp
+[264/996] glob frameworks/compile/mclinker/lib/*/Android.bp
+[265/996] glob frameworks/compile/mclinker/tools/mcld/Android.bp
+[266/996] glob frameworks/compile/slang/BitWriter_2_9/Android.bp
+[267/996] glob frameworks/compile/slang/BitWriter_2_9_func/Android.bp
+[268/996] glob frameworks/compile/slang/BitWriter_3_2/Android.bp
+[269/996] glob frameworks/compile/slang/StripUnkAttr/Android.bp
+[270/996] glob frameworks/hardware/interfaces/Android.bp
+[271/996] glob frameworks/hardware/interfaces/displayservice/1.0/Android.bp
+[272/996] glob frameworks/hardware/interfaces/displayservice/1.0/vts/functional/Android.bp
+[273/996] glob frameworks/hardware/interfaces/sensorservice/1.0/vts/functional/Android.bp
+[274/996] glob frameworks/hardware/interfaces/schedulerservice/1.0/Android.bp
+[275/996] glob frameworks/hardware/interfaces/sensorservice/1.0/Android.bp
+[276/996] glob frameworks/hardware/interfaces/sensorservice/libsensorndkbridge/Android.bp
+[277/996] glob frameworks/hardware/interfaces/vr/composer/1.0/Android.bp
+[278/996] glob frameworks/minikin/app/Android.bp
+[279/996] glob frameworks/minikin/libs/minikin/Android.bp
+[280/996] glob packages/apps/*/Android.bp
+[281/996] glob prebuilts/clang/host/linux-x86/Android.bp
+[282/996] glob prebuilts/clang/host/linux-x86/soong/Android.bp
+[283/996] glob prebuilts/ndk/Android.bp
+[284/996] glob prebuilts/ndk/cpufeatures.bp
+[285/996] glob prebuilts/ndk/stl.bp
+[286/996] glob frameworks/minikin/tests/unittest/Android.bp
+[287/996] glob frameworks/minikin/tests/util/Android.bp
+[288/996] glob frameworks/ml/nn/Android.bp
+[289/996] glob frameworks/ml/nn/common/Android.bp
+[290/996] glob frameworks/ml/nn/driver/Android.bp
+[291/996] glob frameworks/ml/nn/driver/cache/Android.bp
+[292/996] glob frameworks/ml/nn/driver/cache/BlobCache/Android.bp
+[293/996] glob frameworks/ml/nn/driver/cache/nnCache/Android.bp
+[294/996] glob frameworks/ml/nn/driver/sample/Android.bp
+[295/996] glob frameworks/ml/nn/runtime/Android.bp
+[296/996] glob frameworks/ml/nn/runtime/test/Android.bp
+[297/996] glob frameworks/native/cmds/*/Android.bp
+[298/996] glob frameworks/native/cmds/dumpsys/tests/Android.bp
+[299/996] glob frameworks/native/cmds/installd/tests/Android.bp
+[300/996] glob frameworks/native/cmds/surfacereplayer/proto/Android.bp
+[301/996] glob frameworks/native/cmds/surfacereplayer/replayer/Android.bp
+[302/996] glob frameworks/native/headers/Android.bp
+[303/996] glob frameworks/native/libs/*/Android.bp
+[304/996] glob frameworks/native/libs/binder/tests/Android.bp
+[305/996] glob frameworks/native/libs/gui/tests/Android.bp
+[306/996] glob frameworks/native/libs/input/tests/Android.bp
+[307/996] glob frameworks/native/libs/math/tests/Android.bp
+[308/996] glob frameworks/native/libs/nativewindow/tests/Android.bp
+[309/996] glob frameworks/native/libs/sensor/tests/Android.bp
+[310/996] glob frameworks/native/libs/ui/tests/Android.bp
+[311/996] glob frameworks/native/libs/vr/*/Android.bp
+[312/996] glob frameworks/native/libs/vr/libbufferhubqueue/tests/Android.bp
+[313/996] glob frameworks/native/libs/vr/libdvr/tests/Android.bp
+[314/996] glob frameworks/native/opengl/Android.bp
+[315/996] glob frameworks/native/opengl/*/Android.bp
+[316/996] glob frameworks/native/opengl/tests/EGLTest/Android.bp
+[317/996] glob frameworks/native/opengl/tests/angeles/Android.bp
+[318/996] glob frameworks/native/opengl/tests/configdump/Android.bp
+[319/996] glob frameworks/native/opengl/tests/fillrate/Android.bp
+[320/996] glob frameworks/native/opengl/tests/filter/Android.bp
+[321/996] glob frameworks/native/opengl/tests/finish/Android.bp
+[322/996] glob frameworks/native/opengl/tests/gl2_basic/Android.bp
+[323/996] glob frameworks/native/opengl/tests/gl2_copyTexImage/Android.bp
+[324/996] glob frameworks/native/opengl/tests/gl2_yuvtex/Android.bp
+[325/996] glob frameworks/native/opengl/tests/gl_basic/Android.bp
+[326/996] glob frameworks/native/opengl/tests/gl_perf/Android.bp
+[327/996] glob frameworks/native/opengl/tests/gl_yuvtex/Android.bp
+[328/996] glob frameworks/native/opengl/tests/gralloc/Android.bp
+[329/996] glob frameworks/native/opengl/tests/hwc/Android.bp
+[330/996] glob frameworks/native/opengl/tests/lib/Android.bp
+[331/996] glob frameworks/native/services/*/Android.bp
+[332/996] glob frameworks/native/services/thermalservice/libthermalcallback/Android.bp
+[333/996] glob frameworks/native/services/inputflinger/tests/Android.bp
+[334/996] glob frameworks/native/services/inputflinger/host/Android.bp
+[335/996] glob frameworks/native/services/vr/*/Android.bp
+[336/996] glob frameworks/native/services/sensorservice/hidl/Android.bp
+[337/996] glob frameworks/native/vulkan/libvulkan/Android.bp
+[338/996] glob frameworks/native/vulkan/Android.bp
+[339/996] glob frameworks/native/vulkan/nulldrv/Android.bp
+[340/996] glob frameworks/native/vulkan/tools/Android.bp
+[341/996] glob frameworks/opt/net/wifi/Android.bp
+[342/996] glob frameworks/opt/net/wifi/libwifi_system/Android.bp
+[343/996] glob frameworks/opt/net/wifi/libwifi_system_iface/Android.bp
+[344/996] glob frameworks/rs/cpp/Android.bp
+[345/996] glob frameworks/rs/cpu_ref/Android.bp
+[346/996] glob frameworks/rs/support/Android.bp
+[347/996] glob frameworks/rs/support/jni/Android.bp
+[348/996] glob frameworks/rs/support.bp
+[349/996] glob frameworks/wilhelm/src/Android.bp
+[350/996] glob frameworks/wilhelm/tests/Android.bp
+[351/996] glob frameworks/wilhelm/tests/*/Android.bp
+[352/996] glob frameworks/wilhelm/tests/sandbox/streamSource/Android.bp
+[353/996] glob hardware/*/Android.bp
+[354/996] glob hardware/interfaces/*/Android.bp
+[355/996] glob hardware/interfaces/audio/2.0/Android.bp
+[356/996] glob hardware/interfaces/audio/2.0/vts/functional/Android.bp
+[357/996] glob hardware/interfaces/audio/common/2.0/Android.bp
+[358/996] glob hardware/interfaces/audio/common/2.0/default/Android.bp
+[359/996] glob hardware/interfaces/audio/common/test/utility/Android.bp
+[360/996] glob hardware/interfaces/audio/effect/2.0/Android.bp
+[361/996] glob hardware/interfaces/audio/effect/2.0/vts/functional/Android.bp
+[362/996] glob hardware/interfaces/automotive/evs/1.0/vts/functional/Android.bp
+[363/996] glob hardware/interfaces/automotive/evs/1.0/Android.bp
+[364/996] glob hardware/interfaces/automotive/evs/1.0/default/Android.bp
+[365/996] glob hardware/interfaces/automotive/vehicle/2.0/Android.bp
+[366/996] glob hardware/interfaces/automotive/vehicle/2.0/default/Android.bp
+[367/996] glob hardware/interfaces/automotive/vehicle/2.0/default/impl/vhal_v2_0/proto/Android.bp
+[368/996] glob hardware/interfaces/biometrics/fingerprint/2.1/vts/functional/Android.bp
+[369/996] glob hardware/interfaces/biometrics/fingerprint/2.1/Android.bp
+[370/996] glob hardware/interfaces/bluetooth/1.0/Android.bp
+[371/996] glob hardware/interfaces/bluetooth/1.0/default/Android.bp
+[372/996] glob hardware/interfaces/bluetooth/1.0/vts/functional/Android.bp
+[373/996] glob hardware/interfaces/boot/1.0/Android.bp
+[374/996] glob hardware/interfaces/broadcastradio/1.0/vts/functional/Android.bp
+[375/996] glob hardware/interfaces/boot/1.0/vts/Android.bp
+[376/996] glob hardware/interfaces/boot/1.0/vts/*/Android.bp
+[377/996] glob hardware/interfaces/broadcastradio/1.0/Android.bp
+[378/996] glob hardware/interfaces/boot/1.0/vts/functional/Android.bp
+[379/996] glob hardware/interfaces/broadcastradio/1.0/default/Android.bp
+[380/996] glob hardware/interfaces/broadcastradio/1.1/vts/functional/Android.bp
+[381/996] glob hardware/interfaces/broadcastradio/1.1/Android.bp
+[382/996] glob hardware/interfaces/broadcastradio/1.1/utils/Android.bp
+[383/996] glob hardware/interfaces/broadcastradio/1.1/vts/utils/Android.bp
+[384/996] glob hardware/interfaces/broadcastradio/1.1/default/Android.bp
+[385/996] glob hardware/interfaces/broadcastradio/1.1/tests/Android.bp
+[386/996] glob hardware/interfaces/camera/provider/2.4/vts/functional/Android.bp
+[387/996] glob hardware/interfaces/camera/common/1.0/Android.bp
+[388/996] glob hardware/interfaces/camera/common/1.0/default/Android.bp
+[389/996] glob hardware/interfaces/camera/device/1.0/Android.bp
+[390/996] glob hardware/interfaces/camera/device/1.0/default/Android.bp
+[391/996] glob hardware/interfaces/camera/device/3.2/Android.bp
+[392/996] glob hardware/interfaces/camera/device/3.2/default/Android.bp
+[393/996] glob hardware/interfaces/camera/device/3.3/Android.bp
+[394/996] glob hardware/interfaces/camera/device/3.3/default/Android.bp
+[395/996] glob hardware/interfaces/camera/metadata/3.2/Android.bp
+[396/996] glob hardware/interfaces/camera/provider/2.4/Android.bp
+[397/996] glob hardware/interfaces/camera/provider/2.4/default/Android.bp
+[398/996] glob hardware/interfaces/cas/1.0/Android.bp
+[399/996] glob hardware/interfaces/cas/1.0/default/Android.bp
+[400/996] glob hardware/interfaces/cas/1.0/vts/functional/Android.bp
+[401/996] glob hardware/interfaces/cas/native/1.0/Android.bp
+[402/996] glob hardware/interfaces/configstore/1.0/Android.bp
+[403/996] glob hardware/interfaces/configstore/1.0/vts/functional/Android.bp
+[404/996] glob hardware/interfaces/configstore/utils/Android.bp
+[405/996] glob hardware/interfaces/contexthub/1.0/Android.bp
+[406/996] glob hardware/interfaces/contexthub/1.0/default/Android.bp
+[407/996] glob hardware/interfaces/contexthub/1.0/vts/functional/Android.bp
+[408/996] glob hardware/interfaces/drm/1.0/Android.bp
+[409/996] glob hardware/interfaces/drm/1.0/default/Android.bp
+[410/996] glob hardware/interfaces/drm/1.0/vts/functional/Android.bp
+[411/996] glob hardware/interfaces/dumpstate/1.0/Android.bp
+[412/996] glob hardware/interfaces/gatekeeper/1.0/Android.bp
+[413/996] glob hardware/interfaces/dumpstate/1.0/vts/functional/Android.bp
+[414/996] glob hardware/interfaces/gatekeeper/1.0/vts/functional/Android.bp
+[415/996] glob hardware/interfaces/gnss/1.0/Android.bp
+[416/996] glob hardware/interfaces/gnss/1.0/vts/functional/Android.bp
+[417/996] glob hardware/interfaces/graphics/allocator/2.0/Android.bp
+[418/996] glob hardware/interfaces/graphics/allocator/2.0/default/Android.bp
+[419/996] glob hardware/interfaces/graphics/bufferqueue/1.0/Android.bp
+[420/996] glob hardware/interfaces/graphics/common/1.0/Android.bp
+[421/996] glob hardware/interfaces/graphics/composer/2.1/Android.bp
+[422/996] glob hardware/interfaces/graphics/composer/2.1/vts/functional/Android.bp
+[423/996] glob hardware/interfaces/graphics/mapper/2.0/Android.bp
+[424/996] glob hardware/interfaces/graphics/composer/2.1/default/Android.bp
+[425/996] glob hardware/interfaces/graphics/mapper/2.0/vts/functional/Android.bp
+[426/996] glob hardware/interfaces/health/1.0/Android.bp
+[427/996] glob hardware/interfaces/graphics/mapper/2.0/default/Android.bp
+[428/996] glob hardware/interfaces/health/1.0/default/Android.bp
+[429/996] glob hardware/interfaces/health/1.0/default/libhealthd/Android.bp
+[430/996] glob hardware/interfaces/health/1.0/vts/functional/Android.bp
+[431/996] glob hardware/interfaces/ir/1.0/Android.bp
+[432/996] glob hardware/interfaces/ir/1.0/default/Android.bp
+[433/996] glob hardware/interfaces/ir/1.0/vts/functional/Android.bp
+[434/996] glob hardware/interfaces/keymaster/3.0/Android.bp
+[435/996] glob hardware/interfaces/light/2.0/vts/functional/Android.bp
+[436/996] glob hardware/interfaces/keymaster/3.0/vts/functional/Android.bp
+[437/996] glob hardware/interfaces/light/2.0/Android.bp
+[438/996] glob hardware/interfaces/media/omx/1.0/vts/functional/audio/Android.bp
+[439/996] glob hardware/interfaces/media/1.0/Android.bp
+[440/996] glob hardware/interfaces/media/omx/1.0/Android.bp
+[441/996] glob hardware/interfaces/media/omx/1.0/vts/functional/common/Android.bp
+[442/996] glob hardware/interfaces/media/omx/1.0/vts/functional/component/Android.bp
+[443/996] glob hardware/interfaces/media/omx/1.0/vts/functional/master/Android.bp
+[444/996] glob hardware/interfaces/media/omx/1.0/vts/functional/video/Android.bp
+[445/996] glob hardware/interfaces/neuralnetworks/1.0/vts/functional/Android.bp
+[446/996] glob hardware/interfaces/memtrack/1.0/Android.bp
+[447/996] glob hardware/interfaces/memtrack/1.0/default/Android.bp
+[448/996] glob hardware/interfaces/memtrack/1.0/vts/functional/Android.bp
+[449/996] glob hardware/interfaces/neuralnetworks/1.0/Android.bp
+[450/996] glob hardware/interfaces/nfc/1.0/Android.bp
+[451/996] glob hardware/interfaces/nfc/1.0/default/Android.bp
+[452/996] glob hardware/interfaces/nfc/1.0/vts/functional/Android.bp
+[453/996] glob hardware/interfaces/oemlock/1.0/Android.bp
+[454/996] glob hardware/interfaces/oemlock/1.0/vts/functional/Android.bp
+[455/996] glob hardware/interfaces/power/1.0/Android.bp
+[456/996] glob hardware/interfaces/power/1.0/default/Android.bp
+[457/996] glob hardware/interfaces/power/1.0/vts/functional/Android.bp
+[458/996] glob hardware/interfaces/power/1.1/Android.bp
+[459/996] glob hardware/interfaces/power/1.1/vts/functional/Android.bp
+[460/996] glob hardware/interfaces/radio/1.0/Android.bp
+[461/996] glob hardware/interfaces/radio/1.0/vts/functional/Android.bp
+[462/996] glob hardware/interfaces/radio/1.1/Android.bp
+[463/996] glob hardware/interfaces/radio/1.1/vts/functional/Android.bp
+[464/996] glob hardware/interfaces/radio/deprecated/1.0/Android.bp
+[465/996] glob hardware/interfaces/renderscript/1.0/default/Android.bp
+[466/996] glob hardware/interfaces/renderscript/1.0/Android.bp
+[467/996] glob hardware/interfaces/renderscript/1.0/vts/functional/Android.bp
+[468/996] glob hardware/interfaces/sensors/1.0/default/Android.bp
+[469/996] glob hardware/interfaces/sensors/1.0/vts/functional/Android.bp
+[470/996] glob hardware/interfaces/sensors/1.0/Android.bp
+[471/996] glob hardware/interfaces/soundtrigger/2.0/Android.bp
+[472/996] glob hardware/interfaces/soundtrigger/2.0/vts/functional/Android.bp
+[473/996] glob hardware/interfaces/tests/bar/1.0/Android.bp
+[474/996] glob hardware/interfaces/tests/bar/1.0/default/Android.bp
+[475/996] glob hardware/interfaces/tests/baz/1.0/Android.bp
+[476/996] glob hardware/interfaces/tests/baz/1.0/default/Android.bp
+[477/996] glob hardware/interfaces/tests/expression/1.0/Android.bp
+[478/996] glob hardware/interfaces/tests/extension/light/2.0/Android.bp
+[479/996] glob hardware/interfaces/tests/foo/1.0/Android.bp
+[480/996] glob hardware/interfaces/tests/foo/1.0/default/Android.bp
+[481/996] glob hardware/interfaces/tests/hash/1.0/Android.bp
+[482/996] glob hardware/interfaces/tests/foo/1.0/default/lib/Android.bp
+[483/996] glob vendor/vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp
+[484/996] glob hardware/interfaces/tests/hash/1.0/default/Android.bp
+[485/996] glob vendor/vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp
+[486/996] glob vendor/vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp
+[487/996] glob vendor/vendor/qcom/proprietary/interfaces/radio/*/Android.bp
+[488/996] glob vendor/vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp
+[489/996] glob vendor/vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp
+[490/996] glob vendor/vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp
+[491/996] glob vendor/vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp
+[492/996] glob vendor/vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp
+[493/996] glob vendor/vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp
+[494/996] glob vendor/vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp
+[495/996] glob vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp
+[496/996] glob vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp
+[497/996] glob vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp
+[498/996] glob vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp
+[499/996] glob vendor/vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp
+[500/996] glob vendor/vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp
+[501/996] glob vendor/vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp
+[502/996] glob vendor/vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp
+[503/996] glob vendor/vendor/qcom/proprietary/interfaces/wigig/*/Android.bp
+[504/996] glob vendor/vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp
+[505/996] glob hardware/interfaces/tests/pointer/1.0/Android.bp
+[506/996] glob hardware/interfaces/tests/pointer/1.0/default/lib/Android.bp
+[507/996] glob hardware/interfaces/tetheroffload/config/1.0/vts/functional/Android.bp
+[508/996] glob hardware/interfaces/tests/pointer/1.0/default/Android.bp
+[509/996] glob hardware/interfaces/tetheroffload/config/1.0/Android.bp
+[510/996] glob hardware/interfaces/tetheroffload/control/1.0/vts/functional/Android.bp
+[511/996] glob hardware/interfaces/tetheroffload/control/1.0/Android.bp
+[512/996] glob hardware/interfaces/thermal/1.0/Android.bp
+[513/996] glob hardware/interfaces/thermal/1.0/default/Android.bp
+[514/996] glob hardware/interfaces/thermal/1.0/vts/functional/Android.bp
+[515/996] glob hardware/interfaces/thermal/1.1/Android.bp
+[516/996] glob hardware/interfaces/thermal/1.1/vts/functional/Android.bp
+[517/996] glob hardware/interfaces/tv/cec/1.0/Android.bp
+[518/996] glob hardware/interfaces/tv/input/1.0/Android.bp
+[519/996] glob hardware/interfaces/tv/input/1.0/vts/functional/Android.bp
+[520/996] glob hardware/interfaces/usb/1.0/Android.bp
+[521/996] glob hardware/interfaces/usb/1.0/vts/functional/Android.bp
+[522/996] glob hardware/interfaces/usb/1.1/Android.bp
+[523/996] glob hardware/interfaces/vibrator/1.0/Android.bp
+[524/996] glob hardware/interfaces/vibrator/1.0/default/Android.bp
+[525/996] glob hardware/interfaces/vibrator/1.0/vts/functional/Android.bp
+[526/996] glob hardware/interfaces/usb/1.1/vts/functional/Android.bp
+[527/996] glob hardware/interfaces/vibrator/1.1/Android.bp
+[528/996] glob hardware/interfaces/vibrator/1.1/vts/functional/Android.bp
+[529/996] glob hardware/interfaces/vr/1.0/Android.bp
+[530/996] glob hardware/interfaces/vr/1.0/default/Android.bp
+[531/996] glob hardware/interfaces/vr/1.0/vts/functional/Android.bp
+[532/996] glob hardware/interfaces/weaver/1.0/Android.bp
+[533/996] glob hardware/interfaces/weaver/1.0/vts/functional/Android.bp
+[534/996] glob hardware/interfaces/wifi/1.0/Android.bp
+[535/996] glob hardware/interfaces/wifi/1.0/vts/functional/Android.bp
+[536/996] glob hardware/interfaces/wifi/1.1/Android.bp
+[537/996] glob hardware/interfaces/wifi/1.1/vts/functional/Android.bp
+[538/996] glob hardware/interfaces/wifi/offload/1.0/Android.bp
+[539/996] glob hardware/interfaces/wifi/offload/1.0/vts/functional/Android.bp
+[540/996] glob hardware/interfaces/wifi/supplicant/1.0/Android.bp
+[541/996] glob hardware/interfaces/wifi/supplicant/1.0/vts/functional/Android.bp
+[542/996] glob hardware/libhardware/modules/*/Android.bp
+[543/996] glob hardware/libhardware/tests/*/Android.bp
+[544/996] glob hardware/libhardware_legacy/audio/Android.bp
+[545/996] glob libcore/Android.bp
+[546/996] glob libnativehelper/Android.bp
+[547/996] glob libnativehelper/tests/Android.bp
+[548/996] glob packages/apps/Terminal/jni/Android.bp
+[549/996] glob prebuilts/sdk/Android.bp
+[550/996] glob prebuilts/sdk/tools/Android.bp
+[551/996] glob system/*/Android.bp
+[552/996] glob system/bt/audio_a2dp_hw/Android.bp
+[553/996] glob system/bt/bta/Android.bp
+[554/996] glob system/bt/btcore/Android.bp
+[555/996] glob system/bt/build/Android.bp
+[556/996] glob system/bt/btif/Android.bp
+[557/996] glob system/bt/device/Android.bp
+[558/996] glob system/bt/embdrv/sbc/Android.bp
+[559/996] glob system/bt/embdrv/sbc/decoder/Android.bp
+[560/996] glob system/bt/embdrv/Android.bp
+[561/996] glob system/bt/embdrv/sbc/encoder/Android.bp
+[562/996] glob system/bt/hci/Android.bp
+[563/996] glob system/bt/main/Android.bp
+[564/996] glob system/bt/osi/Android.bp
+[565/996] glob system/bt/service/Android.bp
+[566/996] glob system/bt/service/common/Android.bp
+[567/996] glob system/bt/stack/Android.bp
+[568/996] glob system/bt/test/Android.bp
+[569/996] glob system/bt/test/rootcanal/Android.bp
+[570/996] glob system/bt/test/suite/Android.bp
+[571/996] glob system/bt/tools/Android.bp
+[572/996] glob system/bt/tools/mcap_tool/Android.bp
+[573/996] glob system/bt/types/Android.bp
+[574/996] glob system/bt/udrv/Android.bp
+[575/996] glob system/bt/utils/Android.bp
+[576/996] glob system/bt/vendor_libs/Android.bp
+[577/996] glob system/bt/vendor_libs/linux/Android.bp
+[578/996] glob system/bt/vendor_libs/linux/interface/Android.bp
+[579/996] glob system/bt/vendor_libs/test_vendor_lib/Android.bp
+[580/996] glob system/chre/apps/wifi_offload/Android.bp
+[581/996] glob system/core/adf/*/Android.bp
+[582/996] glob system/core/*/Android.bp
+[583/996] glob system/core/adf/libadf/tests/Android.bp
+[584/996] glob system/core/debuggerd/crasher/Android.bp
+[585/996] glob system/core/init/*/Android.bp
+[586/996] glob system/core/libcutils/tests/Android.bp
+[587/996] glob system/core/libion/tests/Android.bp
+[588/996] glob system/core/libnativebridge/tests/Android.bp
+[589/996] glob system/core/libutils/tests/Android.bp
+[590/996] glob system/core/libvndksupport/tests/Android.bp
+[591/996] glob system/core/trusty/gatekeeper/Android.bp
+[592/996] glob system/core/trusty/keymaster/Android.bp
+[593/996] glob system/core/trusty/libtrusty/Android.bp
+[594/996] glob system/core/trusty/libtrusty/tipc-test/Android.bp
+[595/996] glob system/core/trusty/storage/*/Android.bp
+[596/996] glob system/extras/*/Android.bp
+[597/996] glob system/extras/perfprofd/tests/Android.bp
+[598/996] glob system/extras/tests/lib/Android.bp
+[599/996] glob system/extras/tests/lib/*/Android.bp
+[600/996] glob system/hardware/interfaces/Android.bp
+[601/996] glob system/hardware/interfaces/net/netd/1.0/vts/functional/Android.bp
+[602/996] glob system/hardware/interfaces/net/netd/1.0/Android.bp
+[603/996] glob system/hardware/interfaces/wifi/keystore/1.0/vts/functional/Android.bp
+[604/996] glob system/libhidl/base/Android.bp
+[605/996] glob system/hardware/interfaces/wifi/keystore/1.0/Android.bp
+[606/996] glob system/libhidl/libhidlmemory/Android.bp
+[607/996] glob system/libhidl/transport/Android.bp
+[608/996] glob system/libhidl/transport/allocator/1.0/Android.bp
+[609/996] glob system/libhidl/transport/allocator/1.0/default/Android.bp
+[610/996] glob system/libhidl/transport/base/1.0/Android.bp
+[611/996] glob system/libhidl/transport/manager/1.0/Android.bp
+[612/996] glob system/libhidl/transport/manager/1.1/Android.bp
+[613/996] glob system/libhidl/transport/memory/1.0/Android.bp
+[614/996] glob system/libhidl/transport/memory/1.0/default/Android.bp
+[615/996] glob system/libhidl/transport/token/1.0/Android.bp
+[616/996] glob system/libhidl/transport/token/1.0/utils/Android.bp
+[617/996] glob system/libufdt/sysdeps/Android.bp
+[618/996] glob system/libvintf/test/Android.bp
+[619/996] glob system/media/*/Android.bp
+[620/996] glob system/media/audio_utils/tests/Android.bp
+[621/996] glob system/media/camera/tests/Android.bp
+[622/996] glob system/netd/*/Android.bp
+[623/996] glob system/nfc/src/Android.bp
+[624/996] glob system/nvram/client/Android.bp
+[625/996] glob system/nvram/hal/Android.bp
+[626/996] glob system/nvram/hal/tests/Android.bp
+[627/996] glob system/nvram/messages/Android.bp
+[628/996] glob system/nvram/messages/tests/Android.bp
+[629/996] glob system/sepolicy/tests/Android.bp
+[630/996] glob system/timezone/*/Android.bp
+[631/996] glob system/tools/*/Android.bp
+[632/996] glob system/tools/hidl/c2hal/Android.bp
+[633/996] glob system/tools/hidl/c2hal/test/Android.bp
+[634/996] glob system/tools/hidl/test/error_test/Android.bp
+[635/996] glob system/tools/hidl/test/Android.bp
+[636/996] glob system/tools/hidl/test/hash_test/Android.bp
+[637/996] glob system/tools/hidl/test/impl_test/Android.bp
+[638/996] glob system/tools/hidl/test/java_test/Android.bp
+[639/996] glob system/tools/hidl/test/vendor/1.0/Android.bp
+[640/996] glob system/tools/hidl/test/version_test/Android.bp
+[641/996] glob system/tools/hidl/utils/Android.bp
+[642/996] glob system/tools/hidl/test/vendor/1.1/Android.bp
+[643/996] glob test/vts-testcase/*/Android.bp
+[644/996] glob test/vts-testcase/fuzz/func_fuzzer/Android.bp
+[645/996] glob test/vts-testcase/fuzz/func_fuzzer/*/Android.bp
+[646/996] glob test/vts-testcase/fuzz/func_fuzzer/audio/common/V2_0/Android.bp
+[647/996] glob test/vts-testcase/fuzz/func_fuzzer/audio/V2_0/Android.bp
+[648/996] glob test/vts-testcase/fuzz/func_fuzzer/camera/common/V1_0/Android.bp
+[649/996] glob test/vts-testcase/fuzz/func_fuzzer/camera/device/V1_0/Android.bp
+[650/996] glob test/vts-testcase/fuzz/func_fuzzer/camera/device/V3_2/Android.bp
+[651/996] glob test/vts-testcase/fuzz/func_fuzzer/camera/metadata/V3_2/Android.bp
+[652/996] glob test/vts-testcase/fuzz/func_fuzzer/camera/provider/V2_4/Android.bp
+[653/996] glob test/vts-testcase/fuzz/func_fuzzer/configstore/V1_0/Android.bp
+[654/996] glob test/vts-testcase/fuzz/func_fuzzer/contexthub/V1_0/Android.bp
+[655/996] glob test/vts-testcase/fuzz/func_fuzzer/drm/V1_0/Android.bp
+[656/996] glob test/vts-testcase/fuzz/func_fuzzer/dumpstate/V1_0/Android.bp
+[657/996] glob test/vts-testcase/fuzz/func_fuzzer/gatekeeper/V1_0/Android.bp
+[658/996] glob test/vts-testcase/fuzz/func_fuzzer/graphics/allocator/V2_0/Android.bp
+[659/996] glob test/vts-testcase/fuzz/func_fuzzer/gnss/V1_0/Android.bp
+[660/996] glob test/vts-testcase/fuzz/func_fuzzer/graphics/bufferqueue/V1_0/Android.bp
+[661/996] glob test/vts-testcase/fuzz/func_fuzzer/graphics/common/V1_0/Android.bp
+[662/996] glob test/vts-testcase/fuzz/func_fuzzer/graphics/composer/V2_1/Android.bp
+[663/996] glob test/vts-testcase/fuzz/func_fuzzer/graphics/mapper/V2_0/Android.bp
+[664/996] glob test/vts-testcase/fuzz/func_fuzzer/health/V1_0/Android.bp
+[665/996] glob test/vts-testcase/fuzz/func_fuzzer/ir/V1_0/Android.bp
+[666/996] glob test/vts-testcase/fuzz/func_fuzzer/keymaster/V3_0/Android.bp
+[667/996] glob test/vts-testcase/fuzz/func_fuzzer/light/V2_0/Android.bp
+[668/996] glob test/vts-testcase/fuzz/func_fuzzer/media/omx/V1_0/Android.bp
+[669/996] glob test/vts-testcase/fuzz/func_fuzzer/media/V1_0/Android.bp
+[670/996] glob test/vts-testcase/fuzz/func_fuzzer/memtrack/V1_0/Android.bp
+[671/996] glob test/vts-testcase/fuzz/func_fuzzer/radio/deprecated/V1_0/Android.bp
+[672/996] glob test/vts-testcase/fuzz/func_fuzzer/nfc/V1_0/Android.bp
+[673/996] glob test/vts-testcase/fuzz/func_fuzzer/power/V1_0/Android.bp
+[674/996] glob test/vts-testcase/fuzz/func_fuzzer/radio/V1_0/Android.bp
+[675/996] glob test/vts-testcase/fuzz/func_fuzzer/renderscript/V1_0/Android.bp
+[676/996] glob test/vts-testcase/fuzz/func_fuzzer/sensors/V1_0/Android.bp
+[677/996] glob test/vts-testcase/fuzz/func_fuzzer/soundtrigger/V2_0/Android.bp
+[678/996] glob test/vts-testcase/fuzz/func_fuzzer/tests/bar/V1_0/Android.bp
+[679/996] glob test/vts-testcase/fuzz/func_fuzzer/tests/baz/V1_0/Android.bp
+[680/996] glob test/vts-testcase/fuzz/func_fuzzer/tests/expression/V1_0/Android.bp
+[681/996] glob test/vts-testcase/fuzz/func_fuzzer/tests/extension/light/V2_0/Android.bp
+[682/996] glob test/vts-testcase/fuzz/func_fuzzer/tests/foo/V1_0/Android.bp
+[683/996] glob test/vts-testcase/fuzz/func_fuzzer/tests/hash/V1_0/Android.bp
+[684/996] glob test/vts-testcase/fuzz/func_fuzzer/tests/inheritance/V1_0/Android.bp
+[685/996] glob test/vts-testcase/fuzz/func_fuzzer/tests/libhwbinder/V1_0/Android.bp
+[686/996] glob test/vts-testcase/fuzz/func_fuzzer/tests/memory/V1_0/Android.bp
+[687/996] glob test/vts-testcase/fuzz/func_fuzzer/tests/msgq/V1_0/Android.bp
+[688/996] glob test/vts-testcase/fuzz/func_fuzzer/tests/pointer/V1_0/Android.bp
+[689/996] glob test/vts-testcase/fuzz/func_fuzzer/thermal/V1_0/Android.bp
+[690/996] glob test/vts-testcase/fuzz/func_fuzzer/tv/cec/V1_0/Android.bp
+[691/996] glob test/vts-testcase/fuzz/func_fuzzer/tv/input/V1_0/Android.bp
+[692/996] glob test/vts-testcase/fuzz/func_fuzzer/usb/V1_0/Android.bp
+[693/996] glob test/vts-testcase/fuzz/func_fuzzer/vibrator/V1_0/Android.bp
+[694/996] glob test/vts-testcase/fuzz/func_fuzzer/wifi/supplicant/V1_0/Android.bp
+[695/996] glob test/vts-testcase/fuzz/func_fuzzer/vr/V1_0/Android.bp
+[696/996] glob test/vts-testcase/fuzz/func_fuzzer/wifi/V1_0/Android.bp
+[697/996] glob test/vts-testcase/hal/audio/V2_0/Android.bp
+[698/996] glob test/vts-testcase/fuzz/iface_fuzzer/Android.bp
+[699/996] glob test/vts-testcase/hal/*/Android.bp
+[700/996] glob test/vts-testcase/hal/audio/V2_0/*/Android.bp
+[701/996] glob test/vts-testcase/hal/audio/common/V2_0/Android.bp
+[702/996] glob test/vts-testcase/hal/audio/common/V2_0/*/Android.bp
+[703/996] glob test/vts-testcase/hal/audio/effect/V2_0/Android.bp
+[704/996] glob test/vts-testcase/hal/audio/effect/V2_0/*/Android.bp
+[705/996] glob test/vts-testcase/hal/automotive/evs/V1_0/Android.bp
+[706/996] glob test/vts-testcase/hal/automotive/evs/V1_0/*/Android.bp
+[707/996] glob test/vts-testcase/hal/automotive/vehicle/V2_0/Android.bp
+[708/996] glob test/vts-testcase/hal/automotive/vehicle/V2_0/*/Android.bp
+[709/996] glob test/vts-testcase/hal/biometrics/fingerprint/V2_1/Android.bp
+[710/996] glob test/vts-testcase/hal/biometrics/fingerprint/V2_1/*/Android.bp
+[711/996] glob test/vts-testcase/hal/bluetooth/V1_0/Android.bp
+[712/996] glob test/vts-testcase/hal/bluetooth/V1_0/*/Android.bp
+[713/996] glob test/vts-testcase/hal/boot/V1_0/Android.bp
+[714/996] glob test/vts-testcase/hal/boot/V1_0/*/Android.bp
+[715/996] glob test/vts-testcase/hal/broadcastradio/V1_0/Android.bp
+[716/996] glob test/vts-testcase/hal/broadcastradio/V1_0/*/Android.bp
+[717/996] glob test/vts-testcase/hal/broadcastradio/V1_1/Android.bp
+[718/996] glob test/vts-testcase/hal/broadcastradio/V1_1/*/Android.bp
+[719/996] glob test/vts-testcase/hal/build/soong/Android.bp
+[720/996] glob test/vts-testcase/hal/camera/common/V1_0/Android.bp
+[721/996] glob test/vts-testcase/hal/camera/common/V1_0/*/Android.bp
+[722/996] glob test/vts-testcase/hal/camera/device/V1_0/Android.bp
+[723/996] glob test/vts-testcase/hal/camera/device/V1_0/*/Android.bp
+[724/996] glob test/vts-testcase/hal/camera/device/V3_2/Android.bp
+[725/996] glob test/vts-testcase/hal/camera/device/V3_2/*/Android.bp
+[726/996] glob test/vts-testcase/hal/camera/device/V3_3/Android.bp
+[727/996] glob test/vts-testcase/hal/camera/device/V3_3/*/Android.bp
+[728/996] glob test/vts-testcase/hal/camera/metadata/V3_2/Android.bp
+[729/996] glob test/vts-testcase/hal/camera/metadata/V3_2/*/Android.bp
+[730/996] glob test/vts-testcase/hal/camera/provider/V2_4/Android.bp
+[731/996] glob test/vts-testcase/hal/camera/provider/V2_4/*/Android.bp
+[732/996] glob test/vts-testcase/hal/cas/V1_0/*/Android.bp
+[733/996] glob test/vts-testcase/hal/cas/V1_0/Android.bp
+[734/996] glob test/vts-testcase/hal/cas/native/V1_0/Android.bp
+[735/996] glob test/vts-testcase/hal/cas/native/V1_0/*/Android.bp
+[736/996] glob test/vts-testcase/hal/configstore/V1_0/Android.bp
+[737/996] glob test/vts-testcase/hal/configstore/V1_0/*/Android.bp
+[738/996] glob test/vts-testcase/hal/contexthub/V1_0/Android.bp
+[739/996] glob test/vts-testcase/hal/drm/V1_0/Android.bp
+[740/996] glob test/vts-testcase/hal/contexthub/V1_0/*/Android.bp
+[741/996] glob test/vts-testcase/hal/drm/V1_0/*/Android.bp
+[742/996] glob test/vts-testcase/hal/dumpstate/V1_0/Android.bp
+[743/996] glob test/vts-testcase/hal/dumpstate/V1_0/*/Android.bp
+[744/996] glob test/vts-testcase/hal/gatekeeper/V1_0/Android.bp
+[745/996] glob test/vts-testcase/hal/gnss/V1_0/Android.bp
+[746/996] glob test/vts-testcase/hal/gatekeeper/V1_0/*/Android.bp
+[747/996] glob test/vts-testcase/hal/gnss/V1_0/*/Android.bp
+[748/996] glob test/vts-testcase/hal/graphics/allocator/V2_0/Android.bp
+[749/996] glob test/vts-testcase/hal/graphics/allocator/V2_0/*/Android.bp
+[750/996] glob test/vts-testcase/hal/graphics/bufferqueue/V1_0/Android.bp
+[751/996] glob test/vts-testcase/hal/graphics/common/V1_0/Android.bp
+[752/996] glob test/vts-testcase/hal/graphics/common/V1_0/*/Android.bp
+[753/996] glob test/vts-testcase/hal/graphics/bufferqueue/V1_0/*/Android.bp
+[754/996] glob test/vts-testcase/hal/graphics/composer/V2_1/Android.bp
+[755/996] glob test/vts-testcase/hal/graphics/composer/V2_1/*/Android.bp
+[756/996] glob test/vts-testcase/hal/graphics/mapper/V2_0/Android.bp
+[757/996] glob test/vts-testcase/hal/graphics/mapper/V2_0/*/Android.bp
+[758/996] glob test/vts-testcase/hal/health/V1_0/Android.bp
+[759/996] glob test/vts-testcase/hal/health/V1_0/*/Android.bp
+[760/996] glob test/vts-testcase/hal/ir/V1_0/Android.bp
+[761/996] glob test/vts-testcase/hal/ir/V1_0/*/Android.bp
+[762/996] glob test/vts-testcase/hal/keymaster/V3_0/*/Android.bp
+[763/996] glob test/vts-testcase/hal/light/V2_0/Android.bp
+[764/996] glob test/vts-testcase/hal/keymaster/V3_0/Android.bp
+[765/996] glob test/vts-testcase/hal/light/V2_0/*/Android.bp
+[766/996] glob test/vts-testcase/hal/media/V1_0/Android.bp
+[767/996] glob test/vts-testcase/hal/media/omx/V1_0/Android.bp
+[768/996] glob test/vts-testcase/hal/media/omx/V1_0/*/Android.bp
+[769/996] glob test/vts-testcase/hal/media/V1_0/*/Android.bp
+[770/996] glob test/vts-testcase/hal/memtrack/V1_0/Android.bp
+[771/996] glob test/vts-testcase/hal/memtrack/V1_0/*/Android.bp
+[772/996] glob test/vts-testcase/hal/neuralnetworks/V1_0/Android.bp
+[773/996] glob test/vts-testcase/hal/neuralnetworks/V1_0/*/Android.bp
+[774/996] glob test/vts-testcase/hal/nfc/V1_0/Android.bp
+[775/996] glob test/vts-testcase/hal/nfc/V1_0/*/Android.bp
+[776/996] glob test/vts-testcase/hal/oemlock/V1_0/Android.bp
+[777/996] glob test/vts-testcase/hal/oemlock/V1_0/*/Android.bp
+[778/996] glob test/vts-testcase/hal/power/V1_0/Android.bp
+[779/996] glob test/vts-testcase/hal/power/V1_0/*/Android.bp
+[780/996] glob test/vts-testcase/hal/power/V1_1/Android.bp
+[781/996] glob test/vts-testcase/hal/radio/V1_0/Android.bp
+[782/996] glob test/vts-testcase/hal/power/V1_1/*/Android.bp
+[783/996] glob test/vts-testcase/hal/radio/V1_0/*/Android.bp
+[784/996] glob test/vts-testcase/hal/radio/V1_1/Android.bp
+[785/996] glob test/vts-testcase/hal/radio/deprecated/V1_0/Android.bp
+[786/996] glob test/vts-testcase/hal/renderscript/V1_0/Android.bp
+[787/996] glob test/vts-testcase/hal/radio/V1_1/*/Android.bp
+[788/996] glob test/vts-testcase/hal/radio/deprecated/V1_0/*/Android.bp
+[789/996] glob test/vts-testcase/hal/sensors/V1_0/Android.bp
+[790/996] glob test/vts-testcase/hal/renderscript/V1_0/*/Android.bp
+[791/996] glob test/vts-testcase/hal/sensors/V1_0/*/Android.bp
+[792/996] glob test/vts-testcase/hal/soundtrigger/V2_0/*/Android.bp
+[793/996] glob test/vts-testcase/hal/soundtrigger/V2_0/Android.bp
+[794/996] glob test/vts-testcase/hal/tests/bar/V1_0/Android.bp
+[795/996] glob test/vts-testcase/hal/tests/bar/V1_0/*/Android.bp
+[796/996] glob test/vts-testcase/hal/tests/baz/V1_0/*/Android.bp
+[797/996] glob test/vts-testcase/hal/tests/baz/V1_0/Android.bp
+[798/996] glob test/vts-testcase/hal/tests/expression/V1_0/Android.bp
+[799/996] glob test/vts-testcase/hal/tests/extension/light/V2_0/Android.bp
+[800/996] glob test/vts-testcase/hal/tests/foo/V1_0/Android.bp
+[801/996] glob test/vts-testcase/hal/tests/foo/V1_0/*/Android.bp
+[802/996] glob test/vts-testcase/hal/tests/expression/V1_0/*/Android.bp
+[803/996] glob test/vts-testcase/hal/tests/extension/light/V2_0/*/Android.bp
+[804/996] glob test/vts-testcase/hal/tests/hash/V1_0/Android.bp
+[805/996] glob test/vts-testcase/hal/tests/hash/V1_0/*/Android.bp
+[806/996] glob test/vts-testcase/hal/tests/inheritance/V1_0/Android.bp
+[807/996] glob test/vts-testcase/hal/tests/inheritance/V1_0/*/Android.bp
+[808/996] glob test/vts-testcase/hal/tests/libhwbinder/V1_0/Android.bp
+[809/996] glob test/vts-testcase/hal/tests/libhwbinder/V1_0/*/Android.bp
+[810/996] glob test/vts-testcase/hal/tests/memory/V1_0/Android.bp
+[811/996] glob test/vts-testcase/hal/tests/memory/V1_0/*/Android.bp
+[812/996] glob test/vts-testcase/hal/tests/msgq/V1_0/Android.bp
+[813/996] glob test/vts-testcase/hal/tests/msgq/V1_0/*/Android.bp
+[814/996] glob test/vts-testcase/hal/tests/multithread/V1_0/*/Android.bp
+[815/996] glob test/vts-testcase/hal/tests/multithread/V1_0/Android.bp
+[816/996] glob test/vts-testcase/hal/tests/pointer/V1_0/Android.bp
+[817/996] glob test/vts-testcase/hal/tests/pointer/V1_0/*/Android.bp
+[818/996] glob test/vts-testcase/hal/tetheroffload/config/V1_0/Android.bp
+[819/996] glob test/vts-testcase/hal/tetheroffload/config/V1_0/*/Android.bp
+[820/996] glob test/vts-testcase/hal/tetheroffload/control/V1_0/Android.bp
+[821/996] glob test/vts-testcase/hal/tetheroffload/control/V1_0/*/Android.bp
+[822/996] glob test/vts-testcase/hal/thermal/V1_0/Android.bp
+[823/996] glob test/vts-testcase/hal/thermal/V1_0/*/Android.bp
+[824/996] glob test/vts-testcase/hal/thermal/V1_1/Android.bp
+[825/996] glob test/vts-testcase/hal/thermal/V1_1/*/Android.bp
+[826/996] glob test/vts-testcase/hal/treble/vintf/Android.bp
+[827/996] glob test/vts-testcase/hal/tv/cec/V1_0/Android.bp
+[828/996] glob test/vts-testcase/hal/tv/cec/V1_0/*/Android.bp
+[829/996] glob test/vts-testcase/hal/tv/input/V1_0/Android.bp
+[830/996] glob test/vts-testcase/hal/tv/input/V1_0/*/Android.bp
+[831/996] glob test/vts-testcase/hal/usb/V1_0/Android.bp
+[832/996] glob test/vts-testcase/hal/usb/V1_0/*/Android.bp
+[833/996] glob test/vts-testcase/hal/usb/V1_1/Android.bp
+[834/996] glob test/vts-testcase/hal/usb/V1_1/*/Android.bp
+[835/996] glob test/vts-testcase/hal/vibrator/V1_0/Android.bp
+[836/996] glob test/vts-testcase/hal/vibrator/V1_0/*/Android.bp
+[837/996] glob test/vts-testcase/hal/vibrator/V1_1/Android.bp
+[838/996] glob test/vts-testcase/hal/vibrator/V1_1/*/Android.bp
+[839/996] glob test/vts-testcase/hal/vr/V1_0/Android.bp
+[840/996] glob test/vts-testcase/hal/vr/V1_0/*/Android.bp
+[841/996] glob test/vts-testcase/hal/weaver/V1_0/*/Android.bp
+[842/996] glob test/vts-testcase/hal/wifi/V1_0/Android.bp
+[843/996] glob test/vts-testcase/hal/weaver/V1_0/Android.bp
+[844/996] glob test/vts-testcase/hal/wifi/V1_0/*/Android.bp
+[845/996] glob test/vts-testcase/hal/wifi/V1_1/*/Android.bp
+[846/996] glob test/vts-testcase/hal/wifi/offload/V1_0/Android.bp
+[847/996] glob test/vts-testcase/hal/wifi/V1_1/Android.bp
+[848/996] glob test/vts-testcase/hal/wifi/offload/V1_0/*/Android.bp
+[849/996] glob test/vts-testcase/hal/wifi/supplicant/V1_0/*/Android.bp
+[850/996] glob test/vts-testcase/kernel/api/tun/Android.bp
+[851/996] glob test/vts-testcase/security/selinux/policy/Android.bp
+[852/996] glob test/vts-testcase/hal/wifi/supplicant/V1_0/Android.bp
+[853/996] glob test/vts/Android.bp
+[854/996] glob test/vts/compilation_tools/Android.bp
+[855/996] glob test/vts/compilation_tools/vtsc/Android.bp
+[856/996] glob test/vts/drivers/Android.bp
+[857/996] glob test/vts/drivers/hal/Android.bp
+[858/996] glob test/vts/drivers/hal/common/Android.bp
+[859/996] glob test/vts/drivers/hal/libcodecoverage/Android.bp
+[860/996] glob test/vts/drivers/hal/libdatatype/Android.bp
+[861/996] glob test/vts/drivers/hal/libmeasurement/Android.bp
+[862/996] glob test/vts/drivers/hal/replayer/Android.bp
+[863/996] glob test/vts/drivers/hal/server/Android.bp
+[864/996] glob test/vts/drivers/libdrivercomm/Android.bp
+[865/996] glob test/vts/proto/Android.bp
+[866/996] glob test/vts/utils/Android.bp
+[867/996] glob test/vts/runners/target/vts_hal_hidl_target/Android.bp
+[868/996] glob test/vts/utils/native/Android.bp
+[869/996] glob test/vts/utils/native/libprofiling/Android.bp
+[870/996] glob test/vts/utils/native/trace_processor/Android.bp
+[871/996] glob vendor/*/*/Android.bp
+[872/996] glob vendor/*/*/*/Android.bp
+[873/996] glob vendor/nxp/interfaces/opensource/nfc/1.0/Android.bp
+[874/996] glob vendor/nxp/interfaces/opensource/nfc/1.0/default/Android.bp
+[875/996] glob vendor/nxp/interfaces/opensource/nfc/Android.bp
+[876/996] glob vendor/qcom/opensource/bluetooth_ext/system_bt_ext/btif/Android.bp
+[877/996] glob vendor/qcom/opensource/bluetooth_ext/system_bt_ext/device/Android.bp
+[878/996] glob vendor/qcom/opensource/interfaces/*/Android.bp
+[879/996] glob vendor/qcom/opensource/*/Android.bp
+[880/996] glob vendor/qcom/opensource/bluetooth_ext/*/Android.bp
+[881/996] glob vendor/qcom/opensource/bluetooth_ext/system_bt_ext/osi/Android.bp
+[882/996] glob vendor/qcom/opensource/interfaces/display/config/1.0/Android.bp
+[883/996] glob vendor/qcom/opensource/interfaces/camera/device/1.0/Android.bp
+[884/996] glob vendor/qcom/opensource/interfaces/display/config/1.1/Android.bp
+[885/996] glob vendor/qcom/opensource/interfaces/display/config/1.2/Android.bp
+[886/996] glob vendor/qcom/opensource/interfaces/wifi/supplicant/1.0/Android.bp
+[887/996] glob vendor/qcom/opensource/interfaces/wifi/*/Android.bp
+[888/996] glob vendor/qcom/opensource/interfaces/wifi/supplicant/1.1/Android.bp
+[889/996] glob vendor/qcom/proprietary/*/Android.bp
+[890/996] glob vendor/qcom/proprietary/android-perf/*/Android.bp
+[891/996] glob vendor/qcom/proprietary/android-perf/io-p/Android.bp
+[892/996] glob vendor/qcom/proprietary/android-perf/iop-hal/Android.bp
+[893/996] glob vendor/qcom/proprietary/android-perf/perf-hal/Android.bp
+[894/996] glob vendor/qcom/proprietary/android-perf/mp-ctl/Android.bp
+[895/996] glob vendor/qcom/proprietary/android-perf/perf-util/Android.bp
+[896/996] glob vendor/qcom/proprietary/android-perf/tests/UnitTests/*/Android.bp
+[897/996] glob vendor/qcom/proprietary/ims-ship/rcs/interfaces/Android.bp
+[898/996] glob vendor/qcom/proprietary/android-perf/tests/UnitTests/Android.bp
+[899/996] glob vendor/qcom/proprietary/dpm/*/Android.bp
+[900/996] glob vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp
+[901/996] glob vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp
+[902/996] glob vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp
+[903/996] glob vendor/qcom/proprietary/interfaces/automotive/vehicle/*/Android.bp
+[904/996] glob vendor/qcom/proprietary/interfaces/*/Android.bp
+[905/996] glob vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp
+[906/996] glob vendor/*/*/*/*/*/Android.bp
+[907/996] glob vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp
+[908/996] glob vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp
+[909/996] glob vendor/qcom/proprietary/interfaces/automotive/*/Android.bp
+[910/996] glob vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp
+[911/996] glob vendor/qcom/proprietary/interfaces/data/latency/1.0/vts/functional/Android.bp
+[912/996] glob vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp
+[913/996] glob vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp
+[914/996] glob vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp
+[915/996] glob vendor/qcom/proprietary/interfaces/display/color/Android.bp
+[916/996] glob vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp
+[917/996] glob vendor/qcom/proprietary/interfaces/display/postproc/Android.bp
+[918/996] glob vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp
+[919/996] glob vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp
+[920/996] glob vendor/qcom/proprietary/interfaces/fingerprint/*/Android.bp
+[921/996] glob vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp
+[922/996] glob vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp
+[923/996] glob vendor/qcom/proprietary/interfaces/gnss/1.0/service/Android.bp
+[924/996] glob vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp
+[925/996] glob vendor/qcom/proprietary/interfaces/gnss/1.1/service/Android.bp
+[926/996] glob vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp
+[927/996] glob vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp
+[928/996] glob vendor/qcom/proprietary/interfaces/gnss/1.2/service/Android.bp
+[929/996] glob vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp
+[930/996] glob vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp
+[931/996] glob vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp
+[932/996] glob vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp
+[933/996] glob vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp
+[934/996] glob vendor/qcom/proprietary/interfaces/radio/*/Android.bp
+[935/996] glob vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp
+[936/996] glob vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp
+[937/996] glob vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp
+[938/996] glob vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp
+[939/996] glob vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp
+[940/996] glob vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp
+[941/996] glob vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp
+[942/996] glob vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp
+[943/996] glob vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp
+[944/996] glob vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp
+[945/996] glob vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp
+[946/996] glob vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp
+[947/996] glob vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp
+[948/996] glob vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp
+[949/996] glob vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp
+[950/996] glob vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp
+[951/996] glob vendor/qcom/proprietary/interfaces/wigig/*/Android.bp
+[952/996] glob vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp
+[953/996] glob vendor/qcom/proprietary/prebuilt_HY11/target/product/msm8996/Android.bp
+[954/996] glob vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp
+[955/996] glob vendor/qcom/proprietary/securemsm/QTEEConnector/*/Android.bp
+[956/996] glob vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/Android.bp
+[957/996] glob vendor/qcom/proprietary/securemsm/*/Android.bp
+[958/996] glob vendor/qcom/proprietary/thermal-engine/Android.bp
+[959/996] glob vendor/vendor/qcom/proprietary/*/Android.bp
+[960/996] glob vendor/vendor/qcom/proprietary/android-perf/*/Android.bp
+[961/996] glob vendor/vendor/qcom/proprietary/dpm/*/Android.bp
+[962/996] glob vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp
+[963/996] glob vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp
+[964/996] glob vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp
+[965/996] glob vendor/vendor/qcom/proprietary/interfaces/*/Android.bp
+[966/996] glob vendor/vendor/qcom/proprietary/interfaces/automotive/vehicle/*/Android.bp
+[967/996] glob vendor/vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp
+[968/996] glob vendor/vendor/qcom/proprietary/interfaces/automotive/*/Android.bp
+[969/996] glob vendor/vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp
+[970/996] glob vendor/vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp
+[971/996] glob vendor/vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp
+[972/996] glob vendor/vendor/qcom/proprietary/interfaces/data/latency/1.0/vts/functional/Android.bp
+[973/996] glob vendor/vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp
+[974/996] glob vendor/vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp
+[975/996] glob vendor/vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp
+[976/996] glob vendor/vendor/qcom/proprietary/interfaces/display/color/Android.bp
+[977/996] glob vendor/vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp
+[978/996] glob vendor/vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp
+[979/996] glob vendor/vendor/qcom/proprietary/interfaces/fingerprint/*/Android.bp
+[980/996] glob vendor/vendor/qcom/proprietary/interfaces/display/postproc/Android.bp
+[981/996] glob vendor/vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp
+[982/996] glob vendor/vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp
+[983/996] glob vendor/vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp
+[984/996] glob vendor/vendor/qcom/proprietary/interfaces/gnss/1.0/service/Android.bp
+[985/996] glob vendor/vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp
+[986/996] glob vendor/vendor/qcom/proprietary/interfaces/gnss/1.1/service/Android.bp
+[987/996] glob vendor/vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp
+[988/996] glob vendor/vendor/qcom/proprietary/interfaces/gnss/1.2/service/Android.bp
+[989/996] glob vendor/vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp
+[990/996] glob vendor/vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp
+[991/996] glob vendor/vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp
+[992/996] glob vendor/vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp
+[993/996] glob vendor/vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp
+[994/996] glob vendor/vendor/qcom/proprietary/securemsm/QTEEConnector/*/Android.bp
+[995/996] glob vendor/vendor/qcom/proprietary/securemsm/*/Android.bp
+[1/54] compile out/soong/.bootstrap/soong/pkg/android/soong.a
+[2/54] gotestmain out/soong/.bootstrap/soong-cc-config/test/test.go
+[3/54] gotestmain out/soong/.bootstrap/soong-java/test/test.go
+[4/54] compile out/soong/.bootstrap/loadplugins/obj/loadplugins.a
+[5/54] gotestmain out/soong/.bootstrap/soong-python/test/test.go
+[6/54] gotestmain out/soong/.bootstrap/soong-cc/test/test.go
+[7/54] gotestmain out/soong/.bootstrap/soong-android/test/test.go
+[8/54] compile out/soong/.bootstrap/soong-env/pkg/android/soong/env.a
+[9/54] compile out/soong/.bootstrap/soong-shared/pkg/android/soong/shared.a
+[10/54] compile out/soong/.bootstrap/soong_env/obj/soong_env.a
+[11/54] link out/soong/.bootstrap/loadplugins/obj/a.out
+[12/54] link out/soong/.bootstrap/soong_env/obj/a.out
+[13/54] cp out/soong/.bootstrap/bin/loadplugins
+[14/54] cp out/soong/.bootstrap/bin/soong_env
+[15/54] create out/soong/.bootstrap/soong_build/gen/plugin.go
+[16/54] compile out/soong/.bootstrap/soong-android/pkg/android/soong/android.a
+[17/54] compile out/soong/.bootstrap/soong-java-config/pkg/android/soong/java/config.a
+[18/54] compile out/soong/.bootstrap/soong-phony/pkg/android/soong/phony.a
+[19/54] compile out/soong/.bootstrap/soong-genrule/pkg/android/soong/genrule.a
+[20/54] compile out/soong/.bootstrap/soong-android/test/android/soong/android.a
+[21/54] compile out/soong/.bootstrap/soong-android/test/test.a
+[22/54] compile out/soong/.bootstrap/soong-python/pkg/android/soong/python.a
+[23/54] compile out/soong/.bootstrap/soong-python/test/android/soong/python.a
+[24/54] compile out/soong/.bootstrap/soong-python/test/test.a
+[25/54] compile out/soong/.bootstrap/soong-java/test/android/soong/java.a
+[26/54] link out/soong/.bootstrap/soong-android/test/test
+[27/54] compile out/soong/.bootstrap/soong-cc-config/test/android/soong/cc/config.a
+[28/54] test android/soong/android
+[29/54] compile out/soong/.bootstrap/soong-cc-config/pkg/android/soong/cc/config.a
+[30/54] compile out/soong/.bootstrap/soong-java/test/test.a
+[31/54] compile out/soong/.bootstrap/soong-cc-config/test/test.a
+[32/54] compile out/soong/.bootstrap/soong-java/pkg/android/soong/java.a
+[33/54] compile out/soong/.bootstrap/soong-vts-spec/pkg/android/soong/vts/hal2vts.a
+[34/54] link out/soong/.bootstrap/soong-python/test/test
+[35/54] test android/soong/python
+[36/54] link out/soong/.bootstrap/soong-cc-config/test/test
+[37/54] test android/soong/cc/config
+[38/54] link out/soong/.bootstrap/soong-java/test/test
+[39/54] test android/soong/java
+[40/54] compile out/soong/.bootstrap/soong-cc/test/android/soong/cc.a
+[41/54] compile out/soong/.bootstrap/soong-cc/pkg/android/soong/cc.a
+[42/54] compile out/soong/.bootstrap/soong-cc/test/test.a
+[43/54] compile out/soong/.bootstrap/soong-clang-prebuilts/pkg/android/soong/prebuilts/clang/host/linux-x86/clangprebuilts.a
+[44/54] compile out/soong/.bootstrap/soong-fluoride/pkg/android/soong/fluoride.a
+[45/54] compile out/soong/.bootstrap/soong-clang/pkg/android/soong/external/clang.a
+[46/54] compile out/soong/.bootstrap/soong-art/pkg/android/soong/art.a
+[47/54] compile out/soong/.bootstrap/soong-llvm/pkg/android/soong/external/llvm.a
+[48/54] compile out/soong/.bootstrap/soong_build/obj/soong_build.a
+[49/54] link out/soong/.bootstrap/soong-cc/test/test
+[50/54] test android/soong/cc
+[51/54] link out/soong/.bootstrap/soong_build/obj/a.out
+[52/54] cp out/soong/.bootstrap/bin/soong_build
+[53/54] out/soong/.bootstrap/bin/soong_build out/soong/build.ninja
+FAILED: out/soong/build.ninja 
+out/soong/.bootstrap/bin/soong_build  -t -b out/soong -d out/soong/build.ninja.d -o out/soong/build.ninja Android.bp
+error: vendor/vendor/qcom/proprietary/android-perf/io-p/Android.bp:1:1: module "libqti-iopd-client" already defined
+error: vendor/qcom/proprietary/android-perf/io-p/Android.bp:1:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/android-perf/mp-ctl/Android.bp:1:1: module "libfeedbackhandler" already defined
+error: vendor/qcom/proprietary/android-perf/mp-ctl/Android.bp:1:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/android-perf/iop-hal/Android.bp:2:1: module "vendor.qti.hardware.iop@1.0-impl" already defined
+error: vendor/qcom/proprietary/android-perf/iop-hal/Android.bp:2:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:3:1: module "com.qualcomm.qti.uceservice@1.0_hal" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:16:1: module "com.qualcomm.qti.uceservice@1.0_genc++" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:16:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:34:1: module "com.qualcomm.qti.uceservice@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:34:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:77:1: module "com.qualcomm.qti.uceservice@1.0-static" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:77:1: <-- previous definition here
+error: vendor/qcom/proprietary/android-perf/io-p/Android.bp:40:1: module "libqti-iop-client-sys" already defined
+error: vendor/vendor/qcom/proprietary/android-perf/io-p/Android.bp:40:1: <-- previous definition here
+error: vendor/qcom/proprietary/android-perf/mp-ctl/Android.bp:12:1: module "libqti-perfd-client" already defined
+error: vendor/vendor/qcom/proprietary/android-perf/mp-ctl/Android.bp:12:1: <-- previous definition here
+error: vendor/qcom/proprietary/android-perf/mp-ctl/Android.bp:43:1: module "libqti-perfd-client_system" already defined
+error: vendor/vendor/qcom/proprietary/android-perf/mp-ctl/Android.bp:43:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:3:1: module "com.qualcomm.qti.imscmservice@1.1_hal" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:3:1: module "vendor.qti.hardware.iop@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:10:1: module "vendor.qti.hardware.iop@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:22:1: module "vendor.qti.hardware.iop@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:3:1: module "vendor.qti.hardware.iop@2.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:3:1: module "vendor.display.postproc@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:3:1: module "com.qualcomm.qti.imscmservice@1.0_hal" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:38:1: module "vendor.qti.hardware.iop@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:63:1: module "vendor.qti.hardware.iop@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:63:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:10:1: module "vendor.qti.hardware.iop@2.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:22:1: module "vendor.qti.hardware.iop@2.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:38:1: module "vendor.qti.hardware.iop@2.0" already defined
+error: vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:63:1: module "vendor.qti.hardware.iop@2.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:63:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:11:1: module "vendor.display.postproc@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:11:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:24:1: module "vendor.display.postproc@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:24:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:42:1: module "vendor.display.postproc@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:42:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:67:1: module "vendor.display.postproc@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:67:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:14:1: module "com.qualcomm.qti.imscmservice@1.1_genc++" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:14:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:30:1: module "com.qualcomm.qti.imscmservice@1.1_genc++_headers" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:30:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:63:1: module "com.qualcomm.qti.imscmservice@1.1" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:63:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:88:1: module "com.qualcomm.qti.imscmservice@1.1_vendor" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:88:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:3:1: module "vendor.qti.hardware.wipower@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:14:1: module "com.qualcomm.qti.imscmservice@1.0_genc++" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:14:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:3:1: module "vendor.qti.hardware.tui_comm@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:3:1: module "vendor.qti.hardware.alarm@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:3:1: module "com.qualcomm.qti.ant@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:3:1: module "vendor.qti.hardware.automotive.vehicle@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:10:1: module "vendor.qti.hardware.automotive.vehicle@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:3:1: module "vendor.display.color@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:11:1: module "vendor.display.color@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:11:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:24:1: module "vendor.display.color@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:24:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:42:1: module "vendor.display.color@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:42:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:67:1: module "vendor.display.color@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:67:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:3:1: module "vendor.qti.hardware.factory@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:11:1: module "vendor.qti.hardware.factory@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:11:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:24:1: module "vendor.qti.hardware.factory@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:24:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:42:1: module "vendor.qti.hardware.factory@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:42:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:10:1: module "vendor.qti.hardware.wipower@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:22:1: module "vendor.qti.hardware.wipower@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:65:1: module "vendor.qti.hardware.factory@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:65:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/fingerprint/1.0/Android.bp:3:1: module "vendor.qti.hardware.fingerprint@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/fingerprint/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:38:1: module "vendor.qti.hardware.wipower@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/fingerprint/1.0/Android.bp:13:1: module "vendor.qti.hardware.fingerprint@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/fingerprint/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/fingerprint/1.0/Android.bp:28:1: module "vendor.qti.hardware.fingerprint@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/fingerprint/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/fingerprint/1.0/Android.bp:56:1: module "vendor.qti.hardware.fingerprint@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/fingerprint/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:3:1: module "vendor.qti.hardware.fm@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:12:1: module "vendor.qti.hardware.fm@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:12:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:26:1: module "vendor.qti.hardware.fm@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:26:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:49:1: module "vendor.qti.hardware.fm@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:49:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:74:1: module "vendor.qti.hardware.fm@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:74:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:3:1: module "vendor.qti.hardware.limits@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:12:1: module "vendor.qti.hardware.limits@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:12:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:26:1: module "vendor.qti.hardware.limits@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:26:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:49:1: module "vendor.qti.hardware.limits@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:49:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:74:1: module "vendor.qti.hardware.limits@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:74:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:3:1: module "vendor.qti.hardware.perf@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:10:1: module "vendor.qti.hardware.perf@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:22:1: module "vendor.qti.hardware.perf@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:38:1: module "vendor.qti.hardware.perf@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:61:1: module "vendor.qti.hardware.perf@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:61:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:10:1: module "vendor.qti.hardware.alarm@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:12:1: module "com.qualcomm.qti.ant@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:12:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/android-perf/perf-hal/Android.bp:2:1: module "libperfgluelayer" already defined
+error: vendor/qcom/proprietary/android-perf/perf-hal/Android.bp:2:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/android-perf/perf-util/Android.bp:1:1: module "libqti-util" already defined
+error: vendor/qcom/proprietary/android-perf/perf-util/Android.bp:1:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:3:1: module "com.qualcomm.qti.bluetooth_audio@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:3:1: module "vendor.qti.esepowermanager@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:3:1: module "vendor.qti.gnss@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:3:1: module "vendor.qti.hardware.sensorscalibrate@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:10:1: module "vendor.qti.hardware.sensorscalibrate@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:22:1: module "vendor.qti.hardware.sensorscalibrate@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/thermal-engine/Android.bp:2:1: module "libthermalclient" already defined
+error: vendor/qcom/proprietary/thermal-engine/Android.bp:2:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:30:1: module "com.qualcomm.qti.imscmservice@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:30:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:11:1: module "vendor.qti.hardware.tui_comm@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:11:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:22:1: module "vendor.qti.hardware.automotive.vehicle@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:61:1: module "vendor.qti.hardware.wipower@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:61:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:22:1: module "vendor.qti.hardware.alarm@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:26:1: module "com.qualcomm.qti.ant@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:26:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/android-perf/perf-util/Android.bp:33:1: module "libqti-util_system" already defined
+error: vendor/qcom/proprietary/android-perf/perf-util/Android.bp:33:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:12:1: module "com.qualcomm.qti.bluetooth_audio@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:12:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:10:1: module "vendor.qti.esepowermanager@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:29:1: module "vendor.qti.gnss@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:29:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:3:1: module "vendor.display.color@1.2_hal" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:3:1: module "vendor.display.color@1.1_hal" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:3:1: module "vendor.qti.gnss@1.1_hal" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:3:1: module "vendor.qti.gnss@1.2_hal" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:3:1: module "vendor.qti.hardware.data.latency@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp:3:1: module "vendor.qti.voiceprint@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/gnss/1.0/service/Android.bp:1:1: module "vendor.qti.gnss@1.0-service" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.0/service/Android.bp:1:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:63:1: module "com.qualcomm.qti.imscmservice@1.0" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:63:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:86:1: module "com.qualcomm.qti.imscmservice@1.0_vendor" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:86:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:24:1: module "vendor.qti.hardware.tui_comm@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:24:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:38:1: module "vendor.qti.hardware.automotive.vehicle@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:65:1: module "vendor.qti.hardware.automotive.vehicle@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:65:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:45:1: module "vendor.qti.hardware.tui_comm@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:45:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:69:1: module "vendor.qti.hardware.tui_comm@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:69:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:3:1: module "vendor.qti.hardware.vpp@1.1_hal" already defined
+error: vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:13:1: module "vendor.qti.hardware.vpp@1.1_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:13:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:28:1: module "vendor.qti.hardware.vpp@1.1_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:28:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:56:1: module "vendor.qti.hardware.vpp@1.1" already defined
+error: vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:56:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:81:1: module "vendor.qti.hardware.vpp@1.1_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:81:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:3:1: module "vendor.qti.hardware.wigig.netperftuner@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:11:1: module "vendor.qti.hardware.wigig.netperftuner@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:11:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:24:1: module "vendor.qti.hardware.wigig.netperftuner@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:24:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:42:1: module "vendor.qti.hardware.wigig.netperftuner@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:42:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/securemsm/QTEEConnector/include/Android.bp:1:1: module "libQTEEConnector_headers" already defined
+error: vendor/qcom/proprietary/securemsm/QTEEConnector/include/Android.bp:1:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:3:1: module "vendor.qti.hardware.qdutils_disp@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:10:1: module "vendor.qti.hardware.qdutils_disp@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:22:1: module "vendor.qti.hardware.qdutils_disp@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:38:1: module "vendor.qti.hardware.qdutils_disp@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:62:1: module "vendor.qti.hardware.qdutils_disp@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:62:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:3:1: module "vendor.qti.hardware.qteeconnector@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.am@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:12:1: module "vendor.qti.hardware.radio.am@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:12:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:26:1: module "vendor.qti.hardware.radio.am@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:26:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:49:1: module "vendor.qti.hardware.radio.am@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:49:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:74:1: module "vendor.qti.hardware.radio.am@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:74:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:38:1: module "vendor.qti.hardware.sensorscalibrate@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:14:1: module "vendor.qti.hardware.qteeconnector@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:14:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:30:1: module "vendor.qti.hardware.qteeconnector@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:30:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:65:1: module "vendor.qti.hardware.wigig.netperftuner@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:65:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:63:1: module "vendor.qti.hardware.qteeconnector@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:63:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:88:1: module "vendor.qti.hardware.qteeconnector@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:88:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.atcmdfwd@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp:3:1: module "vendor.qti.hardware.wigig.supptunnel@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.config@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:11:1: module "vendor.qti.hardware.radio.config@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:11:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:24:1: module "vendor.qti.hardware.radio.config@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:24:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:42:1: module "vendor.qti.hardware.radio.config@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:42:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:67:1: module "vendor.qti.hardware.radio.config@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:67:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.ims@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:13:1: module "vendor.qti.hardware.radio.ims@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:28:1: module "vendor.qti.hardware.radio.ims@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:56:1: module "vendor.qti.hardware.radio.ims@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:81:1: module "vendor.qti.hardware.radio.ims@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:81:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.qcrilhook@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.qtiradio@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:13:1: module "vendor.qti.hardware.radio.qtiradio@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.uim@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:28:1: module "vendor.qti.hardware.radio.qtiradio@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:38:1: module "vendor.qti.hardware.alarm@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:49:1: module "com.qualcomm.qti.ant@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:49:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:26:1: module "com.qualcomm.qti.bluetooth_audio@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:26:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:22:1: module "vendor.qti.esepowermanager@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:60:1: module "vendor.qti.gnss@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:60:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.uim_remote_client@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:3:1: module "vendor.qti.hardware.radio.uim@1.1_hal" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/data/latency/1.0/vts/functional/Android.bp:1:1: module "VtsHalDataLatencyV1_0TargetTest" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/data/latency/1.0/vts/functional/Android.bp:1:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/gnss/1.1/service/Android.bp:1:1: module "vendor.qti.gnss@1.1-service" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.1/service/Android.bp:1:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:11:1: module "vendor.qti.hardware.radio.atcmdfwd@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:11:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp:13:1: module "vendor.qti.hardware.wigig.supptunnel@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.lpa@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:13:1: module "vendor.qti.hardware.radio.qcrilhook@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:28:1: module "vendor.qti.hardware.radio.qcrilhook@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:56:1: module "vendor.qti.hardware.radio.qcrilhook@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:24:1: module "vendor.qti.hardware.radio.atcmdfwd@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:24:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp:28:1: module "vendor.qti.hardware.wigig.supptunnel@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:13:1: module "vendor.qti.hardware.radio.lpa@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:81:1: module "vendor.qti.hardware.radio.qcrilhook@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:81:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:13:1: module "vendor.qti.hardware.radio.uim@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:28:1: module "vendor.qti.hardware.radio.uim@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:56:1: module "vendor.qti.hardware.radio.qtiradio@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:81:1: module "vendor.qti.hardware.radio.qtiradio@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:81:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:10:1: module "vendor.display.color@1.2_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:10:1: module "vendor.display.color@1.1_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:29:1: module "vendor.qti.gnss@1.1_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:29:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:12:1: module "vendor.qti.gnss@1.2_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:12:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:13:1: module "vendor.qti.hardware.data.latency@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp:12:1: module "vendor.qti.voiceprint@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp:12:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:74:1: module "com.qualcomm.qti.ant@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:74:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:49:1: module "com.qualcomm.qti.bluetooth_audio@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:49:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:38:1: module "vendor.qti.esepowermanager@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:168:1: module "vendor.qti.gnss@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:168:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:26:1: module "vendor.qti.gnss@1.2_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:26:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:13:1: module "vendor.qti.hardware.radio.uim_remote_client@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:12:1: module "vendor.qti.hardware.radio.uim@1.1_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:12:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:22:1: module "vendor.display.color@1.2_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:22:1: module "vendor.display.color@1.1_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:60:1: module "vendor.qti.gnss@1.1_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:60:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:28:1: module "vendor.qti.hardware.data.latency@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp:26:1: module "vendor.qti.voiceprint@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp:26:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:74:1: module "com.qualcomm.qti.bluetooth_audio@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:74:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:63:1: module "vendor.qti.esepowermanager@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:63:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:195:1: module "vendor.qti.gnss@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:195:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:42:1: module "vendor.qti.hardware.radio.atcmdfwd@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:42:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:28:1: module "vendor.qti.hardware.radio.lpa@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:56:1: module "vendor.qti.hardware.radio.uim@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.uim_remote_server@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:52:1: module "vendor.qti.gnss@1.2" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:52:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:28:1: module "vendor.qti.hardware.radio.uim_remote_client@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:26:1: module "vendor.qti.hardware.radio.uim@1.1_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:26:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:38:1: module "vendor.display.color@1.2" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:38:1: module "vendor.display.color@1.1" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp:56:1: module "vendor.qti.hardware.wigig.supptunnel@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:168:1: module "vendor.qti.gnss@1.1" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:168:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:56:1: module "vendor.qti.hardware.data.latency@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp:49:1: module "vendor.qti.voiceprint@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp:49:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/gnss/1.2/service/Android.bp:1:1: module "vendor.qti.gnss@1.2-service" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.2/service/Android.bp:1:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:81:1: module "vendor.qti.hardware.data.latency@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:81:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:67:1: module "vendor.qti.hardware.radio.atcmdfwd@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:67:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:56:1: module "vendor.qti.hardware.radio.lpa@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:81:1: module "vendor.qti.hardware.radio.uim@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:81:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:13:1: module "vendor.qti.hardware.radio.uim_remote_server@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:81:1: module "vendor.qti.hardware.radio.lpa@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:81:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:83:1: module "vendor.qti.gnss@1.2_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:83:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:56:1: module "vendor.qti.hardware.radio.uim_remote_client@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:49:1: module "vendor.qti.hardware.radio.uim@1.1" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:49:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:68:1: module "vendor.display.color@1.2_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:68:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:66:1: module "vendor.display.color@1.1_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:66:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:28:1: module "vendor.qti.hardware.radio.uim_remote_server@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:197:1: module "vendor.qti.gnss@1.1_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:197:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:81:1: module "vendor.qti.hardware.radio.uim_remote_client@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:81:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:77:1: module "vendor.qti.hardware.radio.uim@1.1_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:77:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:56:1: module "vendor.qti.hardware.radio.uim_remote_server@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:81:1: module "vendor.qti.hardware.radio.uim_remote_server@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:81:1: <-- previous definition here
+[54/54] soong_build docs out/soong/.bootstrap/docs/soong_build.html
+FAILED: out/soong/.bootstrap/docs/soong_build.html 
+out/soong/.bootstrap/bin/soong_build  -t -b out/soong --docs out/soong/.bootstrap/docs/soong_build.html ./Android.bp
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:3:1: module "vendor.qti.gnss@1.2_hal" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:12:1: module "vendor.qti.gnss@1.2_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:12:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:26:1: module "vendor.qti.gnss@1.2_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:26:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:3:1: module "vendor.qti.gnss@1.1_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:29:1: module "vendor.qti.gnss@1.1_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:29:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:60:1: module "vendor.qti.gnss@1.1_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:60:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:3:1: module "vendor.qti.hardware.limits@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:3:1: module "vendor.qti.gnss@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:29:1: module "vendor.qti.gnss@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:29:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:60:1: module "vendor.qti.gnss@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:60:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:12:1: module "vendor.qti.hardware.limits@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:12:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:26:1: module "vendor.qti.hardware.limits@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:26:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:3:1: module "vendor.qti.hardware.automotive.vehicle@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:3:1: module "vendor.qti.hardware.alarm@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/android-perf/perf-hal/Android.bp:2:1: module "libperfgluelayer" already defined
+error: vendor/qcom/proprietary/android-perf/perf-hal/Android.bp:2:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/android-perf/iop-hal/Android.bp:2:1: module "vendor.qti.hardware.iop@1.0-impl" already defined
+error: vendor/qcom/proprietary/android-perf/iop-hal/Android.bp:2:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:3:1: module "vendor.qti.hardware.wipower@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp:3:1: module "vendor.qti.hardware.wigig.supptunnel@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:3:1: module "vendor.qti.hardware.wigig.netperftuner@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:3:1: module "vendor.qti.hardware.vpp@1.1_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp:3:1: module "vendor.qti.voiceprint@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:3:1: module "vendor.qti.hardware.tui_comm@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:3:1: module "vendor.qti.hardware.sensorscalibrate@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.uim_remote_client@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.uim@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.qtiradio@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.qcrilhook@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.am@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/android-perf/perf-util/Android.bp:1:1: module "libqti-util" already defined
+error: vendor/vendor/qcom/proprietary/android-perf/perf-util/Android.bp:1:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.lpa@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:13:1: module "vendor.qti.hardware.radio.lpa@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:28:1: module "vendor.qti.hardware.radio.lpa@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:56:1: module "vendor.qti.hardware.radio.lpa@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:3:1: module "vendor.qti.hardware.perf@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:10:1: module "vendor.qti.hardware.perf@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:22:1: module "vendor.qti.hardware.perf@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:3:1: module "vendor.qti.hardware.qteeconnector@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:14:1: module "vendor.qti.hardware.qteeconnector@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:14:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:30:1: module "vendor.qti.hardware.qteeconnector@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:30:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:3:1: module "vendor.qti.hardware.qdutils_disp@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:10:1: module "vendor.qti.hardware.qdutils_disp@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:22:1: module "vendor.qti.hardware.qdutils_disp@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:10:1: module "vendor.qti.hardware.automotive.vehicle@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:22:1: module "vendor.qti.hardware.automotive.vehicle@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:10:1: module "vendor.qti.hardware.alarm@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:22:1: module "vendor.qti.hardware.alarm@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:22:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:3:1: module "com.qualcomm.qti.ant@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:3:1: module "vendor.qti.hardware.fm@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/securemsm/QTEEConnector/include/Android.bp:1:1: module "libQTEEConnector_headers" already defined
+error: vendor/qcom/proprietary/securemsm/QTEEConnector/include/Android.bp:1:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:38:1: module "vendor.qti.hardware.qdutils_disp@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:38:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:38:1: module "vendor.qti.hardware.perf@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:38:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:49:1: module "vendor.qti.hardware.limits@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:49:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.uim_remote_server@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/android-perf/mp-ctl/Android.bp:1:1: module "libfeedbackhandler" already defined
+error: vendor/vendor/qcom/proprietary/android-perf/mp-ctl/Android.bp:1:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/android-perf/perf-util/Android.bp:33:1: module "libqti-util_system" already defined
+error: vendor/qcom/proprietary/android-perf/perf-util/Android.bp:33:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:3:1: module "vendor.qti.hardware.radio.uim@1.1_hal" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:168:1: module "vendor.qti.gnss@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:168:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:12:1: module "com.qualcomm.qti.ant@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:12:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:12:1: module "vendor.qti.hardware.fm@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:12:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:10:1: module "vendor.qti.hardware.wipower@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:10:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:62:1: module "vendor.qti.hardware.qdutils_disp@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:62:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:61:1: module "vendor.qti.hardware.perf@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp:61:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:3:1: module "vendor.display.postproc@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:3:1: module "vendor.display.color@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp:13:1: module "vendor.qti.hardware.wigig.supptunnel@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/qcom/proprietary/android-perf/mp-ctl/Android.bp:12:1: module "libqti-perfd-client" already defined
+error: vendor/vendor/qcom/proprietary/android-perf/mp-ctl/Android.bp:12:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:38:1: module "vendor.qti.hardware.alarm@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:52:1: module "vendor.qti.gnss@1.2" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:52:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:168:1: module "vendor.qti.gnss@1.1" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:168:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:11:1: module "vendor.qti.hardware.wigig.netperftuner@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:11:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:13:1: module "vendor.qti.hardware.vpp@1.1_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:13:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp:12:1: module "vendor.qti.voiceprint@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp:12:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:11:1: module "vendor.qti.hardware.tui_comm@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:11:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:10:1: module "vendor.qti.hardware.sensorscalibrate@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:81:1: module "vendor.qti.hardware.radio.lpa@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp:81:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:13:1: module "vendor.qti.hardware.radio.uim_remote_server@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:13:1: module "vendor.qti.hardware.radio.uim_remote_client@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:12:1: module "vendor.qti.hardware.radio.uim@1.1_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:12:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:13:1: module "vendor.qti.hardware.radio.uim@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:13:1: module "vendor.qti.hardware.radio.qtiradio@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:13:1: module "vendor.qti.hardware.radio.qcrilhook@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:12:1: module "vendor.qti.hardware.radio.am@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:12:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:3:1: module "com.qualcomm.qti.bluetooth_audio@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:38:1: module "vendor.qti.hardware.automotive.vehicle@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:74:1: module "vendor.qti.hardware.limits@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp:74:1: <-- previous definition here
+error: vendor/qcom/proprietary/android-perf/io-p/Android.bp:1:1: module "libqti-iopd-client" already defined
+error: vendor/vendor/qcom/proprietary/android-perf/io-p/Android.bp:1:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:63:1: module "vendor.qti.hardware.qteeconnector@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:63:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:195:1: module "vendor.qti.gnss@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp:195:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:26:1: module "com.qualcomm.qti.ant@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:26:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:26:1: module "vendor.qti.hardware.fm@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:26:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:22:1: module "vendor.qti.hardware.wipower@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:11:1: module "vendor.display.postproc@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:11:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:11:1: module "vendor.display.color@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:11:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.config@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:11:1: module "vendor.qti.hardware.radio.config@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:11:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:24:1: module "vendor.qti.hardware.radio.config@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:24:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:42:1: module "vendor.qti.hardware.radio.config@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:42:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:67:1: module "vendor.qti.hardware.radio.config@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp:67:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.ims@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:3:1: module "vendor.qti.hardware.iop@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:24:1: module "vendor.display.postproc@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:24:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:42:1: module "vendor.display.postproc@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:42:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:67:1: module "vendor.display.postproc@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp:67:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp:28:1: module "vendor.qti.hardware.wigig.supptunnel@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp:56:1: module "vendor.qti.hardware.wigig.supptunnel@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/qcom/proprietary/android-perf/mp-ctl/Android.bp:43:1: module "libqti-perfd-client_system" already defined
+error: vendor/vendor/qcom/proprietary/android-perf/mp-ctl/Android.bp:43:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:83:1: module "vendor.qti.gnss@1.2_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp:83:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:197:1: module "vendor.qti.gnss@1.1_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp:197:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:3:1: module "vendor.qti.hardware.iop@2.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:10:1: module "vendor.qti.hardware.iop@2.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:22:1: module "vendor.qti.hardware.iop@2.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:38:1: module "vendor.qti.hardware.iop@2.0" already defined
+error: vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:38:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:22:1: module "vendor.qti.hardware.sensorscalibrate@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:22:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:28:1: module "vendor.qti.hardware.radio.uim_remote_server@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:28:1: module "vendor.qti.hardware.radio.uim_remote_client@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:26:1: module "vendor.qti.hardware.radio.uim@1.1_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:26:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:56:1: module "vendor.qti.hardware.radio.uim_remote_client@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:24:1: module "vendor.display.color@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:24:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:38:1: module "vendor.qti.hardware.sensorscalibrate@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:38:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:56:1: module "vendor.qti.hardware.radio.uim_remote_server@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:28:1: module "vendor.qti.hardware.radio.uim@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:56:1: module "vendor.qti.hardware.radio.uim@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:81:1: module "vendor.qti.hardware.radio.uim@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp:81:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:28:1: module "vendor.qti.hardware.radio.qtiradio@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:56:1: module "vendor.qti.hardware.radio.qtiradio@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:81:1: module "vendor.qti.hardware.radio.qtiradio@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp:81:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:28:1: module "vendor.qti.hardware.radio.qcrilhook@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:56:1: module "vendor.qti.hardware.radio.qcrilhook@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:26:1: module "vendor.qti.hardware.radio.am@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:26:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:49:1: module "vendor.qti.hardware.radio.am@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:49:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:74:1: module "vendor.qti.hardware.radio.am@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp:74:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:12:1: module "com.qualcomm.qti.bluetooth_audio@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:12:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:65:1: module "vendor.qti.hardware.automotive.vehicle@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/automotive/vehicle/1.0/Android.bp:65:1: <-- previous definition here
+error: vendor/qcom/proprietary/android-perf/io-p/Android.bp:40:1: module "libqti-iop-client-sys" already defined
+error: vendor/vendor/qcom/proprietary/android-perf/io-p/Android.bp:40:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:63:1: module "vendor.qti.hardware.iop@2.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp:63:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:3:1: module "com.qualcomm.qti.uceservice@1.0_hal" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/fingerprint/1.0/Android.bp:3:1: module "vendor.qti.hardware.fingerprint@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/fingerprint/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:3:1: module "vendor.qti.hardware.factory@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:3:1: module "vendor.qti.esepowermanager@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:26:1: module "com.qualcomm.qti.bluetooth_audio@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:26:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:3:1: module "com.qualcomm.qti.imscmservice@1.0_hal" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:88:1: module "vendor.qti.hardware.qteeconnector@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp:88:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:49:1: module "com.qualcomm.qti.ant@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:49:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:74:1: module "com.qualcomm.qti.ant@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp:74:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:3:1: module "vendor.qti.hardware.radio.atcmdfwd@1.0_hal" already defined
+error: vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:11:1: module "vendor.qti.hardware.radio.atcmdfwd@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:11:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:49:1: module "vendor.qti.hardware.fm@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:49:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:74:1: module "vendor.qti.hardware.fm@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp:74:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:3:1: module "vendor.display.color@1.1_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:3:1: module "vendor.display.color@1.2_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:10:1: module "vendor.display.color@1.1_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:10:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:10:1: module "vendor.display.color@1.2_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/thermal-engine/Android.bp:2:1: module "libthermalclient" already defined
+error: vendor/qcom/proprietary/thermal-engine/Android.bp:2:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:38:1: module "vendor.qti.hardware.wipower@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:38:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:61:1: module "vendor.qti.hardware.wipower@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp:61:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:24:1: module "vendor.qti.hardware.radio.atcmdfwd@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:24:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:13:1: module "vendor.qti.hardware.radio.ims@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:28:1: module "vendor.qti.hardware.radio.ims@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:56:1: module "vendor.qti.hardware.radio.ims@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:22:1: module "vendor.display.color@1.1_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:22:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:22:1: module "vendor.display.color@1.2_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:42:1: module "vendor.qti.hardware.radio.atcmdfwd@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:42:1: <-- previous definition here
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:3:1: module "com.qualcomm.qti.imscmservice@1.1_hal" already defined
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:81:1: module "vendor.qti.hardware.radio.ims@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp:81:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:10:1: module "vendor.qti.hardware.iop@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:22:1: module "vendor.qti.hardware.iop@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:38:1: module "vendor.qti.hardware.iop@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:63:1: module "vendor.qti.hardware.iop@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp:63:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:81:1: module "vendor.qti.hardware.radio.uim_remote_client@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp:81:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:42:1: module "vendor.display.color@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:42:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:11:1: module "vendor.qti.hardware.factory@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:11:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:14:1: module "com.qualcomm.qti.imscmservice@1.0_genc++" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:14:1: <-- previous definition here
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:14:1: module "com.qualcomm.qti.imscmservice@1.1_genc++" already defined
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:14:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:24:1: module "vendor.qti.hardware.wigig.netperftuner@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:24:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:28:1: module "vendor.qti.hardware.vpp@1.1_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:28:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:24:1: module "vendor.qti.hardware.tui_comm@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:24:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/gnss/1.1/service/Android.bp:1:1: module "vendor.qti.gnss@1.1-service" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.1/service/Android.bp:1:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/gnss/1.0/service/Android.bp:1:1: module "vendor.qti.gnss@1.0-service" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.0/service/Android.bp:1:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/gnss/1.2/service/Android.bp:1:1: module "vendor.qti.gnss@1.2-service" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/gnss/1.2/service/Android.bp:1:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:3:1: module "vendor.qti.hardware.data.latency@1.0_hal" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:3:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/data/latency/1.0/vts/functional/Android.bp:1:1: module "VtsHalDataLatencyV1_0TargetTest" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/data/latency/1.0/vts/functional/Android.bp:1:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:16:1: module "com.qualcomm.qti.uceservice@1.0_genc++" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:16:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/fingerprint/1.0/Android.bp:13:1: module "vendor.qti.hardware.fingerprint@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/fingerprint/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:10:1: module "vendor.qti.esepowermanager@1.0_genc++" already defined
+error: vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:10:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:49:1: module "com.qualcomm.qti.bluetooth_audio@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:49:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:81:1: module "vendor.qti.hardware.radio.uim_remote_server@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp:81:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:38:1: module "vendor.display.color@1.2" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:81:1: module "vendor.qti.hardware.radio.qcrilhook@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp:81:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:67:1: module "vendor.qti.hardware.radio.atcmdfwd@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp:67:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:38:1: module "vendor.display.color@1.1" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:49:1: module "vendor.qti.hardware.radio.uim@1.1" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:49:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp:26:1: module "vendor.qti.voiceprint@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp:26:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:34:1: module "com.qualcomm.qti.uceservice@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:34:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:24:1: module "vendor.qti.hardware.factory@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:24:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:30:1: module "com.qualcomm.qti.imscmservice@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:30:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:63:1: module "com.qualcomm.qti.imscmservice@1.0" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:63:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/fingerprint/1.0/Android.bp:28:1: module "vendor.qti.hardware.fingerprint@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/fingerprint/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:22:1: module "vendor.qti.esepowermanager@1.0_genc++_headers" already defined
+error: vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:22:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:38:1: module "vendor.qti.esepowermanager@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:38:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:74:1: module "com.qualcomm.qti.bluetooth_audio@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp:74:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:77:1: module "com.qualcomm.qti.uceservice@1.0-static" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:77:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:42:1: module "vendor.qti.hardware.factory@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:42:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:65:1: module "vendor.qti.hardware.factory@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp:65:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:63:1: module "vendor.qti.esepowermanager@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp:63:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:68:1: module "vendor.display.color@1.2_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:68:1: <-- previous definition here
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:30:1: module "com.qualcomm.qti.imscmservice@1.1_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:30:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:42:1: module "vendor.qti.hardware.wigig.netperftuner@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:42:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:56:1: module "vendor.qti.hardware.vpp@1.1" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:56:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:65:1: module "vendor.qti.hardware.wigig.netperftuner@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp:65:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:81:1: module "vendor.qti.hardware.vpp@1.1_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp:81:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:45:1: module "vendor.qti.hardware.tui_comm@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:45:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:66:1: module "vendor.display.color@1.1_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:66:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:77:1: module "vendor.qti.hardware.radio.uim@1.1_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:77:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:86:1: module "com.qualcomm.qti.imscmservice@1.0_vendor" already defined
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:86:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/fingerprint/1.0/Android.bp:56:1: module "vendor.qti.hardware.fingerprint@1.0" already defined
+error: vendor/qcom/proprietary/interfaces/fingerprint/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:67:1: module "vendor.display.color@1.0_vendor" already defined
+error: vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp:67:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:13:1: module "vendor.qti.hardware.data.latency@1.0_genc++" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:13:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp:49:1: module "vendor.qti.voiceprint@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp:49:1: <-- previous definition here
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:63:1: module "com.qualcomm.qti.imscmservice@1.1" already defined
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:63:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:69:1: module "vendor.qti.hardware.tui_comm@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:69:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:28:1: module "vendor.qti.hardware.data.latency@1.0_genc++_headers" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:28:1: <-- previous definition here
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:88:1: module "com.qualcomm.qti.imscmservice@1.1_vendor" already defined
+error: vendor/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp:88:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:56:1: module "vendor.qti.hardware.data.latency@1.0" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:56:1: <-- previous definition here
+error: vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:81:1: module "vendor.qti.hardware.data.latency@1.0_vendor" already defined
+error: vendor/vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp:81:1: <-- previous definition here
+ninja: build stopped: subcommand failed.
