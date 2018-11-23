@@ -1,0 +1,120 @@
+including device/generic/car/vendorsetup.sh
+including device/generic/mini-emulator-arm64/vendorsetup.sh
+including device/generic/mini-emulator-armv7-a-neon/vendorsetup.sh
+including device/generic/mini-emulator-x86_64/vendorsetup.sh
+including device/generic/mini-emulator-x86/vendorsetup.sh
+including device/generic/uml/vendorsetup.sh
+including device/qcom/common/vendorsetup.sh
+including sdk/bash_completion/adb.bash
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.1.0
+TARGET_PRODUCT=msm8996
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_PLATFORM_VERSION=OPM1
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=kryo
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.15.0-20-generic-x86_64-with-Ubuntu-18.04-bionic
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=OPM1.171019.026
+OUT_DIR=out
+AUX_OS_VARIANT_LIST=
+============================================
+
+INFO: Removing entire out dir. . .
+
+
+[0;32m#### build completed successfully (1 seconds) ####[00m
+
+
+INFO: Setting CCACHE with 10 GB
+
+Cleared cache
+Set cache size limit to 10.0 Gbytes
+
+INFO: Build Android tree for msm8996
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.1.0
+TARGET_PRODUCT=msm8996
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=kryo
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.15.0-20-generic-x86_64-with-Ubuntu-18.04-bionic
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=OPM1.171019.026
+OUT_DIR=out
+============================================
+[1/44] compile out/soong/.bootstrap/blueprint-deptools/pkg/github.com/google/blueprint/deptools.a
+[2/44] compile out/soong/.bootstrap/gotestmain/obj/gotestmain.a
+[3/44] compile out/soong/.bootstrap/blueprint-proptools/pkg/github.com/google/blueprint/proptools.a
+[4/44] compile out/soong/.bootstrap/blueprint-pathtools/test/github.com/google/blueprint/pathtools.a
+[5/44] compile out/soong/.bootstrap/gotestmain-tests/test/github.com/google/blueprint/gotestmain.a
+[6/44] compile out/soong/.bootstrap/blueprint-parser/pkg/github.com/google/blueprint/parser.a
+[7/44] compile out/soong/.bootstrap/gotestmain-tests/pkg/github.com/google/blueprint/gotestmain.a
+[8/44] compile out/soong/.bootstrap/blueprint-proptools/test/github.com/google/blueprint/proptools.a
+[9/44] compile out/soong/.bootstrap/blueprint-pathtools/pkg/github.com/google/blueprint/pathtools.a
+[10/44] compile out/soong/.bootstrap/gotestrunner/obj/gotestrunner.a
+[11/44] compile out/soong/.bootstrap/blueprint-parser/test/github.com/google/blueprint/parser.a
+[12/44] link out/soong/.bootstrap/gotestmain/obj/a.out
+[13/44] cp out/soong/.bootstrap/bin/gotestmain
+[14/44] gotestmain out/soong/.bootstrap/blueprint-parser/test/test.go
+[15/44] gotestmain out/soong/.bootstrap/blueprint-pathtools/test/test.go
+[16/44] gotestmain out/soong/.bootstrap/blueprint/test/test.go
+[17/44] gotestmain out/soong/.bootstrap/blueprint-proptools/test/test.go
+[18/44] compile out/soong/.bootstrap/blueprint-parser/test/test.a
+[19/44] compile out/soong/.bootstrap/blueprint-pathtools/test/test.a
+[20/44] link out/soong/.bootstrap/gotestrunner/obj/a.out
+[21/44] compile out/soong/.bootstrap/blueprint-proptools/test/test.a
+[22/44] gotestmain out/soong/.bootstrap/gotestmain-tests/test/test.go
+[23/44] compile out/soong/.bootstrap/gotestmain-tests/test/test.a
+[24/44] link out/soong/.bootstrap/blueprint-pathtools/test/test
+[25/44] link out/soong/.bootstrap/blueprint-proptools/test/test
+[26/44] cp out/soong/.bootstrap/bin/gotestrunner
+[27/44] test github.com/google/blueprint/proptools
+[28/44] link out/soong/.bootstrap/blueprint-parser/test/test
+[29/44] test github.com/google/blueprint/pathtools
+[30/44] test github.com/google/blueprint/parser
+[31/44] link out/soong/.bootstrap/gotestmain-tests/test/test
+[32/44] test github.com/google/blueprint/gotestmain
+[33/44] compile out/soong/.bootstrap/blueprint/pkg/github.com/google/blueprint.a
+[34/44] compile out/soong/.bootstrap/blueprint-bootstrap-bpdoc/pkg/github.com/google/blueprint/bootstrap/bpdoc.a
+[35/44] compile out/soong/.bootstrap/blueprint/test/github.com/google/blueprint.a
+[36/44] compile out/soong/.bootstrap/blueprint/test/test.a
+[37/44] compile out/soong/.bootstrap/blueprint-bootstrap/pkg/github.com/google/blueprint/bootstrap.a
+[38/44] compile out/soong/.bootstrap/minibp/obj/minibp.a
+[39/44] link out/soong/.bootstrap/blueprint/test/test
+[40/44] test github.com/google/blueprint
+[41/44] link out/soong/.bootstrap/minibp/obj/a.out
+[42/44] cp out/soong/.bootstrap/bin/minibp
+[43/44] out/soong/.bootstrap/bin/minibp out/soong/.minibootstrap/build.ninja.in
+FAILED: out/soong/.minibootstrap/build.ninja.in 
+out/soong/.bootstrap/bin/minibp  -t -b out/soong -d out/soong/.minibootstrap/build.ninja.in.d -o out/soong/.minibootstrap/build.ninja.in Android.bp
+error: Android.bp:11:18: "vendor/*/*/*/Android.bp": unexpected error after glob: unexpected error after glob: stat vendor/nxp/interfaces/Android.bp: no such file or directory
+error: Android.bp:11:18: "vendor/*/*/*/*/*/Android.bp": unexpected error after glob: unexpected error after glob: stat vendor/nxp/interfaces/Android.bp: no such file or directory
+internal error: open vendor/nxp/interfaces/Android.bp: no such file or directory
