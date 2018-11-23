@@ -18,5 +18,5 @@ cd logs/buildlogs_andriod/
 
 git status
 git add .
-git commit -m "Build attempted and logs pushed with command {./build.sh $@ }"
+git commit -m "Build attempted and logs pushed with command {./build.sh $1 $2 $3 $4 }"
 git push
