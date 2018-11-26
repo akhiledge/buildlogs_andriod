@@ -1,0 +1,47 @@
+
+ERROR: Extra inputs. Need TARGET_PRODUCT only
+
+
+Usage:
+    bash ./build.sh <TARGET_PRODUCT> [OPTIONS]
+
+Description:
+    Builds Android tree for given TARGET_PRODUCT
+
+OPTIONS:
+    -c, --clean_build
+        Clean build - build from scratch by removing entire out dir
+
+    -d, --debug
+        Enable debugging - captures all commands while doing the build
+
+    -h, --help
+        Display this help message
+
+    -i, --image
+        Specify image to be build/re-build (bootimg/sysimg/usrimg)
+
+    -j, --jobs
+        Specifies the number of jobs to run simultaneously (Default: 8)
+
+    -k, --kernel_defconf
+        Specify defconf file to be used for compiling Kernel
+
+    -l, --log_file
+        Log file to store build logs (Default: <TARGET_PRODUCT>.log)
+
+    -m, --module
+        Module to be build
+
+    -p, --project
+        Project to be build
+
+    -s, --setup_ccache
+        Set CCACHE for faster incremental builds (true/false - Default: true)
+
+    -u, --update-api
+        Update APIs
+
+    -v, --build_variant
+        Build variant (Default: userdebug)
+
