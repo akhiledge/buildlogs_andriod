@@ -1,0 +1,235 @@
+including device/asus/fugu/vendorsetup.sh
+including device/fsl/imx6/vendorsetup.sh
+including device/fsl/imx7/vendorsetup.sh
+including device/fsl/imx8/vendorsetup.sh
+including device/generic/car/car-arm64/vendorsetup.sh
+including device/generic/car/car-armv7-a-neon/vendorsetup.sh
+including device/generic/car/car-x86_64/vendorsetup.sh
+including device/generic/car/car-x86/vendorsetup.sh
+including device/generic/mini-emulator-arm64/vendorsetup.sh
+including device/generic/mini-emulator-armv7-a-neon/vendorsetup.sh
+including device/generic/mini-emulator-mips64/vendorsetup.sh
+including device/generic/mini-emulator-mips/vendorsetup.sh
+including device/generic/mini-emulator-x86_64/vendorsetup.sh
+including device/generic/mini-emulator-x86/vendorsetup.sh
+including device/google/dragon/vendorsetup.sh
+including device/google/marlin/vendorsetup.sh
+including device/google/muskie/vendorsetup.sh
+including device/google/taimen/vendorsetup.sh
+including device/huawei/angler/vendorsetup.sh
+including device/lge/bullhead/vendorsetup.sh
+including device/linaro/hikey/vendorsetup.sh
+including device/qcom/common/vendorsetup.sh
+including vendor/qcom/proprietary/common/vendorsetup.sh
+including sdk/bash_completion/adb.bash
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.0.0
+TARGET_PRODUCT=msm8996
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_PLATFORM_VERSION=OPD1
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=kryo
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.4.0-31-generic-x86_64-with-Ubuntu-16.04-xenial
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=OPD1.170816.018
+OUT_DIR=out
+AUX_OS_VARIANT_LIST=
+============================================
+
+INFO: Build Android tree for msm8996
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.0.0
+TARGET_PRODUCT=msm8996
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=kryo
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.4.0-31-generic-x86_64-with-Ubuntu-16.04-xenial
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=OPD1.170816.018
+OUT_DIR=out
+============================================
+[1/2] out/soong/.bootstrap/bin/minibp out/soong/.minibootstrap/build.ninja.in
+[2/2] bootstrap out/soong/.minibootstrap/build.ninja.in
+[1/2] out/soong/.bootstrap/bin/minibp out/soong/.minibootstrap/build.ninja.in
+ninja: no work to do.
+[1/3] glob vendor/*/*/Android.bp
+[2/3] glob device/*/*/Android.bp
+[3/3] out/soong/.bootstrap/bin/minibp out/soong/.bootstrap/build.ninja
+[1/73] glob device/*/*/Android.bp
+[2/73] glob vendor/qcom/opensource/*/Android.bp
+[3/73] glob vendor/qcom/opensource/bluetooth_ext/system_bt_ext/btif/Android.bp
+[4/73] glob vendor/qcom/opensource/bluetooth_ext/*/Android.bp
+[5/73] glob vendor/qcom/opensource/bluetooth_ext/system_bt_ext/device/Android.bp
+[6/73] glob vendor/qcom/opensource/bluetooth_ext/system_bt_ext/osi/Android.bp
+[7/73] glob vendor/qcom/opensource/interfaces/*/Android.bp
+[8/73] glob vendor/qcom/opensource/interfaces/camera/device/1.0/Android.bp
+[9/73] glob vendor/qcom/opensource/interfaces/display/config/1.0/Android.bp
+[10/73] glob vendor/qcom/opensource/interfaces/wifi/supplicant/1.0/Android.bp
+[11/73] glob vendor/qcom/opensource/interfaces/wifi/*/Android.bp
+[12/73] glob vendor/qcom/opensource/interfaces/wifi/supplicant/1.1/Android.bp
+[13/73] glob vendor/qcom/proprietary/*/Android.bp
+[14/73] glob vendor/qcom/proprietary/android-perf/*/Android.bp
+[15/73] glob vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp
+[16/73] glob vendor/qcom/proprietary/dpm/*/Android.bp
+[17/73] glob vendor/qcom/proprietary/ims-ship/rcs/interfaces/Android.bp
+[18/73] glob vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp
+[19/73] glob vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp
+[20/73] glob vendor/qcom/proprietary/interfaces/automotive/vehicle/*/Android.bp
+[21/73] glob vendor/qcom/proprietary/interfaces/*/Android.bp
+[22/73] glob vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp
+[23/73] glob vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp
+[24/73] glob vendor/qcom/proprietary/interfaces/automotive/*/Android.bp
+[25/73] glob vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp
+[26/73] glob vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp
+[27/73] glob vendor/qcom/proprietary/interfaces/data/latency/1.0/vts/functional/Android.bp
+[28/73] glob vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp
+[29/73] glob vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp
+[30/73] glob vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp
+[31/73] glob vendor/qcom/proprietary/interfaces/display/color/Android.bp
+[32/73] glob vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp
+[33/73] glob vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp
+[34/73] glob vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp
+[35/73] glob vendor/qcom/proprietary/interfaces/fingerprint/*/Android.bp
+[36/73] glob vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp
+[37/73] glob vendor/qcom/proprietary/interfaces/display/postproc/Android.bp
+[38/73] glob vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp
+[39/73] glob vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp
+[40/73] glob vendor/qcom/proprietary/interfaces/gnss/1.0/service/Android.bp
+[41/73] glob vendor/qcom/proprietary/interfaces/gnss/1.1/service/Android.bp
+[42/73] glob vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp
+[43/73] glob vendor/qcom/proprietary/interfaces/gnss/1.2/service/Android.bp
+[44/73] glob vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp
+[45/73] glob vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp
+[46/73] glob vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp
+[47/73] glob vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp
+[48/73] glob vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp
+[49/73] glob vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp
+[50/73] glob vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp
+[51/73] glob vendor/qcom/proprietary/interfaces/radio/*/Android.bp
+[52/73] glob vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp
+[53/73] glob vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp
+[54/73] glob vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp
+[55/73] glob vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp
+[56/73] glob vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp
+[57/73] glob vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp
+[58/73] glob vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp
+[59/73] glob vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp
+[60/73] glob vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp
+[61/73] glob vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp
+[62/73] glob vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp
+[63/73] glob vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp
+[64/73] glob vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp
+[65/73] glob vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp
+[66/73] glob vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp
+[67/73] glob vendor/qcom/proprietary/interfaces/wigig/*/Android.bp
+[68/73] glob vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp
+[69/73] glob vendor/qcom/proprietary/prebuilt_HY11/target/product/msm8996/Android.bp
+[70/73] glob vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp
+[71/73] glob vendor/qcom/proprietary/securemsm/QTEEConnector/*/Android.bp
+[72/73] glob vendor/qcom/proprietary/securemsm/*/Android.bp
+[1/73] glob vendor/qcom/opensource/bluetooth_ext/system_bt_ext/btif/Android.bp
+[2/73] glob vendor/qcom/opensource/bluetooth_ext/*/Android.bp
+[3/73] glob vendor/qcom/opensource/*/Android.bp
+[4/73] glob vendor/qcom/opensource/bluetooth_ext/system_bt_ext/osi/Android.bp
+[5/73] glob vendor/qcom/opensource/bluetooth_ext/system_bt_ext/device/Android.bp
+[6/73] glob vendor/qcom/opensource/interfaces/*/Android.bp
+[7/73] glob vendor/qcom/opensource/interfaces/camera/device/1.0/Android.bp
+[8/73] glob vendor/qcom/opensource/interfaces/display/config/1.0/Android.bp
+[9/73] glob vendor/qcom/opensource/interfaces/wifi/supplicant/1.0/Android.bp
+[10/73] glob vendor/qcom/opensource/interfaces/wifi/supplicant/1.1/Android.bp
+[11/73] glob vendor/qcom/proprietary/*/Android.bp
+[12/73] glob vendor/qcom/opensource/interfaces/wifi/*/Android.bp
+[13/73] glob vendor/qcom/proprietary/dpm/*/Android.bp
+[14/73] glob vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp
+[15/73] glob vendor/qcom/proprietary/ims-ship/rcs/interfaces/Android.bp
+[16/73] glob vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.1/Android.bp
+[17/73] glob vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp
+[18/73] glob vendor/qcom/proprietary/interfaces/automotive/vehicle/*/Android.bp
+[19/73] glob vendor/qcom/proprietary/interfaces/*/Android.bp
+[20/73] glob vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp
+[21/73] glob vendor/qcom/proprietary/interfaces/ant/1.0/Android.bp
+[22/73] glob vendor/qcom/proprietary/interfaces/automotive/*/Android.bp
+[23/73] glob vendor/qcom/proprietary/interfaces/data/latency/1.0/Android.bp
+[24/73] glob vendor/qcom/proprietary/interfaces/bluetooth_audio/1.0/Android.bp
+[25/73] glob vendor/qcom/proprietary/interfaces/data/latency/1.0/vts/functional/Android.bp
+[26/73] glob vendor/qcom/proprietary/interfaces/display/color/1.0/Android.bp
+[27/73] glob vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp
+[28/73] glob vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp
+[29/73] glob vendor/qcom/proprietary/interfaces/display/color/Android.bp
+[30/73] glob vendor/qcom/proprietary/interfaces/display/postproc/1.0/Android.bp
+[31/73] glob vendor/qcom/proprietary/interfaces/display/postproc/Android.bp
+[32/73] glob vendor/qcom/proprietary/interfaces/esepowermanager/1.0/Android.bp
+[33/73] glob vendor/qcom/proprietary/interfaces/factory/1.0/Android.bp
+[34/73] glob vendor/qcom/proprietary/interfaces/gnss/1.0/Android.bp
+[35/73] glob vendor/qcom/proprietary/interfaces/fm/1.0/Android.bp
+[36/73] glob vendor/qcom/proprietary/interfaces/fingerprint/*/Android.bp
+[37/73] glob vendor/qcom/proprietary/interfaces/gnss/1.0/service/Android.bp
+[38/73] glob vendor/qcom/proprietary/android-perf/*/Android.bp
+[39/73] glob vendor/qcom/proprietary/interfaces/gnss/1.1/Android.bp
+[40/73] glob vendor/qcom/proprietary/interfaces/gnss/1.1/service/Android.bp
+[41/73] glob vendor/qcom/proprietary/interfaces/gnss/1.2/Android.bp
+[42/73] glob vendor/qcom/proprietary/interfaces/gnss/1.2/service/Android.bp
+[43/73] glob vendor/qcom/proprietary/interfaces/iop/2.0/Android.bp
+[44/73] glob vendor/qcom/proprietary/interfaces/limits/1.0/Android.bp
+[45/73] glob vendor/qcom/proprietary/interfaces/iop/1.0/Android.bp
+[46/73] glob vendor/qcom/proprietary/interfaces/perf/1.0/Android.bp
+[47/73] glob vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp
+[48/73] glob vendor/qcom/proprietary/interfaces/qteeconnector/1.0/Android.bp
+[49/73] glob vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1.0/Android.bp
+[50/73] glob vendor/qcom/proprietary/interfaces/radio/*/Android.bp
+[51/73] glob vendor/qcom/proprietary/interfaces/radio/am/1.0/Android.bp
+[52/73] glob vendor/qcom/proprietary/interfaces/radio/config/1.0/Android.bp
+[53/73] glob vendor/qcom/proprietary/interfaces/radio/ims/1.0/Android.bp
+[54/73] glob vendor/qcom/proprietary/interfaces/radio/lpa/1.0/Android.bp
+[55/73] glob vendor/qcom/proprietary/interfaces/radio/qcrilhook/1.0/Android.bp
+[56/73] glob vendor/qcom/proprietary/interfaces/radio/uim/1.0/Android.bp
+[57/73] glob vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp
+[58/73] glob vendor/qcom/proprietary/interfaces/radio/qtiradio/1.0/Android.bp
+[59/73] glob vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1.0/Android.bp
+[60/73] glob vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1.0/Android.bp
+[61/73] glob vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp
+[62/73] glob vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp
+[63/73] glob vendor/qcom/proprietary/interfaces/voiceprint/1.0/Android.bp
+[64/73] glob vendor/qcom/proprietary/interfaces/wigig/netperftuner/1.0/Android.bp
+[65/73] glob vendor/qcom/proprietary/interfaces/vpp/1.1/Android.bp
+[66/73] glob vendor/qcom/proprietary/interfaces/wigig/*/Android.bp
+[67/73] glob vendor/qcom/proprietary/interfaces/wigig/supptunnel/1.0/Android.bp
+[68/73] glob vendor/qcom/proprietary/prebuilt_HY11/target/product/msm8996/Android.bp
+[69/73] glob vendor/qcom/proprietary/interfaces/wipower/1.0/Android.bp
+[70/73] glob vendor/qcom/proprietary/securemsm/QTEEConnector/*/Android.bp
+[71/73] glob vendor/qcom/proprietary/securemsm/*/Android.bp
+[72/72] out/soong/.bootstrap/bin/soong_build out/soong/build.ninja
+FAILED: out/soong/build.ninja 
+out/soong/.bootstrap/bin/soong_build  -t -b out/soong -d out/soong/build.ninja.d -o out/soong/build.ninja Android.bp
+error: vendor/qcom/opensource/interfaces/wifi/1.1/Android.bp:45:9: unrecognized property "vndk"
+error: vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp:45:9: unrecognized property "vndk"
+error: vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp:45:9: unrecognized property "vndk"
+error: vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp:56:9: unrecognized property "vndk"
+ninja: build stopped: subcommand failed.
