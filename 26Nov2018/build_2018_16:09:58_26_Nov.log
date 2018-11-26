@@ -1,0 +1,102 @@
+including device/asus/fugu/vendorsetup.sh
+including device/fsl/imx6/vendorsetup.sh
+including device/fsl/imx7/vendorsetup.sh
+including device/fsl/imx8/vendorsetup.sh
+including device/generic/car/car-arm64/vendorsetup.sh
+including device/generic/car/car-armv7-a-neon/vendorsetup.sh
+including device/generic/car/car-x86_64/vendorsetup.sh
+including device/generic/car/car-x86/vendorsetup.sh
+including device/generic/mini-emulator-arm64/vendorsetup.sh
+including device/generic/mini-emulator-armv7-a-neon/vendorsetup.sh
+including device/generic/mini-emulator-mips64/vendorsetup.sh
+including device/generic/mini-emulator-mips/vendorsetup.sh
+including device/generic/mini-emulator-x86_64/vendorsetup.sh
+including device/generic/mini-emulator-x86/vendorsetup.sh
+including device/google/dragon/vendorsetup.sh
+including device/google/marlin/vendorsetup.sh
+including device/google/muskie/vendorsetup.sh
+including device/google/taimen/vendorsetup.sh
+including device/huawei/angler/vendorsetup.sh
+including device/lge/bullhead/vendorsetup.sh
+including device/linaro/hikey/vendorsetup.sh
+including device/qcom/common/vendorsetup.sh
+including vendor/qcom/proprietary/common/vendorsetup.sh
+including sdk/bash_completion/adb.bash
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.0.0
+TARGET_PRODUCT=msm8996
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_PLATFORM_VERSION=OPD1
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=kryo
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.4.0-31-generic-x86_64-with-Ubuntu-16.04-xenial
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=OPD1.170816.018
+OUT_DIR=out
+AUX_OS_VARIANT_LIST=
+============================================
+
+INFO: Build Android tree for msm8996
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.0.0
+TARGET_PRODUCT=msm8996
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=kryo
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.4.0-31-generic-x86_64-with-Ubuntu-16.04-xenial
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=OPD1.170816.018
+OUT_DIR=out
+============================================
+[1/2] out/soong/.bootstrap/bin/minibp out/soong/.minibootstrap/build.ninja.in
+[2/2] bootstrap out/soong/.minibootstrap/build.ninja.in
+[1/2] out/soong/.bootstrap/bin/minibp out/soong/.minibootstrap/build.ninja.in
+[1/1] out/soong/.bootstrap/bin/minibp out/soong/.bootstrap/build.ninja
+[1/5] glob vendor/qcom/opensource/interfaces/wifi/*/Android.bp
+[2/5] glob vendor/qcom/proprietary/interfaces/display/color/1.1/Android.bp
+[3/5] glob vendor/qcom/proprietary/interfaces/display/color/1.2/Android.bp
+[4/5] glob vendor/qcom/proprietary/interfaces/radio/uim/1.1/Android.bp
+[5/5] out/soong/.bootstrap/bin/minibp out/soong/.bootstrap/build.ninja
+[1/1] out/soong/.bootstrap/bin/soong_build out/soong/build.ninja
+FAILED: out/soong/build.ninja 
+out/soong/.bootstrap/bin/soong_build  -t -b out/soong -d out/soong/build.ninja.d -o out/soong/build.ninja Android.bp
+error: vendor/qcom/proprietary/interfaces/sensorscalibrate/1.0/Android.bp:38:1: "vendor.qti.hardware.sensorscalibrate@1.0" depends on undefined module "android.hidl.base@1.0"
+error: vendor/qcom/proprietary/android-perf/iop-hal/Android.bp:2:1: "vendor.qti.hardware.iop@1.0-impl" depends on undefined module "android.hidl.base@1.0"
+error: vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:69:1: "vendor.qti.hardware.tui_comm@1.0" depends on undefined module "android.hidl.base@1.0"
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:63:1: "com.qualcomm.qti.imscmservice@1.0" depends on undefined module "android.hidl.base@1.0"
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1.0/Android.bp:77:1: "com.qualcomm.qti.uceservice@1.0-static" depends on undefined module "android.hidl.base@1.0"
+error: vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:38:1: "vendor.qti.hardware.qdutils_disp@1.0_vendor" depends on undefined module "android.hidl.base@1.0"
+error: vendor/qcom/opensource/bluetooth_ext/system_bt_ext/device/Android.bp:3:1: "libbtdevice_ext" depends on undefined module "libbluetooth-types"
+error: vendor/qcom/proprietary/interfaces/qdutils_disp/1.0/Android.bp:62:1: "vendor.qti.hardware.qdutils_disp@1.0" depends on undefined module "android.hidl.base@1.0"
+error: vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1.0/Android.bp:86:1: "com.qualcomm.qti.imscmservice@1.0_vendor" depends on undefined module "android.hidl.base@1.0"
+error: vendor/qcom/opensource/bluetooth_ext/system_bt_ext/btif/Android.bp:3:1: "libbtif_ext" depends on undefined module "libbluetooth-types"
+error: vendor/qcom/proprietary/interfaces/alarm/1.0/Android.bp:38:1: "vendor.qti.hardware.alarm@1.0" depends on undefined module "android.hidl.base@1.0"
+error: vendor/qcom/proprietary/interfaces/tui_comm/1.0/Android.bp:45:1: "vendor.qti.hardware.tui_comm@1.0_vendor" depends on undefined module "android.hidl.base@1.0"
+ninja: build stopped: subcommand failed.
