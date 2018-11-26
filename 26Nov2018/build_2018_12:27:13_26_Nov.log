@@ -1,0 +1,585 @@
+including device/generic/car/vendorsetup.sh
+including device/generic/mini-emulator-arm64/vendorsetup.sh
+including device/generic/mini-emulator-armv7-a-neon/vendorsetup.sh
+including device/generic/mini-emulator-x86_64/vendorsetup.sh
+including device/generic/mini-emulator-x86/vendorsetup.sh
+including device/generic/uml/vendorsetup.sh
+including device/qcom/common/vendorsetup.sh
+including vendor/qcom/proprietary/common/vendorsetup.sh
+including sdk/bash_completion/adb.bash
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.1.0
+TARGET_PRODUCT=msm8996
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_PLATFORM_VERSION=OPM1
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=kryo
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.15.0-20-generic-x86_64-with-Ubuntu-18.04-bionic
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=OPM1.171019.026
+OUT_DIR=out
+AUX_OS_VARIANT_LIST=
+============================================
+
+INFO: Build Android tree for msm8996
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.1.0
+TARGET_PRODUCT=msm8996
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=kryo
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.15.0-20-generic-x86_64-with-Ubuntu-18.04-bionic
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=OPM1.171019.026
+OUT_DIR=out
+============================================
+[1/2] out/soong/.bootstrap/bin/minibp out/soong/.minibootstrap/build.ninja.in
+[2/2] bootstrap out/soong/.minibootstrap/build.ninja.in
+[1/1] out/soong/.bootstrap/bin/minibp out/soong/.bootstrap/build.ninja
+[1/1] out/soong/.bootstrap/bin/soong_build out/soong/build.ninja
+[ 50% 1/2] out/soong/.bootstrap/bin/bpglob -o out/soong/.glob/art.glob  "art"
+[100% 2/2] out/soong/.bootstrap/bin/soong_build  -t -b out/soong -d out/soong/build.ninja.d -o out/soong/build.ninja Android.bp
+[ 50% 1/2] out/soong/.bootstrap/bin/bpglob -o out/soong/.glob/art.glob  "art"
+[  0% 1/109670] /bin/bash -c "rm -f out/target/product/msm8996/emmc_appsboot.mbn"
+[  0% 2/109670] /bin/bash -c "(if [ -d \"out/target/product/msm8996/OTA_Target_Files\" ] ; then            cd out/target/product/msm8996/OTA_Target_Files ;           rm -rf \`ls | grep -v \"Default.zip\"\` ;           cd - ;         fi ) && (if [ -d \"out/target/product/msm8996/OTA_Binary_Packs\" ] ; then            rm -rf out/target/product/msm8996/OTA_Binary_Packs/* ;         fi ) && (mkdir -p out/target/product/msm8996/OTA_Target_Files ) && (mkdir -p out/target/product/msm8996/OTA_Binary_Packs ) && (mkdir -p out/target/product/msm8996/OTA_Target_Files/temp ) && (for path in \`find out/target/product/msm8996/vendor/package -name \".preloadspec\"\` ; do            tmp=\"\${path%\\/.preloadspec}\" ;           pack=\"\${tmp##*\\/}\" ;           if [ \"\$pack\" != \"\" ] ; then              echo \"Back up \$pack to out/target/product/msm8996/OTA_Target_Files/temp/\$pack ...\" ;             echo \"\$pack\" >> \"out/target/product/msm8996/OTA_Target_Files/temp/packlist\" ;             cp -rf out/target/product/msm8996/vendor/package/\$pack out/target/product/msm8996/OTA_Target_Files/temp ;           fi ;         done ) && (mkdir -p out/target/product/msm8996/persist/speccfg ) && (echo \"omt\" > out/target/product/msm8996/persist/speccfg/devicetype ) && (touch out/target/product/msm8996/persist/speccfg/mbnversion ) && (touch out/target/product/msm8996/persist/speccfg/.not_triggered )"
+/android/msm8996
+Back up TelefonicaGermany to out/target/product/msm8996/OTA_Target_Files/temp/TelefonicaGermany ...
+Back up ChinaUnicom to out/target/product/msm8996/OTA_Target_Files/temp/ChinaUnicom ...
+Back up ChinaMobile to out/target/product/msm8996/OTA_Target_Files/temp/ChinaMobile ...
+Back up VodafoneGroup to out/target/product/msm8996/OTA_Target_Files/temp/VodafoneGroup ...
+Back up ChinaTelecom to out/target/product/msm8996/OTA_Target_Files/temp/ChinaTelecom ...
+Back up VodafoneUK to out/target/product/msm8996/OTA_Target_Files/temp/VodafoneUK ...
+Back up Default to out/target/product/msm8996/OTA_Target_Files/temp/Default ...
+Back up EUCommon to out/target/product/msm8996/OTA_Target_Files/temp/EUCommon ...
+Back up CTA to out/target/product/msm8996/OTA_Target_Files/temp/CTA ...
+[  0% 3/109670] /bin/bash -c "(prebuilts/sdk/tools/jack-admin install-server prebuilts/sdk/tools/jack-launcher.jar prebuilts/sdk/tools/jack-server-4.11.ALPHA.jar  2>&1 || (exit 0) ) && (JACK_SERVER_VM_ARGUMENTS=\"-Dfile.encoding=UTF-8 -XX:+TieredCompilation\" prebuilts/sdk/tools/jack-admin start-server 2>&1 || exit 0 ) && (prebuilts/sdk/tools/jack-admin update server prebuilts/sdk/tools/jack-server-4.11.ALPHA.jar 4.11.ALPHA 2>&1 || exit 0 ) && (prebuilts/sdk/tools/jack-admin update jack prebuilts/sdk/tools/jacks/jack-4.32.CANDIDATE.jar 4.32.CANDIDATE || exit 47 )"
+Jack server already installed in "/home/android/.jack-server"
+Server is already running
+[  0% 4/109670] /bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/sdk_v8_intermediates/classes.jack.tmpjill.res ) && (unzip -qo prebuilts/sdk/8/android.jar -d out/target/common/obj/JAVA_LIBRARIES/sdk_v8_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/sdk_v8_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args    -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=8 --import prebuilts/sdk/8/android.jar --import-resource out/target/common/obj/JAVA_LIBRARIES/sdk_v8_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/sdk_v8_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/sdk_v8_intermediates/classes.jack.tmpjill.res )"
+[  0% 5/109670] /bin/bash -c "touch out/target/common/obj/JAVA_LIBRARIES/sdk_v8_intermediates/classes.dex.toc"
+[  0% 6/109670] /bin/bash -c "(rm -f out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/jack-rsc ) && (mkdir -p out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/ ) && (mkdir -p out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/jack-rsc ) && (rm -f out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/jack-rsc/java-source-list ) && (touch out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/jack-rsc/java-source-list ) && (echo -n 'external/protobuf/javamicro/src/main/java/com/google/protobuf/micro/ByteStringMicro.java external/protobuf/javamicro/src/main/java/com/google/protobuf/micro/CodedInputStreamMicro.java external/protobuf/javamicro/src/main/java/com/google/protobuf/micro/CodedOutputStreamMicro.java external/protobuf/javamicro/src/main/java/com/google/protobuf/micro/InvalidProtocolBufferMicroException.java external/protobuf/javamicro/src/main/java/com/google/protobuf/micro/MessageMicro.java external/protobuf/javamicro/src/main/java/com/google/protobuf/micro/WireFormatMicro.java ' >> out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/jack-rsc/java-source-list ) && (if [ -d \"out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/src\" ]; then find out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/src -name '*.java' >> out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/jack-rsc/java-source-list; fi ) && (tr ' ' '\\n' < out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/jack-rsc/java-source-list | build/tools/normalize_path.py | sort -u > out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/jack-rsc/java-source-list-uniq ) && (if [ -s out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/jack-rsc/java-source-list-uniq ] ; then export tmpEcjArg=\"@out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/jack-rsc/java-source-list-uniq\"; else export tmpEcjArg=\"\"; fi;  JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args -g -D jack.java.source.version=1.7  --classpath out/target/common/obj/JAVA_LIBRARIES/sdk_v8_intermediates/classes.jack     -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=8  --output-jack out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/classes.jack   \$tmpEcjArg || ( rm -f out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/classes.jack ; exit 41 ) ) && (rm -f out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/jack-rsc/java-source-list ) && (mv out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/jack-rsc/java-source-list-uniq out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/jack-rsc.java-source-list )"
+[  0% 7/109670] /bin/bash -c "touch out/target/common/obj/JAVA_LIBRARIES/libprotobuf-java-micro_intermediates/classes.dex.toc"
+[  0% 8/109670] /bin/bash -c "(rm -f out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/jack-rsc ) && (mkdir -p out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/ ) && (mkdir -p out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/jack-rsc ) && (rm -f out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/jack-rsc/java-source-list ) && (touch out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/jack-rsc/java-source-list ) && (echo -n 'frameworks/ex/common/java/com/android/common/LegacyHttpDateTime.java frameworks/ex/common/java/com/android/common/NetworkConnectivityListener.java frameworks/ex/common/java/com/android/common/OperationScheduler.java frameworks/ex/common/java/com/android/common/Rfc822InputFilter.java frameworks/ex/common/java/com/android/common/Rfc822Validator.java frameworks/ex/common/java/com/android/common/Search.java frameworks/ex/common/java/com/android/common/SharedPreferencesCompat.java frameworks/ex/common/java/com/android/common/contacts/BaseEmailAddressAdapter.java frameworks/ex/common/java/com/android/common/contacts/DataUsageStatUpdater.java frameworks/ex/common/java/com/android/common/content/ProjectionMap.java frameworks/ex/common/java/com/android/common/content/SQLiteContentProvider.java frameworks/ex/common/java/com/android/common/content/SyncStateContentProviderHelper.java frameworks/ex/common/java/com/android/common/io/MoreCloseables.java frameworks/ex/common/java/com/android/common/speech/LoggingEvents.java frameworks/ex/common/java/com/android/common/speech/Recognition.java frameworks/ex/common/java/com/android/common/userhappiness/UserHappinessSignals.java frameworks/ex/common/java/com/android/common/widget/CompositeCursorAdapter.java frameworks/ex/common/java/com/android/common/widget/GroupingListAdapter.java frameworks/ex/common/java/com/android/ex/editstyledtext/EditStyledText.java out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/src/java/com/android/common/GoogleLogTags.java ' >> out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/jack-rsc/java-source-list ) && (if [ -d \"out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/src\" ]; then find out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/src -name '*.java' >> out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/jack-rsc/java-source-list; fi ) && (tr ' ' '\\n' < out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/jack-rsc/java-source-list | build/tools/normalize_path.py | sort -u > out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/jack-rsc/java-source-list-uniq ) && (if [ -s out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/jack-rsc/java-source-list-uniq ] ; then export tmpEcjArg=\"@out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/jack-rsc/java-source-list-uniq\"; else export tmpEcjArg=\"\"; fi;  JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args -g -D jack.java.source.version=1.7  --classpath out/target/common/obj/JAVA_LIBRARIES/sdk_v8_intermediates/classes.jack     -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=8  --output-jack out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/classes.jack   \$tmpEcjArg || ( rm -f out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/classes.jack ; exit 41 ) ) && (rm -f out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/jack-rsc/java-source-list ) && (mv out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/jack-rsc/java-source-list-uniq out/target/common/obj/JAVA_LIBRARIES/android-common_intermediates/jack-rsc.java-source-list )"
+[  0% 9/109670] /bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/apptoolkit-arch-core-common_intermediates/classes.jack.tmpjill.res ) && (unzip -qo prebuilts/maven_repo/android/android/arch/core/common/1.0.0/common-1.0.0.jar -d out/target/common/obj/JAVA_LIBRARIES/apptoolkit-arch-core-common_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/apptoolkit-arch-core-common_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args    -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=1 --import prebuilts/maven_repo/android/android/arch/core/common/1.0.0/common-1.0.0.jar --import-resource out/target/common/obj/JAVA_LIBRARIES/apptoolkit-arch-core-common_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/apptoolkit-arch-core-common_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/apptoolkit-arch-core-common_intermediates/classes.jack.tmpjill.res )"
+[  0% 10/109670] /bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/apptoolkit-lifecycle-common_intermediates/classes.jack.tmpjill.res ) && (unzip -qo prebuilts/maven_repo/android/android/arch/lifecycle/common/1.0.0/common-1.0.0.jar -d out/target/common/obj/JAVA_LIBRARIES/apptoolkit-lifecycle-common_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/apptoolkit-lifecycle-common_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args    -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=1 --import prebuilts/maven_repo/android/android/arch/lifecycle/common/1.0.0/common-1.0.0.jar --import-resource out/target/common/obj/JAVA_LIBRARIES/apptoolkit-lifecycle-common_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/apptoolkit-lifecycle-common_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/apptoolkit-lifecycle-common_intermediates/classes.jack.tmpjill.res )"
+[  0% 11/109670] /bin/bash -c "PWD=/proc/self/cwd vendor/qcom/proprietary/llvm-arm-toolchain-ship/4.0/bin/clang++ 	-I external/v8/src -I external/icu/icu4c/source/common -I external/icu/icu4c/source/i18n -I external/v8 -I out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates -I out/target/product/msm8996/gen/STATIC_LIBRARIES/libv8src_intermediates -I libnativehelper/include_deprecated \$(cat out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates/import_includes)  -I system/core/include -I system/media/audio/include -I hardware/libhardware/include -I hardware/libhardware_legacy/include -I hardware/ril/include -I libnativehelper/include -I frameworks/native/include -I frameworks/native/opengl/include -I frameworks/av/include -isystem out/target/product/msm8996/obj/include -isystem bionic/libc/arch-arm64/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/uapi/asm-arm64 -isystem bionic/libc/kernel/android/scsi -isystem bionic/libc/kernel/android/uapi -c  -fno-exceptions -Wno-multichar -fno-strict-aliasing -fstack-protector-strong -ffunction-sections -fdata-sections -funwind-tables -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -Werror=pointer-to-int-cast -Werror=int-to-pointer-cast -Werror=implicit-function-declaration -DNDEBUG -O2 -g -Wstrict-aliasing=2 -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -DNDEBUG -UDEBUG -fdebug-prefix-map=/proc/self/cwd= -D__compiler_offsetof=__builtin_offsetof -Werror=int-conversion -Wno-reserved-id-macro -Wno-format-pedantic -Wno-unused-command-line-argument -fcolor-diagnostics -Wno-expansion-to-defined -fdebug-prefix-map=\$PWD/= -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -nostdlibinc -mcpu=kryo -target aarch64-linux-android -Bprebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/aarch64-linux-android/bin  -Wsign-promo -Wno-inconsistent-missing-override -Wno-null-dereference -D_LIBCPP_ENABLE_THREAD_SAFETY_ANNOTATIONS -Wno-thread-safety-negative -fvisibility-inlines-hidden -std=gnu++14   -fno-rtti -Wno-endif-labels -Wno-import -Wno-format -Wno-unused-parameter -Wno-sign-compare -Wno-missing-field-initializers -Wno-ignored-qualifiers -Wno-undefined-var-template -fno-exceptions -fvisibility=hidden -DENABLE_DEBUGGER_SUPPORT -DENABLE_LOGGING_AND_PROFILING -DENABLE_VMSTATE_TRACKING -DV8_NATIVE_REGEXP -DV8_I18N_SUPPORT -std=gnu++0x -Os -fPIC -DV8_TARGET_ARCH_ARM64 -D_USING_LIBCXX   -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -Werror=address-of-temporary -Werror=return-type   -Wno-vectorizer-no-neon -Wno-vectorizer-no-neon -MD -MF out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates/src/parsing/preparsed-scope-data..d -o out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates/src/parsing/preparsed-scope-data..o external/v8/src/parsing/preparsed-scope-data.cc"
+[  0% 12/109670] /bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/apptoolkit-lifecycle-runtime_intermediates/classes.jack.tmpjill.res ) && (unzip -qo out/target/common/obj/JAVA_LIBRARIES/apptoolkit-lifecycle-runtime_intermediates/aar/classes.jar -d out/target/common/obj/JAVA_LIBRARIES/apptoolkit-lifecycle-runtime_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/apptoolkit-lifecycle-runtime_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args    -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=1 --import out/target/common/obj/JAVA_LIBRARIES/apptoolkit-lifecycle-runtime_intermediates/aar/classes.jar --import-resource out/target/common/obj/JAVA_LIBRARIES/apptoolkit-lifecycle-runtime_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/apptoolkit-lifecycle-runtime_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/apptoolkit-lifecycle-runtime_intermediates/classes.jack.tmpjill.res )"
+[  0% 13/109670] /bin/bash -c "(rm -f out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/jack-rsc ) && (mkdir -p out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/ ) && (mkdir -p out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/jack-rsc ) && (rm -f out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/jack-rsc/java-source-list ) && (touch out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/jack-rsc/java-source-list ) && (echo -n 'external/jsr305/ri/src/main/java/javax/annotation/CheckForNull.java external/jsr305/ri/src/main/java/javax/annotation/CheckForSigned.java external/jsr305/ri/src/main/java/javax/annotation/CheckReturnValue.java external/jsr305/ri/src/main/java/javax/annotation/Detainted.java external/jsr305/ri/src/main/java/javax/annotation/MatchesPattern.java external/jsr305/ri/src/main/java/javax/annotation/Nonnegative.java external/jsr305/ri/src/main/java/javax/annotation/Nonnull.java external/jsr305/ri/src/main/java/javax/annotation/Nullable.java external/jsr305/ri/src/main/java/javax/annotation/OverridingMethodsMustInvokeSuper.java external/jsr305/ri/src/main/java/javax/annotation/ParametersAreNonnullByDefault.java external/jsr305/ri/src/main/java/javax/annotation/ParametersAreNullableByDefault.java external/jsr305/ri/src/main/java/javax/annotation/PropertyKey.java external/jsr305/ri/src/main/java/javax/annotation/RegEx.java external/jsr305/ri/src/main/java/javax/annotation/Signed.java external/jsr305/ri/src/main/java/javax/annotation/Syntax.java external/jsr305/ri/src/main/java/javax/annotation/Tainted.java external/jsr305/ri/src/main/java/javax/annotation/Untainted.java external/jsr305/ri/src/main/java/javax/annotation/WillClose.java external/jsr305/ri/src/main/java/javax/annotation/WillCloseWhenClosed.java external/jsr305/ri/src/main/java/javax/annotation/WillNotClose.java external/jsr305/ri/src/main/java/javax/annotation/concurrent/GuardedBy.java external/jsr305/ri/src/main/java/javax/annotation/concurrent/Immutable.java external/jsr305/ri/src/main/java/javax/annotation/concurrent/NotThreadSafe.java external/jsr305/ri/src/main/java/javax/annotation/concurrent/ThreadSafe.java external/jsr305/ri/src/main/java/javax/annotation/meta/Exclusive.java external/jsr305/ri/src/main/java/javax/annotation/meta/Exhaustive.java external/jsr305/ri/src/main/java/javax/annotation/meta/TypeQualifier.java external/jsr305/ri/src/main/java/javax/annotation/meta/TypeQualifierDefault.java external/jsr305/ri/src/main/java/javax/annotation/meta/TypeQualifierNickname.java external/jsr305/ri/src/main/java/javax/annotation/meta/TypeQualifierValidator.java external/jsr305/ri/src/main/java/javax/annotation/meta/When.java ' >> out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/jack-rsc/java-source-list ) && (if [ -d \"out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/src\" ]; then find out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/src -name '*.java' >> out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/jack-rsc/java-source-list; fi ) && (tr ' ' '\\n' < out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/jack-rsc/java-source-list | build/tools/normalize_path.py | sort -u > out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/jack-rsc/java-source-list-uniq ) && (if [ -s out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/jack-rsc/java-source-list-uniq ] ; then export tmpEcjArg=\"@out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/jack-rsc/java-source-list-uniq\"; else export tmpEcjArg=\"\"; fi;  JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args -g -D jack.java.source.version=1.7  --classpath out/target/common/obj/JAVA_LIBRARIES/sdk_v8_intermediates/classes.jack     -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=8  --output-jack out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/classes.jack   \$tmpEcjArg || ( rm -f out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/classes.jack ; exit 41 ) ) && (rm -f out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/jack-rsc/java-source-list ) && (mv out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/jack-rsc/java-source-list-uniq out/target/common/obj/JAVA_LIBRARIES/jsr305_intermediates/jack-rsc.java-source-list )"
+[  0% 14/109670] /bin/bash -c "PWD=/proc/self/cwd vendor/qcom/proprietary/llvm-arm-toolchain-ship/4.0/bin/clang++ 	-I external/v8/src -I external/icu/icu4c/source/common -I external/icu/icu4c/source/i18n -I external/v8 -I out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates -I out/target/product/msm8996/gen/STATIC_LIBRARIES/libv8src_intermediates -I libnativehelper/include_deprecated \$(cat out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates/import_includes)  -I system/core/include -I system/media/audio/include -I hardware/libhardware/include -I hardware/libhardware_legacy/include -I hardware/ril/include -I libnativehelper/include -I frameworks/native/include -I frameworks/native/opengl/include -I frameworks/av/include -isystem out/target/product/msm8996/obj/include -isystem bionic/libc/arch-arm64/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/uapi/asm-arm64 -isystem bionic/libc/kernel/android/scsi -isystem bionic/libc/kernel/android/uapi -c  -fno-exceptions -Wno-multichar -fno-strict-aliasing -fstack-protector-strong -ffunction-sections -fdata-sections -funwind-tables -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -Werror=pointer-to-int-cast -Werror=int-to-pointer-cast -Werror=implicit-function-declaration -DNDEBUG -O2 -g -Wstrict-aliasing=2 -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -DNDEBUG -UDEBUG -fdebug-prefix-map=/proc/self/cwd= -D__compiler_offsetof=__builtin_offsetof -Werror=int-conversion -Wno-reserved-id-macro -Wno-format-pedantic -Wno-unused-command-line-argument -fcolor-diagnostics -Wno-expansion-to-defined -fdebug-prefix-map=\$PWD/= -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -nostdlibinc -mcpu=kryo -target aarch64-linux-android -Bprebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/aarch64-linux-android/bin  -Wsign-promo -Wno-inconsistent-missing-override -Wno-null-dereference -D_LIBCPP_ENABLE_THREAD_SAFETY_ANNOTATIONS -Wno-thread-safety-negative -fvisibility-inlines-hidden -std=gnu++14   -fno-rtti -Wno-endif-labels -Wno-import -Wno-format -Wno-unused-parameter -Wno-sign-compare -Wno-missing-field-initializers -Wno-ignored-qualifiers -Wno-undefined-var-template -fno-exceptions -fvisibility=hidden -DENABLE_DEBUGGER_SUPPORT -DENABLE_LOGGING_AND_PROFILING -DENABLE_VMSTATE_TRACKING -DV8_NATIVE_REGEXP -DV8_I18N_SUPPORT -std=gnu++0x -Os -fPIC -DV8_TARGET_ARCH_ARM64 -D_USING_LIBCXX   -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -Werror=address-of-temporary -Werror=return-type   -Wno-vectorizer-no-neon -Wno-vectorizer-no-neon -MD -MF out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates/src/parsing/rewriter..d -o out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates/src/parsing/rewriter..o external/v8/src/parsing/rewriter.cc"
+[  0% 15/109670] /bin/bash -c "PWD=/proc/self/cwd vendor/qcom/proprietary/llvm-arm-toolchain-ship/4.0/bin/clang++ 	-I external/v8/src -I external/icu/icu4c/source/common -I external/icu/icu4c/source/i18n -I external/v8 -I out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates -I out/target/product/msm8996/gen/STATIC_LIBRARIES/libv8src_intermediates -I libnativehelper/include_deprecated \$(cat out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates/import_includes)  -I system/core/include -I system/media/audio/include -I hardware/libhardware/include -I hardware/libhardware_legacy/include -I hardware/ril/include -I libnativehelper/include -I frameworks/native/include -I frameworks/native/opengl/include -I frameworks/av/include -isystem out/target/product/msm8996/obj/include -isystem bionic/libc/arch-arm64/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/uapi/asm-arm64 -isystem bionic/libc/kernel/android/scsi -isystem bionic/libc/kernel/android/uapi -c  -fno-exceptions -Wno-multichar -fno-strict-aliasing -fstack-protector-strong -ffunction-sections -fdata-sections -funwind-tables -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -Werror=pointer-to-int-cast -Werror=int-to-pointer-cast -Werror=implicit-function-declaration -DNDEBUG -O2 -g -Wstrict-aliasing=2 -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -DNDEBUG -UDEBUG -fdebug-prefix-map=/proc/self/cwd= -D__compiler_offsetof=__builtin_offsetof -Werror=int-conversion -Wno-reserved-id-macro -Wno-format-pedantic -Wno-unused-command-line-argument -fcolor-diagnostics -Wno-expansion-to-defined -fdebug-prefix-map=\$PWD/= -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -nostdlibinc -mcpu=kryo -target aarch64-linux-android -Bprebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/aarch64-linux-android/bin  -Wsign-promo -Wno-inconsistent-missing-override -Wno-null-dereference -D_LIBCPP_ENABLE_THREAD_SAFETY_ANNOTATIONS -Wno-thread-safety-negative -fvisibility-inlines-hidden -std=gnu++14   -fno-rtti -Wno-endif-labels -Wno-import -Wno-format -Wno-unused-parameter -Wno-sign-compare -Wno-missing-field-initializers -Wno-ignored-qualifiers -Wno-undefined-var-template -fno-exceptions -fvisibility=hidden -DENABLE_DEBUGGER_SUPPORT -DENABLE_LOGGING_AND_PROFILING -DENABLE_VMSTATE_TRACKING -DV8_NATIVE_REGEXP -DV8_I18N_SUPPORT -std=gnu++0x -Os -fPIC -DV8_TARGET_ARCH_ARM64 -D_USING_LIBCXX   -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -Werror=address-of-temporary -Werror=return-type   -Wno-vectorizer-no-neon -Wno-vectorizer-no-neon -MD -MF out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates/src/parsing/preparse-data..d -o out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates/src/parsing/preparse-data..o external/v8/src/parsing/preparse-data.cc"
+[  0% 16/109670] /bin/bash -c "PWD=/proc/self/cwd vendor/qcom/proprietary/llvm-arm-toolchain-ship/4.0/bin/clang++ 	-I external/v8/src -I external/icu/icu4c/source/common -I external/icu/icu4c/source/i18n -I external/v8 -I out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates -I out/target/product/msm8996/gen/STATIC_LIBRARIES/libv8src_intermediates -I libnativehelper/include_deprecated \$(cat out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates/import_includes)  -I system/core/include -I system/media/audio/include -I hardware/libhardware/include -I hardware/libhardware_legacy/include -I hardware/ril/include -I libnativehelper/include -I frameworks/native/include -I frameworks/native/opengl/include -I frameworks/av/include -isystem out/target/product/msm8996/obj/include -isystem bionic/libc/arch-arm64/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/uapi/asm-arm64 -isystem bionic/libc/kernel/android/scsi -isystem bionic/libc/kernel/android/uapi -c  -fno-exceptions -Wno-multichar -fno-strict-aliasing -fstack-protector-strong -ffunction-sections -fdata-sections -funwind-tables -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -Werror=pointer-to-int-cast -Werror=int-to-pointer-cast -Werror=implicit-function-declaration -DNDEBUG -O2 -g -Wstrict-aliasing=2 -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -DNDEBUG -UDEBUG -fdebug-prefix-map=/proc/self/cwd= -D__compiler_offsetof=__builtin_offsetof -Werror=int-conversion -Wno-reserved-id-macro -Wno-format-pedantic -Wno-unused-command-line-argument -fcolor-diagnostics -Wno-expansion-to-defined -fdebug-prefix-map=\$PWD/= -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -nostdlibinc -mcpu=kryo -target aarch64-linux-android -Bprebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/aarch64-linux-android/bin  -Wsign-promo -Wno-inconsistent-missing-override -Wno-null-dereference -D_LIBCPP_ENABLE_THREAD_SAFETY_ANNOTATIONS -Wno-thread-safety-negative -fvisibility-inlines-hidden -std=gnu++14   -fno-rtti -Wno-endif-labels -Wno-import -Wno-format -Wno-unused-parameter -Wno-sign-compare -Wno-missing-field-initializers -Wno-ignored-qualifiers -Wno-undefined-var-template -fno-exceptions -fvisibility=hidden -DENABLE_DEBUGGER_SUPPORT -DENABLE_LOGGING_AND_PROFILING -DENABLE_VMSTATE_TRACKING -DV8_NATIVE_REGEXP -DV8_I18N_SUPPORT -std=gnu++0x -Os -fPIC -DV8_TARGET_ARCH_ARM64 -D_USING_LIBCXX   -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -Werror=address-of-temporary -Werror=return-type   -Wno-vectorizer-no-neon -Wno-vectorizer-no-neon -MD -MF out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates/src/parsing/pattern-rewriter..d -o out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates/src/parsing/pattern-rewriter..o external/v8/src/parsing/pattern-rewriter.cc"
+[  0% 17/109670] /bin/bash -c "(if [ ! -z \"msm_defconfig\" ]; then 			rm -f ../../out/target/product/msm8996/obj/kernel/msm-3.18/.config; 			make -j2 -C kernel/msm-3.18 O=../../out/target/product/msm8996/obj/kernel/msm-3.18 ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- msm_defconfig; 			make -j2 -C kernel/msm-3.18 O=../../out/target/product/msm8996/obj/kernel/msm-3.18 ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- headers_install; fi ) && (if [ \"msm_defconfig\" != \"msm_defconfig\" ]; then 			echo \"Used a different defconfig for header generation\"; 			rm -f ../../out/target/product/msm8996/obj/kernel/msm-3.18/.config; 			make -j2 -C kernel/msm-3.18 O=../../out/target/product/msm8996/obj/kernel/msm-3.18 ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- msm_defconfig; fi ) && (if [ ! -z \"\" ]; then 			echo \"Overriding kernel config with ''\"; 			echo  >> out/target/product/msm8996/obj/kernel/msm-3.18/.config; 			make -j2 -C kernel/msm-3.18 O=../../out/target/product/msm8996/obj/kernel/msm-3.18 ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- oldconfig; fi )"
+make: Entering directory '/android/msm8996/kernel/msm-3.18'
+make[1]: Entering directory '/android/msm8996/out/target/product/msm8996/obj/kernel/msm-3.18'
+/android/msm8996/kernel/msm-3.18/arch/arm64/Makefile:130: warning: overriding recipe for target 'vdso_prepare'
+/android/msm8996/kernel/msm-3.18/arch/arm64/Makefile:120: warning: ignoring old recipe for target 'vdso_prepare'
+  GEN     ./Makefile
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/android/msm8996/out/target/product/msm8996/obj/kernel/msm-3.18'
+make: Leaving directory '/android/msm8996/kernel/msm-3.18'
+make: Entering directory '/android/msm8996/kernel/msm-3.18'
+make[1]: Entering directory '/android/msm8996/out/target/product/msm8996/obj/kernel/msm-3.18'
+/android/msm8996/kernel/msm-3.18/arch/arm64/Makefile:130: warning: overriding recipe for target 'vdso_prepare'
+/android/msm8996/kernel/msm-3.18/arch/arm64/Makefile:120: warning: ignoring old recipe for target 'vdso_prepare'
+  CHK     include/generated/uapi/linux/version.h
+make[1]: Leaving directory '/android/msm8996/out/target/product/msm8996/obj/kernel/msm-3.18'
+make: Leaving directory '/android/msm8996/kernel/msm-3.18'
+[  0% 18/109670] /bin/bash -c "(rm -rf out/target/product/msm8996/obj/KERNEL_OBJ ) && (ln -s kernel/msm-3.18 out/target/product/msm8996/obj/KERNEL_OBJ )"
+[  0% 19/109670] /bin/bash -c "make -j2 -C bootable/bootloader/lk/ TOOLCHAIN_PREFIX=../../../prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi- BOOTLOADER_OUT=../../../out/target/product/msm8996/obj/EMMC_BOOTLOADER_OBJ msm8996  EMMC_BOOT=1 SIGNED_KERNEL=1 VERIFIED_BOOT=1 ENABLE_DISPLAY=1 ENABLE_BOOTDEVICE_MOUNT=1 DEFAULT_UNLOCK=true  BOARD_NAME=QC_Reference_Phone ENABLE_VB_ATTEST=1 OSVERSION_IN_BOOTIMAGE=1"
+make: Entering directory '/android/msm8996/bootable/bootloader/lk'
+make[1]: Entering directory '/android/msm8996/bootable/bootloader/lk'
+including app/aboot app/mmutest app/tests dev/fbcon dev/gcdb/display dev/keys dev/pmic/pm8x41 dev/pmic/pmi8994 dev/qpnp_haptic dev/qpnp_led dev/qpnp_wled dev/vib lib/debug lib/heap lib/libc lib/libfdt lib/openssl lib/ptable
+including lib/openssl/crypto lib/zlib_inflate
+generating ../../../out/target/product/msm8996/obj/EMMC_BOOTLOADER_OBJ/build-msm8996/config.h
+generating ../../../out/target/product/msm8996/obj/EMMC_BOOTLOADER_OBJ/build-msm8996/system-onesegment.ld
+linking ../../../out/target/product/msm8996/obj/EMMC_BOOTLOADER_OBJ/build-msm8996/lk
+../../../prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-ld: warning: /android/msm8996/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/../lib/gcc/arm-eabi/4.8/libgcc.a(bpabi.o) uses 32-bit enums yet the output is to use variable-size enums; use of enum values across objects may fail
+../../../prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-ld: warning: /android/msm8996/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/../lib/gcc/arm-eabi/4.8/libgcc.a(_divdi3.o) uses 32-bit enums yet the output is to use variable-size enums; use of enum values across objects may fail
+../../../prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-ld: warning: /android/msm8996/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/../lib/gcc/arm-eabi/4.8/libgcc.a(_udivdi3.o) uses 32-bit enums yet the output is to use variable-size enums; use of enum values across objects may fail
+generating image: ../../../out/target/product/msm8996/obj/EMMC_BOOTLOADER_OBJ/build-msm8996/lk.bin
+generating listing: ../../../out/target/product/msm8996/obj/EMMC_BOOTLOADER_OBJ/build-msm8996/lk.lst
+   text	   data	    bss	    dec	    hex	filename
+ 472008	 303224	 202872	 978104	  eecb8	../../../out/target/product/msm8996/obj/EMMC_BOOTLOADER_OBJ/build-msm8996/lk
+../../../prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-objcopy -O binary ../../../out/target/product/msm8996/obj/EMMC_BOOTLOADER_OBJ/build-msm8996/lk ../../../out/target/product/msm8996/obj/EMMC_BOOTLOADER_OBJ/build-msm8996/lk.bin
+generating listing: ../../../out/target/product/msm8996/obj/EMMC_BOOTLOADER_OBJ/build-msm8996/lk.debug.lst
+generating symbols: ../../../out/target/product/msm8996/obj/EMMC_BOOTLOADER_OBJ/build-msm8996/lk.sym
+generating size map: ../../../out/target/product/msm8996/obj/EMMC_BOOTLOADER_OBJ/build-msm8996/lk.size
+generating stripped elf: ../../../out/target/product/msm8996/obj/EMMC_BOOTLOADER_OBJ/build-msm8996/lk_s.elf
+cp -f ../../../out/target/product/msm8996/obj/EMMC_BOOTLOADER_OBJ/build-msm8996/lk_s.elf ../../../out/target/product/msm8996/obj/EMMC_BOOTLOADER_OBJ/../../emmc_appsboot.mbn
+make[1]: Leaving directory '/android/msm8996/bootable/bootloader/lk'
+make: Leaving directory '/android/msm8996/bootable/bootloader/lk'
+[  0% 20/109670] /bin/bash -c "PWD=/proc/self/cwd vendor/qcom/proprietary/llvm-arm-toolchain-ship/4.0/bin/clang++ 	-I external/v8/src -I external/icu/icu4c/source/common -I external/icu/icu4c/source/i18n -I external/v8 -I out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates -I out/target/product/msm8996/gen/STATIC_LIBRARIES/libv8src_intermediates -I libnativehelper/include_deprecated \$(cat out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates/import_includes)  -I system/core/include -I system/media/audio/include -I hardware/libhardware/include -I hardware/libhardware_legacy/include -I hardware/ril/include -I libnativehelper/include -I frameworks/native/include -I frameworks/native/opengl/include -I frameworks/av/include -isystem out/target/product/msm8996/obj/include -isystem bionic/libc/arch-arm64/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/uapi/asm-arm64 -isystem bionic/libc/kernel/android/scsi -isystem bionic/libc/kernel/android/uapi -c  -fno-exceptions -Wno-multichar -fno-strict-aliasing -fstack-protector-strong -ffunction-sections -fdata-sections -funwind-tables -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -Werror=pointer-to-int-cast -Werror=int-to-pointer-cast -Werror=implicit-function-declaration -DNDEBUG -O2 -g -Wstrict-aliasing=2 -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -DNDEBUG -UDEBUG -fdebug-prefix-map=/proc/self/cwd= -D__compiler_offsetof=__builtin_offsetof -Werror=int-conversion -Wno-reserved-id-macro -Wno-format-pedantic -Wno-unused-command-line-argument -fcolor-diagnostics -Wno-expansion-to-defined -fdebug-prefix-map=\$PWD/= -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -nostdlibinc -mcpu=kryo -target aarch64-linux-android -Bprebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/aarch64-linux-android/bin  -Wsign-promo -Wno-inconsistent-missing-override -Wno-null-dereference -D_LIBCPP_ENABLE_THREAD_SAFETY_ANNOTATIONS -Wno-thread-safety-negative -fvisibility-inlines-hidden -std=gnu++14   -fno-rtti -Wno-endif-labels -Wno-import -Wno-format -Wno-unused-parameter -Wno-sign-compare -Wno-missing-field-initializers -Wno-ignored-qualifiers -Wno-undefined-var-template -fno-exceptions -fvisibility=hidden -DENABLE_DEBUGGER_SUPPORT -DENABLE_LOGGING_AND_PROFILING -DENABLE_VMSTATE_TRACKING -DV8_NATIVE_REGEXP -DV8_I18N_SUPPORT -std=gnu++0x -Os -fPIC -DV8_TARGET_ARCH_ARM64 -D_USING_LIBCXX   -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -Werror=address-of-temporary -Werror=return-type   -Wno-vectorizer-no-neon -Wno-vectorizer-no-neon -MD -MF out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates/src/parsing/preparser..d -o out/target/product/msm8996/obj/STATIC_LIBRARIES/libv8src_intermediates/src/parsing/preparser..o external/v8/src/parsing/preparser.cc"
+[  0% 21/109670] /bin/bash -c "PWD=/proc/self/cwd vendor/qcom/proprietary/llvm-arm-toolchain-ship/4.0/bin/clang++ 	-I bootable/recovery -I system/core/libsparse -I out/target/product/msm8996/obj/KERNEL_OBJ/usr/include -I device/qcom/common/recovery/oem-recovery -I out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates -I out/target/product/msm8996/gen/STATIC_LIBRARIES/librecovery_updater_msm_intermediates -I libnativehelper/include_deprecated \$(cat out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/import_includes)  -I system/core/include -I system/media/audio/include -I hardware/libhardware/include -I hardware/libhardware_legacy/include -I hardware/ril/include -I libnativehelper/include -I frameworks/native/include -I frameworks/native/opengl/include -I frameworks/av/include -isystem out/target/product/msm8996/obj/include -isystem bionic/libc/arch-arm64/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/uapi/asm-arm64 -isystem bionic/libc/kernel/android/scsi -isystem bionic/libc/kernel/android/uapi -c  -fno-exceptions -Wno-multichar -fno-strict-aliasing -fstack-protector-strong -ffunction-sections -fdata-sections -funwind-tables -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -Werror=pointer-to-int-cast -Werror=int-to-pointer-cast -Werror=implicit-function-declaration -DNDEBUG -O2 -g -Wstrict-aliasing=2 -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -DNDEBUG -UDEBUG -fdebug-prefix-map=/proc/self/cwd= -D__compiler_offsetof=__builtin_offsetof -Werror=int-conversion -Wno-reserved-id-macro -Wno-format-pedantic -Wno-unused-command-line-argument -fcolor-diagnostics -Wno-expansion-to-defined -fdebug-prefix-map=\$PWD/= -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -nostdlibinc -mcpu=kryo -target aarch64-linux-android -Bprebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/aarch64-linux-android/bin  -Wsign-promo -Wno-inconsistent-missing-override -Wno-null-dereference -D_LIBCPP_ENABLE_THREAD_SAFETY_ANNOTATIONS -Wno-thread-safety-negative -fvisibility-inlines-hidden -std=gnu++14   -fno-rtti -fPIC -D_USING_LIBCXX -DANDROID_STRICT   -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -Werror=address-of-temporary -Werror=return-type   -Wno-vectorizer-no-neon -Wno-vectorizer-no-neon -MD -MF out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/gpt-utils.d -o out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/gpt-utils.o device/qcom/common/recovery/oem-recovery/gpt-utils.cpp"
+device/qcom/common/recovery/oem-recovery/gpt-utils.cpp:155:64: warning: format specifies type 'long long' but the argument has type 'int64_t' (aka 'long') [-Wformat]
+        fprintf(stderr, "block dev lseek64 %lld failed: %s\n", offset,
+                                           ~~~~                ^~~~~~
+                                           %ld
+1 warning generated.
+[  0% 22/109670] /bin/bash -c "PWD=/proc/self/cwd vendor/qcom/proprietary/llvm-arm-toolchain-ship/4.0/bin/clang++ 	-I bootable/recovery -I system/core/libsparse -I out/target/product/msm8996/obj/KERNEL_OBJ/usr/include -I device/qcom/common/recovery/oem-recovery -I out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates -I out/target/product/msm8996/gen/STATIC_LIBRARIES/librecovery_updater_msm_intermediates -I libnativehelper/include_deprecated \$(cat out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/import_includes)  -I system/core/include -I system/media/audio/include -I hardware/libhardware/include -I hardware/libhardware_legacy/include -I hardware/ril/include -I libnativehelper/include -I frameworks/native/include -I frameworks/native/opengl/include -I frameworks/av/include -isystem out/target/product/msm8996/obj/include -isystem bionic/libc/arch-arm64/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/uapi/asm-arm64 -isystem bionic/libc/kernel/android/scsi -isystem bionic/libc/kernel/android/uapi -c  -fno-exceptions -Wno-multichar -fno-strict-aliasing -fstack-protector-strong -ffunction-sections -fdata-sections -funwind-tables -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -Werror=pointer-to-int-cast -Werror=int-to-pointer-cast -Werror=implicit-function-declaration -DNDEBUG -O2 -g -Wstrict-aliasing=2 -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -DNDEBUG -UDEBUG -fdebug-prefix-map=/proc/self/cwd= -D__compiler_offsetof=__builtin_offsetof -Werror=int-conversion -Wno-reserved-id-macro -Wno-format-pedantic -Wno-unused-command-line-argument -fcolor-diagnostics -Wno-expansion-to-defined -fdebug-prefix-map=\$PWD/= -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -nostdlibinc -mcpu=kryo -target aarch64-linux-android -Bprebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/aarch64-linux-android/bin  -Wsign-promo -Wno-inconsistent-missing-override -Wno-null-dereference -D_LIBCPP_ENABLE_THREAD_SAFETY_ANNOTATIONS -Wno-thread-safety-negative -fvisibility-inlines-hidden -std=gnu++14   -fno-rtti -fPIC -D_USING_LIBCXX -DANDROID_STRICT   -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -Werror=address-of-temporary -Werror=return-type   -Wno-vectorizer-no-neon -Wno-vectorizer-no-neon -MD -MF out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/dec.d -o out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/dec.o device/qcom/common/recovery/oem-recovery/dec.cpp"
+device/qcom/common/recovery/oem-recovery/dec.cpp:305:53: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+    fprintf(stdout, "%s written %d bytes\n", fname, len);
+                                ~~                  ^~~
+                                %zu
+1 warning generated.
+[  0% 23/109670] /bin/bash -c "PWD=/proc/self/cwd vendor/qcom/proprietary/llvm-arm-toolchain-ship/4.0/bin/clang++ 	-I bootable/recovery -I system/core/libsparse -I out/target/product/msm8996/obj/KERNEL_OBJ/usr/include -I device/qcom/common/recovery/oem-recovery -I out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates -I out/target/product/msm8996/gen/STATIC_LIBRARIES/librecovery_updater_msm_intermediates -I libnativehelper/include_deprecated \$(cat out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/import_includes)  -I system/core/include -I system/media/audio/include -I hardware/libhardware/include -I hardware/libhardware_legacy/include -I hardware/ril/include -I libnativehelper/include -I frameworks/native/include -I frameworks/native/opengl/include -I frameworks/av/include -isystem out/target/product/msm8996/obj/include -isystem bionic/libc/arch-arm64/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/uapi/asm-arm64 -isystem bionic/libc/kernel/android/scsi -isystem bionic/libc/kernel/android/uapi -c  -fno-exceptions -Wno-multichar -fno-strict-aliasing -fstack-protector-strong -ffunction-sections -fdata-sections -funwind-tables -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -Werror=pointer-to-int-cast -Werror=int-to-pointer-cast -Werror=implicit-function-declaration -DNDEBUG -O2 -g -Wstrict-aliasing=2 -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -DNDEBUG -UDEBUG -fdebug-prefix-map=/proc/self/cwd= -D__compiler_offsetof=__builtin_offsetof -Werror=int-conversion -Wno-reserved-id-macro -Wno-format-pedantic -Wno-unused-command-line-argument -fcolor-diagnostics -Wno-expansion-to-defined -fdebug-prefix-map=\$PWD/= -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -nostdlibinc -mcpu=kryo -target aarch64-linux-android -Bprebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/aarch64-linux-android/bin  -Wsign-promo -Wno-inconsistent-missing-override -Wno-null-dereference -D_LIBCPP_ENABLE_THREAD_SAFETY_ANNOTATIONS -Wno-thread-safety-negative -fvisibility-inlines-hidden -std=gnu++14   -fno-rtti -fPIC -D_USING_LIBCXX -DANDROID_STRICT   -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -Werror=address-of-temporary -Werror=return-type   -Wno-vectorizer-no-neon -Wno-vectorizer-no-neon -MD -MF out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/oem-updater.d -o out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/oem-updater.o device/qcom/common/recovery/oem-recovery/oem-updater.cpp"
+[  0% 24/109670] /bin/bash -c "(rm -f out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/librecovery_updater_msm.a out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/librecovery_updater_msm.a.tmp ) && (prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-ar crsPD  out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/librecovery_updater_msm.a.tmp out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/gpt-utils.o out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/dec.o out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/oem-updater.o ) && (mv -f out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/librecovery_updater_msm.a.tmp out/target/product/msm8996/obj/STATIC_LIBRARIES/librecovery_updater_msm_intermediates/librecovery_updater_msm.a )"
+[  0% 25/109670] /bin/bash -c "(rm -rf out/target/product/msm8996/signed ) && (SECIMAGE_LOCAL_DIR=vendor/qcom/proprietary/common/scripts/SecImage USES_SEC_POLICY_MULTIPLE_DEFAULT_SIGN=1 USES_SEC_POLICY_DEFAULT_SUBFOLDER_SIGN= USES_SEC_POLICY_INTEGRITY_CHECK=1 python vendor/qcom/proprietary/common/scripts/SecImage/sectools_builder.py -i out/target/product/msm8996/emmc_appsboot.mbn -t vendor/qcom/proprietary/common/scripts/SecImage/signed -g appsbl --config=vendor/qcom/proprietary/common/scripts/SecImage/config/integration/secimage.xml --install_base_dir=out/target/product/msm8996 > out/target/product/msm8996/secimage.log 2>&1 ) && (echo Completed secimage signed appsbl \\(logs in out/target/product/msm8996/secimage.log\\) )"
+Completed secimage signed appsbl (logs in out/target/product/msm8996/secimage.log)
+[  0% 26/109670] /bin/bash -c "(rm -rf out/target/product/msm8996/obj/kernel/msm-3.18/arch/arm64/boot/dts ) && (make -j2 -C kernel/msm-3.18 O=../../out/target/product/msm8996/obj/kernel/msm-3.18 ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- KCFLAGS=-mno-android ) && (make -j2 -C kernel/msm-3.18 O=../../out/target/product/msm8996/obj/kernel/msm-3.18 ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- KCFLAGS=-mno-android modules ) && (make -j2 -C kernel/msm-3.18 O=../../out/target/product/msm8996/obj/kernel/msm-3.18 INSTALL_MOD_PATH=../../../system INSTALL_MOD_STRIP=1 ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- modules_install ) && (mdpath=\`find out/target/product/msm8996/system/lib/modules -type f -name modules.dep\`; if [ \"\$mdpath\" != \"\" ];then mpath=\`dirname \$mdpath\`; ko=\`find \$mpath/kernel -type f -name *.ko\`; for i in \$ko; do mv \$i out/target/product/msm8996/system/lib/modules/; done; fi ) && (mdpath=\`find out/target/product/msm8996/system/lib/modules -type f -name modules.dep\`; if [ \"\$mdpath\" != \"\" ];then mpath=\`dirname \$mdpath\`; rm -rf \$mpath; fi )"
+make: Entering directory '/android/msm8996/kernel/msm-3.18'
+make[1]: Entering directory '/android/msm8996/out/target/product/msm8996/obj/kernel/msm-3.18'
+/android/msm8996/kernel/msm-3.18/arch/arm64/Makefile:130: warning: overriding recipe for target 'vdso_prepare'
+/android/msm8996/kernel/msm-3.18/arch/arm64/Makefile:120: warning: ignoring old recipe for target 'vdso_prepare'
+/android/msm8996/kernel/msm-3.18/arch/arm64/Makefile:130: warning: overriding recipe for target 'vdso_prepare'
+/android/msm8996/kernel/msm-3.18/arch/arm64/Makefile:120: warning: ignoring old recipe for target 'vdso_prepare'
+  GEN     ./Makefile
+scripts/kconfig/conf  --silentoldconfig Kconfig
+/android/msm8996/kernel/msm-3.18/arch/arm64/Makefile:130: warning: overriding recipe for target 'vdso_prepare'
+/android/msm8996/kernel/msm-3.18/arch/arm64/Makefile:120: warning: ignoring old recipe for target 'vdso_prepare'
+  CHK     include/config/kernel.release
+  GEN     ./Makefile
+  CHK     include/generated/uapi/linux/version.h
+  Using /android/msm8996/kernel/msm-3.18 as source for kernel
+  CHK     include/generated/utsrelease.h
+  CALL    /android/msm8996/kernel/msm-3.18/scripts/checksyscalls.sh
+make[2]: 'include/generated/vdso-offsets.h' is up to date.
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v2-pmi8994-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v2-pmi8994-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v2-pmi8994-pm8004-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v2-pmi8994-pm8004-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v2-fluid.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v2-liquid.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v2-dtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-auto-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-auto-adp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8994-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8994-mtp.dtb
+  Building modules, stage 2.
+  MODPOST 12 modules
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8994-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8994-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8994-pm8004-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8994-pm8004-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8994-pm8004-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8994-pm8004-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8996-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8996-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8996-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8996-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-fluid.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-liquid.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-dtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pm8004-mmxf-adp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pm8004-agave-adp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pm8004-agave-adp-lite.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-auto-adp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-auto-adp-lite.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-auto-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8994-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8994-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8994-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8994-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8994-pm8004-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8994-pm8004-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8994-pm8004-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8994-pm8004-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8996-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8996-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8996-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8996-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-auto-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8994-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8994-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8994-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8994-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8994-pm8004-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8994-pm8004-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8994-pm8004-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8994-pm8004-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8996-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8996-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8996-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8996-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-auto-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-auto-adp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-auto-adp-lite.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-liquid.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-auto-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8994-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8994-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8994-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8994-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8994-pm8004-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8994-pm8004-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8994-pm8004-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8994-pm8004-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8996-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8996-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8996-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8996-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-pmi8994-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-pmi8994-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-pmi8994-pm8004-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-pmi8994-pm8004-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-pmi8994-pm8004-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-pmi8994-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-pmi8996-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-pmi8996-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-fluid.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-liquid.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-dtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v2-pmi8994-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v2-liquid.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v2-dragonboard.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v2-auto-dragonboard.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-pm8004-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-pm8004-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8996-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8996-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-liquid.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-dragonboard.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-mediabox.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-sbc.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-auto-dragonboard.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-auto-adp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-auto-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-drone.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-pmi8994-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-pmi8994-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-pmi8994-pm8004-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-pmi8994-pm8004-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-pmi8994-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-pmi8996-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-pmi8996-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-liquid.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-dragonboard.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-mdm9x55-i2s-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-pm8004-mdm9x55-i2s-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-pm8004-pmk8001-mdm9x55-i2s-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-pmk8001-mdm9x55-i2s-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8996-mdm9x55-i2s-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-mdm9x55-i2s-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-mdm9x55-slimbus-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8996-mdm9x55-i2s-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8996-mdm9x55-slimbus-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8996-dragonboard.dtb
+  DTC     arch/arm64/boot/dts/qcom/msmcobalt-sim.dtb
+  DTC     arch/arm64/boot/dts/qcom/msmcobalt-rumi.dtb
+  DTC     arch/arm64/boot/dts/qcom/msmcobalt-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msmcobalt-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msmcobalt-v2-sim.dtb
+  DTC     arch/arm64/boot/dts/qcom/msmcobalt-v2-rumi.dtb
+  DTC     arch/arm64/boot/dts/qcom/msmcobalt-v2-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msmcobalt-v2-cdp.dtb
+/android/msm8996/kernel/msm-3.18/arch/arm64/boot/Makefile:46: warning: overriding recipe for target 'arch/arm64/boot/Image-dtb'
+/android/msm8996/kernel/msm-3.18/arch/arm64/boot/Makefile:33: warning: ignoring old recipe for target 'arch/arm64/boot/Image-dtb'
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8996-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v2-pmi8994-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-auto-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8994-pm8004-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-pm8004-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8996-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-pmi8994-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-auto-adp-lite.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8996-dragonboard.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8994-pm8004-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-auto-adp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-liquid.dtb
+  DTC     arch/arm64/boot/dts/qcom/msmcobalt-v2-rumi.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8994-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8994-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8996-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v2-pmi8994-pm8004-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8994-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8996-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8996-mdm9x55-i2s-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-liquid.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8994-pm8004-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8994-pm8004-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8994-pm8004-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8996-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-auto-adp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-pmi8994-pm8004-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8996-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8994-pm8004-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-dtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8994-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8994-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8996-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-dtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-pmi8994-pm8004-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v2-dtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8996-mdm9x55-i2s-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pm8004-mmxf-adp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v2-auto-dragonboard.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-auto-adp-lite.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v2-liquid.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8994-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msmcobalt-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8994-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-pmi8994-pm8004-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-sbc.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8996-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v2-pmi8994-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8994-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v2-liquid.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8996-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8994-pm8004-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-auto-dragonboard.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8994-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-pmi8996-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-pmi8994-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-pm8004-pmk8001-mdm9x55-i2s-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-fluid.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8996-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-liquid.dtb
+  DTC     arch/arm64/boot/dts/qcom/msmcobalt-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8994-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-mediabox.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8994-pm8004-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8994-pm8004-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-liquid.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-auto-adp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v2-pmi8994-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8994-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8994-pm8004-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8996-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v2-pmi8994-pm8004-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8994-pm8004-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-auto-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-pmi8996-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8994-pm8004-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-mdm9x55-slimbus-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msmcobalt-rumi.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8994-pm8004-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-pmi8994-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-auto-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-dragonboard.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-auto-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-pmi8994-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-pmi8994-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-v1.1-pmi8994-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-auto-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pm8004-agave-adp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-drone.dtb
+  DTC     arch/arm64/boot/dts/qcom/msmcobalt-v2-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8996-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-dragonboard.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pm8004-agave-adp-lite.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-mdm9x55-i2s-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8996-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-pmi8994-pm8004-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8994-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msmcobalt-v2-sim.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096pro-liquid.dtb
+  DTC     arch/arm64/boot/dts/qcom/msmcobalt-v2-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8996-mdm9x55-slimbus-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8994-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-pmi8994-pm8004-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msmcobalt-sim.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8996-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-fluid.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-pm8004-mdm9x55-i2s-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8994-pm8004-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8996-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8996-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-pmk8001-mdm9x55-i2s-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8994-pm8004-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-mdm9x55-i2s-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8996-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-pmi8994-pm8004-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8994-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-pmi8996-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-pmi8996-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3.0-pmi8994-pmk8001-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v2-dragonboard.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3-auto-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8096-v3.0-pmi8996-cdp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v2-fluid.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-auto-adp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996pro-v1.1-pmi8994-pm8004-pmk8001-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8996-v3-pmi8994-mtp.dtb
+  CAT     arch/arm64/boot/Image.gz-dtb
+make[1]: Leaving directory '/android/msm8996/out/target/product/msm8996/obj/kernel/msm-3.18'
+make: Leaving directory '/android/msm8996/kernel/msm-3.18'
+make: Entering directory '/android/msm8996/kernel/msm-3.18'
+make[1]: Entering directory '/android/msm8996/out/target/product/msm8996/obj/kernel/msm-3.18'
+/android/msm8996/kernel/msm-3.18/arch/arm64/Makefile:130: warning: overriding recipe for target 'vdso_prepare'
+/android/msm8996/kernel/msm-3.18/arch/arm64/Makefile:120: warning: ignoring old recipe for target 'vdso_prepare'
+  CHK     include/config/kernel.release
+  GEN     ./Makefile
+  CHK     include/generated/uapi/linux/version.h
+  Using /android/msm8996/kernel/msm-3.18 as source for kernel
+  CHK     include/generated/utsrelease.h
+  CALL    /android/msm8996/kernel/msm-3.18/scripts/checksyscalls.sh
+make[2]: 'include/generated/vdso-offsets.h' is up to date.
+  Building modules, stage 2.
+  MODPOST 12 modules
+make[1]: Leaving directory '/android/msm8996/out/target/product/msm8996/obj/kernel/msm-3.18'
+make: Leaving directory '/android/msm8996/kernel/msm-3.18'
+make: Entering directory '/android/msm8996/kernel/msm-3.18'
+make[1]: Entering directory '/android/msm8996/out/target/product/msm8996/obj/kernel/msm-3.18'
+/android/msm8996/kernel/msm-3.18/arch/arm64/Makefile:130: warning: overriding recipe for target 'vdso_prepare'
+/android/msm8996/kernel/msm-3.18/arch/arm64/Makefile:120: warning: ignoring old recipe for target 'vdso_prepare'
+  INSTALL crypto/ansi_cprng.ko
+  INSTALL block/test-iosched.ko
+  INSTALL drivers/char/rdbg.ko
+  INSTALL drivers/input/evbug.ko
+  INSTALL drivers/mmc/card/mmc_block_test.ko
+  INSTALL drivers/mmc/card/mmc_test.ko
+  INSTALL drivers/net/wireless/ath/wil6210/wil6210.ko
+  INSTALL drivers/scsi/ufs/ufs_test.ko
+  INSTALL drivers/video/backlight/backlight.ko
+  INSTALL drivers/video/backlight/generic_bl.ko
+  INSTALL drivers/video/backlight/lcd.ko
+  INSTALL net/bridge/br_netfilter.ko
+  DEPMOD  3.18.71-gccdf22601714-dirty
+make[1]: Leaving directory '/android/msm8996/out/target/product/msm8996/obj/kernel/msm-3.18'
+make: Leaving directory '/android/msm8996/kernel/msm-3.18'
+[  0% 27/109670] /bin/bash -c "(rm -f out/target/product/msm8996/kernel ) && (cp out/target/product/msm8996/obj/kernel/msm-3.18/arch/arm64/boot/Image.gz-dtb out/target/product/msm8996/kernel )"
+[  0% 28/109670] /bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/sdk_v14_intermediates/classes.jack.tmpjill.res ) && (unzip -qo prebuilts/sdk/14/android.jar -d out/target/common/obj/JAVA_LIBRARIES/sdk_v14_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/sdk_v14_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args    -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=14 --import prebuilts/sdk/14/android.jar --import-resource out/target/common/obj/JAVA_LIBRARIES/sdk_v14_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/sdk_v14_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/sdk_v14_intermediates/classes.jack.tmpjill.res )"
+FAILED: out/target/common/obj/JAVA_LIBRARIES/sdk_v14_intermediates/classes.jack 
+/bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/sdk_v14_intermediates/classes.jack.tmpjill.res ) && (unzip -qo prebuilts/sdk/14/android.jar -d out/target/common/obj/JAVA_LIBRARIES/sdk_v14_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/sdk_v14_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args    -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=14 --import prebuilts/sdk/14/android.jar --import-resource out/target/common/obj/JAVA_LIBRARIES/sdk_v14_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/sdk_v14_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/sdk_v14_intermediates/classes.jack.tmpjill.res )"
+Communication error with Jack server (52). Try 'jack-diagnose'
+[  0% 29/109670] /bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/sdk_v9_intermediates/classes.jack.tmpjill.res ) && (unzip -qo prebuilts/sdk/9/android.jar -d out/target/common/obj/JAVA_LIBRARIES/sdk_v9_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/sdk_v9_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args    -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=9 --import prebuilts/sdk/9/android.jar --import-resource out/target/common/obj/JAVA_LIBRARIES/sdk_v9_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/sdk_v9_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/sdk_v9_intermediates/classes.jack.tmpjill.res )"
+FAILED: out/target/common/obj/JAVA_LIBRARIES/sdk_v9_intermediates/classes.jack 
+/bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/sdk_v9_intermediates/classes.jack.tmpjill.res ) && (unzip -qo prebuilts/sdk/9/android.jar -d out/target/common/obj/JAVA_LIBRARIES/sdk_v9_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/sdk_v9_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args    -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=9 --import prebuilts/sdk/9/android.jar --import-resource out/target/common/obj/JAVA_LIBRARIES/sdk_v9_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/sdk_v9_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/sdk_v9_intermediates/classes.jack.tmpjill.res )"
+Connection to the Jack server timeout, retrying with debug
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8076 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /home/android/.jack-server/server.pem
+  CApath: /etc/ssl/certs
+} [5 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client hello (1):
+} [207 bytes data]
+* OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to localhost:8076 
+* stopped the pause stream!
+* Closing connection 0
+[  0% 30/109670] /bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/sdk_v21_intermediates/classes.jack.tmpjill.res ) && (unzip -qo prebuilts/sdk/21/android.jar -d out/target/common/obj/JAVA_LIBRARIES/sdk_v21_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/sdk_v21_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args    -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=21 --import prebuilts/sdk/21/android.jar --import-resource out/target/common/obj/JAVA_LIBRARIES/sdk_v21_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/sdk_v21_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/sdk_v21_intermediates/classes.jack.tmpjill.res )"
+FAILED: out/target/common/obj/JAVA_LIBRARIES/sdk_v21_intermediates/classes.jack 
+/bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/sdk_v21_intermediates/classes.jack.tmpjill.res ) && (unzip -qo prebuilts/sdk/21/android.jar -d out/target/common/obj/JAVA_LIBRARIES/sdk_v21_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/sdk_v21_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args    -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=21 --import prebuilts/sdk/21/android.jar --import-resource out/target/common/obj/JAVA_LIBRARIES/sdk_v21_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/sdk_v21_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/sdk_v21_intermediates/classes.jack.tmpjill.res )"
+Connection to the Jack server timeout, retrying with debug
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8076 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /home/android/.jack-server/server.pem
+  CApath: /etc/ssl/certs
+} [5 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client hello (1):
+} [207 bytes data]
+* OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to localhost:8076 
+* stopped the pause stream!
+* Closing connection 0
+[  0% 31/109670] /bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack.tmpjill.res ) && (unzip -qo vendor/qcom/proprietary/prebuilt_HY11/target/product/msm8996/../../.././target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack -d out/target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args    -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=1 --import vendor/qcom/proprietary/prebuilt_HY11/target/product/msm8996/../../.././target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack --import-resource out/target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack.tmpjill.res )"
+FAILED: out/target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack 
+/bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack.tmpjill.res ) && (unzip -qo vendor/qcom/proprietary/prebuilt_HY11/target/product/msm8996/../../.././target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack -d out/target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args    -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=1 --import vendor/qcom/proprietary/prebuilt_HY11/target/product/msm8996/../../.././target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack --import-resource out/target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/cneapiclient_intermediates/classes.jack.tmpjill.res )"
+Connection to the Jack server timeout, retrying with debug
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8076 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /home/android/.jack-server/server.pem
+  CApath: /etc/ssl/certs
+} [5 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client hello (1):
+} [207 bytes data]
+* OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to localhost:8076 
+* stopped the pause stream!
+* Closing connection 0
+[  0% 32/109670] /bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/jacoco-asm_intermediates/classes.jack.tmpjill.res ) && (unzip -qo external/jacoco/asm-debug-all-5.0.1.jar -d out/target/common/obj/JAVA_LIBRARIES/jacoco-asm_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/jacoco-asm_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args -D jack.import.jar.debug-info=false   -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=1 --import external/jacoco/asm-debug-all-5.0.1.jar --import-resource out/target/common/obj/JAVA_LIBRARIES/jacoco-asm_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/jacoco-asm_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/jacoco-asm_intermediates/classes.jack.tmpjill.res )"
+FAILED: out/target/common/obj/JAVA_LIBRARIES/jacoco-asm_intermediates/classes.jack 
+/bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/jacoco-asm_intermediates/classes.jack.tmpjill.res ) && (unzip -qo external/jacoco/asm-debug-all-5.0.1.jar -d out/target/common/obj/JAVA_LIBRARIES/jacoco-asm_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/jacoco-asm_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args -D jack.import.jar.debug-info=false   -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=1 --import external/jacoco/asm-debug-all-5.0.1.jar --import-resource out/target/common/obj/JAVA_LIBRARIES/jacoco-asm_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/jacoco-asm_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/jacoco-asm_intermediates/classes.jack.tmpjill.res )"
+Communication error with Jack server (52). Try 'jack-diagnose'
+[  0% 33/109670] /bin/bash out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/with-local/classes.dex.rsp
+FAILED: out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/with-local/classes.dex 
+/bin/bash out/target/common/obj/JAVA_LIBRARIES/core-all_intermediates/with-local/classes.dex.rsp
+Connection to the Jack server timeout, retrying with debug
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8076 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /home/android/.jack-server/server.pem
+  CApath: /etc/ssl/certs
+} [5 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client hello (1):
+} [207 bytes data]
+* OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to localhost:8076 
+* stopped the pause stream!
+* Closing connection 0
+[  0% 34/109670] /bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/sdk_v25_intermediates/classes.jack.tmpjill.res ) && (unzip -qo prebuilts/sdk/25/android.jar -d out/target/common/obj/JAVA_LIBRARIES/sdk_v25_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/sdk_v25_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args    -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=25 --import prebuilts/sdk/25/android.jar --import-resource out/target/common/obj/JAVA_LIBRARIES/sdk_v25_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/sdk_v25_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/sdk_v25_intermediates/classes.jack.tmpjill.res )"
+FAILED: out/target/common/obj/JAVA_LIBRARIES/sdk_v25_intermediates/classes.jack 
+/bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/sdk_v25_intermediates/classes.jack.tmpjill.res ) && (unzip -qo prebuilts/sdk/25/android.jar -d out/target/common/obj/JAVA_LIBRARIES/sdk_v25_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/sdk_v25_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args    -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=25 --import prebuilts/sdk/25/android.jar --import-resource out/target/common/obj/JAVA_LIBRARIES/sdk_v25_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/sdk_v25_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/sdk_v25_intermediates/classes.jack.tmpjill.res )"
+Connection to the Jack server timeout, retrying with debug
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8076 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /home/android/.jack-server/server.pem
+  CApath: /etc/ssl/certs
+} [5 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client hello (1):
+} [207 bytes data]
+* OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to localhost:8076 
+* stopped the pause stream!
+* Closing connection 0
+[  0% 35/109670] /bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/juniversalchardet_intermediates/classes.jack.tmpjill.res ) && (unzip -qo packages/apps/CMFileManager/libs/juniversalchardet/juniversalchardet-1.0.3.jar -d out/target/common/obj/JAVA_LIBRARIES/juniversalchardet_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/juniversalchardet_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args    -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=1 --import packages/apps/CMFileManager/libs/juniversalchardet/juniversalchardet-1.0.3.jar --import-resource out/target/common/obj/JAVA_LIBRARIES/juniversalchardet_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/juniversalchardet_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/juniversalchardet_intermediates/classes.jack.tmpjill.res )"
+FAILED: out/target/common/obj/JAVA_LIBRARIES/juniversalchardet_intermediates/classes.jack 
+/bin/bash -c "(mkdir -p out/target/common/obj/JAVA_LIBRARIES/juniversalchardet_intermediates/classes.jack.tmpjill.res ) && (unzip -qo packages/apps/CMFileManager/libs/juniversalchardet/juniversalchardet-1.0.3.jar -d out/target/common/obj/JAVA_LIBRARIES/juniversalchardet_intermediates/classes.jack.tmpjill.res ) && (find out/target/common/obj/JAVA_LIBRARIES/juniversalchardet_intermediates/classes.jack.tmpjill.res -iname \"*.class\" -delete ) && (JACK_VERSION=4.32.CANDIDATE out/host/linux-x86/bin/jack @build/core/jack-default.args    -D jack.import.resource.policy=keep-first -D jack.import.type.policy=keep-first -D jack.android.min-api-level=1 --import packages/apps/CMFileManager/libs/juniversalchardet/juniversalchardet-1.0.3.jar --import-resource out/target/common/obj/JAVA_LIBRARIES/juniversalchardet_intermediates/classes.jack.tmpjill.res --output-jack out/target/common/obj/JAVA_LIBRARIES/juniversalchardet_intermediates/classes.jack ) && (rm -rf out/target/common/obj/JAVA_LIBRARIES/juniversalchardet_intermediates/classes.jack.tmpjill.res )"
+SSL error when connecting to the Jack server, retrying with debug
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* connect to 127.0.0.1 port 8076 failed: Connection refused
+* Failed to connect to localhost port 8076: Connection refused
+* Closing connection 0
+ninja: build stopped: subcommand failed.
