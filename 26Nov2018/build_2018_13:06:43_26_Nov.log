@@ -1,0 +1,120 @@
+including device/generic/car/vendorsetup.sh
+including device/generic/mini-emulator-arm64/vendorsetup.sh
+including device/generic/mini-emulator-armv7-a-neon/vendorsetup.sh
+including device/generic/mini-emulator-x86_64/vendorsetup.sh
+including device/generic/mini-emulator-x86/vendorsetup.sh
+including device/generic/uml/vendorsetup.sh
+including device/qcom/common/vendorsetup.sh
+including vendor/qcom/proprietary/common/vendorsetup.sh
+including sdk/bash_completion/adb.bash
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.1.0
+TARGET_PRODUCT=msm8996
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_PLATFORM_VERSION=OPM1
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=kryo
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.15.0-20-generic-x86_64-with-Ubuntu-18.04-bionic
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=OPM1.171019.026
+OUT_DIR=out
+AUX_OS_VARIANT_LIST=
+============================================
+
+INFO: Build Android tree for msm8996
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.1.0
+TARGET_PRODUCT=msm8996
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=kryo
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.15.0-20-generic-x86_64-with-Ubuntu-18.04-bionic
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=OPM1.171019.026
+OUT_DIR=out
+============================================
+[1/2] out/soong/.bootstrap/bin/minibp out/soong/.minibootstrap/build.ninja.in
+[2/2] bootstrap out/soong/.minibootstrap/build.ninja.in
+[1/1] out/soong/.bootstrap/bin/minibp out/soong/.bootstrap/build.ninja
+[1/1] out/soong/.bootstrap/bin/soong_build out/soong/build.ninja
+[ 50% 1/2] out/soong/.bootstrap/bin/bpglob -o out/soong/.glob/art.glob  "art"
+[100% 2/2] out/soong/.bootstrap/bin/soong_build  -t -b out/soong -d out/soong/build.ninja.d -o out/soong/build.ninja Android.bp
+FAILED: out/soong/build.ninja 
+out/soong/.bootstrap/bin/soong_build  -t -b out/soong -d out/soong/build.ninja.d -o out/soong/build.ninja Android.bp
+fatal error: unexpected signal during runtime execution
+[signal SIGSEGV: segmentation violation code=0x80 addr=0x0 pc=0x41ce8e]
+
+runtime stack:
+runtime.throw(0x819a79, 0x2a)
+	prebuilts/go/linux-x86/src/runtime/panic.go:596 +0x95
+runtime.sigpanic()
+	prebuilts/go/linux-x86/src/runtime/signal_unix.go:274 +0x2db
+runtime.greyobject(0xc027346880, 0xc4442be8d0, 0x0, 0xf80000c43fc65cbb, 0xf80000c400000000, 0x7f1cd033a140, 0xc42002ab28, 0x44)
+	prebuilts/go/linux-x86/src/runtime/mgcmark.go:1399 +0x34e
+runtime.scanobject(0xc4442be8d0, 0xc42002ab28)
+	prebuilts/go/linux-x86/src/runtime/mgcmark.go:1327 +0x313
+runtime.gcDrain(0xc42002ab28, 0x6)
+	prebuilts/go/linux-x86/src/runtime/mgcmark.go:1082 +0x17f
+runtime.gcBgMarkWorker.func2()
+	prebuilts/go/linux-x86/src/runtime/mgc.go:1530 +0xfa
+runtime.systemstack(0xa0ed00)
+	prebuilts/go/linux-x86/src/runtime/asm_amd64.s:327 +0x79
+runtime.mstart()
+	prebuilts/go/linux-x86/src/runtime/proc.go:1132
+
+goroutine 10 [GC worker (idle)]:
+runtime.systemstack_switch()
+	prebuilts/go/linux-x86/src/runtime/asm_amd64.s:281 fp=0xc420033750 sp=0xc420033748
+runtime.gcBgMarkWorker(0xc420029900)
+	prebuilts/go/linux-x86/src/runtime/mgc.go:1537 +0x1fc fp=0xc4200337d8 sp=0xc420033750
+runtime.goexit()
+	prebuilts/go/linux-x86/src/runtime/asm_amd64.s:2197 +0x1 fp=0xc4200337e0 sp=0xc4200337d8
+created by runtime.gcBgMarkStartWorkers
+	prebuilts/go/linux-x86/src/runtime/mgc.go:1412 +0x98
+
+goroutine 1 [runnable]:
+github.com/google/blueprint.(*ninjaString).ValueWithEscaper(0xc44791b590, 0xc48b81f6b0, 0xc420012390, 0x1, 0xc4479191e0)
+	/android/msm8996/build/blueprint/ninja_strings.go:282 +0x128
+github.com/google/blueprint.(*ninjaString).Value(0xc44791b590, 0xc48b81f6b0, 0x8089de, 0xb)
+	/android/msm8996/build/blueprint/ninja_strings.go:274 +0x41
+github.com/google/blueprint.writeVariables(0xc428215fe0, 0xc44791b5c0, 0xc48b81f6b0, 0xc444c5ba40, 0xc444c5b8b8)
+	/android/msm8996/build/blueprint/ninja_defs.go:430 +0x204
+github.com/google/blueprint.(*buildDef).WriteTo(0xc4305dfe00, 0xc428215fe0, 0xc48b81f6b0, 0x0, 0x0)
+	/android/msm8996/build/blueprint/ninja_defs.go:386 +0x5d3
+github.com/google/blueprint.(*Context).writeLocalBuildActions(0xc42012a280, 0xc428215fe0, 0xc434e7fda0, 0x0, 0x0)
+	/android/msm8996/build/blueprint/context.go:3152 +0x2bc
+github.com/google/blueprint.(*Context).writeAllModuleActions(0xc42012a280, 0xc428215fe0, 0x0, 0x0)
+	/android/msm8996/build/blueprint/context.go:3036 +0x923
+github.com/google/blueprint.(*Context).WriteBuildFile(0xc42012a280, 0x9ed7a0, 0xc429c209a0, 0xbad, 0xc48b824000)
+	/android/msm8996/build/blueprint/context.go:2712 +0x19a
+github.com/google/blueprint/bootstrap.Main(0xc42012a280, 0x7fafc0, 0xc42008e840, 0xc420069f58, 0x2, 0x2)
+	/android/msm8996/build/blueprint/bootstrap/command.go:150 +0x73e
+main.main()
+	/android/msm8996/build/soong/cmd/soong_build/main.go:48 +0x235
