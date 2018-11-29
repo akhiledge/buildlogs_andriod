@@ -1,0 +1,401 @@
+including device/asus/fugu/vendorsetup.sh
+including device/fsl/imx6/vendorsetup.sh
+including device/fsl/imx7/vendorsetup.sh
+including device/fsl/imx8/vendorsetup.sh
+including device/generic/car/car-arm64/vendorsetup.sh
+including device/generic/car/car-armv7-a-neon/vendorsetup.sh
+including device/generic/car/car-x86_64/vendorsetup.sh
+including device/generic/car/car-x86/vendorsetup.sh
+including device/generic/mini-emulator-arm64/vendorsetup.sh
+including device/generic/mini-emulator-armv7-a-neon/vendorsetup.sh
+including device/generic/mini-emulator-mips64/vendorsetup.sh
+including device/generic/mini-emulator-mips/vendorsetup.sh
+including device/generic/mini-emulator-x86_64/vendorsetup.sh
+including device/generic/mini-emulator-x86/vendorsetup.sh
+including device/google/dragon/vendorsetup.sh
+including device/google/marlin/vendorsetup.sh
+including device/google/muskie/vendorsetup.sh
+including device/google/taimen/vendorsetup.sh
+including device/huawei/angler/vendorsetup.sh
+including device/lge/bullhead/vendorsetup.sh
+including device/linaro/hikey/vendorsetup.sh
+including sdk/bash_completion/adb.bash
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.0.0
+TARGET_PRODUCT=sabresd_7d
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_PLATFORM_VERSION=OPD1
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.4.0-31-generic-x86_64-with-Ubuntu-16.04-xenial
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=1.0.0-rfp-rc4
+OUT_DIR=out
+AUX_OS_VARIANT_LIST=
+============================================
+
+INFO: Build Android tree for sabresd_7d
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.0.0
+TARGET_PRODUCT=sabresd_7d
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.4.0-31-generic-x86_64-with-Ubuntu-16.04-xenial
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=1.0.0-rfp-rc4
+OUT_DIR=out
+============================================
+[1/2] out/soong/.bootstrap/bin/minibp out/soong/.minibootstrap/build.ninja.in
+[2/2] bootstrap out/soong/.minibootstrap/build.ninja.in
+[1/2] out/soong/.bootstrap/bin/minibp out/soong/.minibootstrap/build.ninja.in
+ninja: no work to do.
+[1/2] glob vendor/*/*/Android.bp
+ninja: no work to do.
+[ 50% 1/2] out/soong/.bootstrap/bin/bpglob -o out/soong/.glob/vendor/_/_/Android_bp.glob  "vendor/*/*/Android.bp"
+[  6% 1/16] /bin/bash -c "(rm -f out/target/product/sabresd_7d/root/fstab.freescale ) && (cp device/fsl/sabresd_7d/fstab.freescale out/target/product/sabresd_7d/root/fstab.freescale )"
+[ 12% 2/16] /bin/bash -c "out/host/linux-x86/bin/mkbootfs -d out/target/product/sabresd_7d/system out/target/product/sabresd_7d/root | out/host/linux-x86/bin/minigzip > out/target/product/sabresd_7d/ramdisk.img"
+[ 18% 3/16] /bin/bash -c "(prebuilts/sdk/tools/jack-admin install-server prebuilts/sdk/tools/jack-launcher.jar prebuilts/sdk/tools/jack-server-4.11.ALPHA.jar  2>&1 || (exit 0) ) && (JACK_SERVER_VM_ARGUMENTS=\"-Dfile.encoding=UTF-8 -XX:+TieredCompilation\" prebuilts/sdk/tools/jack-admin start-server 2>&1 || exit 0 ) && (prebuilts/sdk/tools/jack-admin update server prebuilts/sdk/tools/jack-server-4.11.ALPHA.jar 4.11.ALPHA 2>&1 || exit 0 ) && (prebuilts/sdk/tools/jack-admin update jack prebuilts/sdk/tools/jacks/jack-4.32.CANDIDATE.jar 4.32.CANDIDATE || exit 47 )"
+Jack server already installed in "/home/vepuri/.jack-server"
+Launching Jack server java -XX:MaxJavaStackTraceDepth=-1 -Djava.io.tmpdir=/tmp -Dfile.encoding=UTF-8 -XX:+TieredCompilation -cp /home/vepuri/.jack-server/launcher.jar com.android.jack.launcher.ServerLauncher
+[ 25% 4/16] /bin/bash -c "for ubootplat in imx7d:mx7dsabresdandroid_config imx7d-epdc:mx7dsabresdandroid_config; do 		UBOOT_PLATFORM=\`echo \$ubootplat | cut -d':' -f1\`; 		UBOOT_CONFIG=\`echo \$ubootplat | cut -d':' -f2\`; 		make -j2 -C vendor/nxp-opensource/uboot-imx/ distclean CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-; 		make -j2 -C vendor/nxp-opensource/uboot-imx/ O=\$(/home/vepuri/android/prebuilts/build-tools/linux-x86/bin/ckati --realpath out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ 2> /dev/null) \$UBOOT_CONFIG CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-; 		make -j2 -C vendor/nxp-opensource/uboot-imx/ mrproper CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-; 		make -j2 -C vendor/nxp-opensource/uboot-imx/ O=\$(/home/vepuri/android/prebuilts/build-tools/linux-x86/bin/ckati --realpath out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ 2> /dev/null) CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- || exit 1; 		install -D out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ/u-boot-dtb.imx out/target/product/sabresd_7d/u-boot-\$UBOOT_PLATFORM.imx; 		if [  = true ]; then 		echo \"build post process\" ; 		 		fi 	done"
+make: Entering directory `/home/vepuri/android/vendor/nxp-opensource/uboot-imx'
+make: Leaving directory `/home/vepuri/android/vendor/nxp-opensource/uboot-imx'
+make: Entering directory `/home/vepuri/android/vendor/nxp-opensource/uboot-imx'
+make[1]: Entering directory `/home/vepuri/android/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+  GEN     ./Makefile
+#
+# configuration written to .config
+#
+make[1]: Leaving directory `/home/vepuri/android/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+make: Leaving directory `/home/vepuri/android/vendor/nxp-opensource/uboot-imx'
+make: Entering directory `/home/vepuri/android/vendor/nxp-opensource/uboot-imx'
+make: Leaving directory `/home/vepuri/android/vendor/nxp-opensource/uboot-imx'
+make: Entering directory `/home/vepuri/android/vendor/nxp-opensource/uboot-imx'
+make[1]: Entering directory `/home/vepuri/android/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+  GEN     ./Makefile
+scripts/kconfig/conf  --silentoldconfig Kconfig
+  CHK     include/config.h
+  CFG     u-boot.cfg
+  GEN     include/autoconf.mk.dep
+  GEN     include/autoconf.mk
+make[1]: Leaving directory `/home/vepuri/android/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+make[1]: Entering directory `/home/vepuri/android/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+  CHK     include/config/uboot.release
+  GEN     ./Makefile
+  CHK     include/generated/timestamp_autogenerated.h
+  UPD     include/generated/timestamp_autogenerated.h
+  CHK     include/generated/version_autogenerated.h
+  Using /home/vepuri/android/vendor/nxp-opensource/uboot-imx as source for U-Boot
+  CHK     include/generated/generic-asm-offsets.h
+  CHK     include/generated/asm-offsets.h
+  HOSTCC  tools/mkenvimage.o
+  HOSTCC  tools/fit_image.o
+  HOSTCC  tools/image-host.o
+  HOSTCC  tools/dumpimage.o
+  HOSTCC  tools/mkimage.o
+  HOSTLD  tools/mkenvimage
+  HOSTLD  tools/dumpimage
+  HOSTLD  tools/mkimage
+  CC      cmd/version.o
+  LD      cmd/built-in.o
+  CC      common/main.o
+  CC      common/board_f.o
+  LD      common/built-in.o
+  CC      drivers/video/cfb_console.o
+  LD      drivers/video/built-in.o
+  LD      drivers/built-in.o
+  CC      drivers/usb/gadget/f_fastboot.o
+/home/vepuri/android/vendor/nxp-opensource/uboot-imx/drivers/usb/gadget/f_fastboot.c: In function 'write_backup_gpt':
+/home/vepuri/android/vendor/nxp-opensource/uboot-imx/drivers/usb/gadget/f_fastboot.c:979:2: warning: implicit declaration of function 'write_backup_gpt_partitions' [-Wimplicit-function-declaration]
+  if (write_backup_gpt_partitions(dev_desc, interface.transfer_buffer)) {
+  ^
+  LD      drivers/usb/gadget/built-in.o
+  CC      lib/efi_loader/helloworld.o
+  LD      lib/efi_loader/helloworld.so
+  OBJCOPY lib/efi_loader/helloworld.efi
+  CC      lib/smbios.o
+  CC      lib/display_options.o
+  LD      lib/built-in.o
+  LD      u-boot
+  OBJCOPY u-boot-nodtb.bin
+  OBJCOPY u-boot.srec
+  SYM     u-boot.sym
+  CAT     u-boot-dtb.bin
+  COPY    u-boot.bin
+  MKIMAGE u-boot-dtb.imx
+  CFGCHK  u-boot.cfg
+make[1]: Leaving directory `/home/vepuri/android/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+make: Leaving directory `/home/vepuri/android/vendor/nxp-opensource/uboot-imx'
+/bin/bash: line 0: [: =: unary operator expected
+make: Entering directory `/home/vepuri/android/vendor/nxp-opensource/uboot-imx'
+make: Leaving directory `/home/vepuri/android/vendor/nxp-opensource/uboot-imx'
+make: Entering directory `/home/vepuri/android/vendor/nxp-opensource/uboot-imx'
+make[1]: Entering directory `/home/vepuri/android/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+  GEN     ./Makefile
+#
+# configuration written to .config
+#
+make[1]: Leaving directory `/home/vepuri/android/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+make: Leaving directory `/home/vepuri/android/vendor/nxp-opensource/uboot-imx'
+make: Entering directory `/home/vepuri/android/vendor/nxp-opensource/uboot-imx'
+make: Leaving directory `/home/vepuri/android/vendor/nxp-opensource/uboot-imx'
+make: Entering directory `/home/vepuri/android/vendor/nxp-opensource/uboot-imx'
+make[1]: Entering directory `/home/vepuri/android/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+  GEN     ./Makefile
+scripts/kconfig/conf  --silentoldconfig Kconfig
+  CHK     include/config.h
+  CFG     u-boot.cfg
+  GEN     include/autoconf.mk.dep
+  GEN     include/autoconf.mk
+make[1]: Leaving directory `/home/vepuri/android/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+make[1]: Entering directory `/home/vepuri/android/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+  CHK     include/config/uboot.release
+  GEN     ./Makefile
+  CHK     include/generated/timestamp_autogenerated.h
+  UPD     include/generated/timestamp_autogenerated.h
+  Using /home/vepuri/android/vendor/nxp-opensource/uboot-imx as source for U-Boot
+  CHK     include/generated/version_autogenerated.h
+  CHK     include/generated/generic-asm-offsets.h
+  CHK     include/generated/asm-offsets.h
+  HOSTCC  tools/mkenvimage.o
+  HOSTCC  tools/fit_image.o
+  HOSTCC  tools/image-host.o
+  HOSTCC  tools/dumpimage.o
+  HOSTCC  tools/mkimage.o
+  HOSTLD  tools/mkenvimage
+  HOSTLD  tools/dumpimage
+  HOSTLD  tools/mkimage
+  CC      cmd/version.o
+  CC      common/main.o
+  CC      common/board_f.o
+  LD      cmd/built-in.o
+  LD      common/built-in.o
+  CC      drivers/video/cfb_console.o
+  CC      drivers/usb/gadget/f_fastboot.o
+/home/vepuri/android/vendor/nxp-opensource/uboot-imx/drivers/usb/gadget/f_fastboot.c: In function 'write_backup_gpt':
+/home/vepuri/android/vendor/nxp-opensource/uboot-imx/drivers/usb/gadget/f_fastboot.c:979:2: warning: implicit declaration of function 'write_backup_gpt_partitions' [-Wimplicit-function-declaration]
+  if (write_backup_gpt_partitions(dev_desc, interface.transfer_buffer)) {
+  ^
+  LD      drivers/video/built-in.o
+  LD      drivers/built-in.o
+  CC      lib/efi_loader/helloworld.o
+  LD      drivers/usb/gadget/built-in.o
+  LD      lib/efi_loader/helloworld.so
+  OBJCOPY lib/efi_loader/helloworld.efi
+  CC      lib/smbios.o
+  CC      lib/display_options.o
+  LD      lib/built-in.o
+  LD      u-boot
+  OBJCOPY u-boot-nodtb.bin
+  OBJCOPY u-boot.srec
+  SYM     u-boot.sym
+  CAT     u-boot-dtb.bin
+  COPY    u-boot.bin
+  MKIMAGE u-boot-dtb.imx
+  CFGCHK  u-boot.cfg
+make[1]: Leaving directory `/home/vepuri/android/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+make: Leaving directory `/home/vepuri/android/vendor/nxp-opensource/uboot-imx'
+/bin/bash: line 0: [: =: unary operator expected
+[ 31% 5/16] /bin/bash -c "(make -j2 -C vendor/nxp-opensource/kernel_imx mrproper ) && (make -j2 -C vendor/nxp-opensource/kernel_imx O=\$(/home/vepuri/android/prebuilts/build-tools/linux-x86/bin/ckati --realpath out/target/product/sabresd_7d/obj/KERNEL_OBJ 2> /dev/null) -j4 ARCH=arm CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- LOADADDR=0x80008000 KCFLAGS=-mno-android ) && (make -j2 -C vendor/nxp-opensource/kernel_imx O=\$(/home/vepuri/android/prebuilts/build-tools/linux-x86/bin/ckati --realpath out/target/product/sabresd_7d/obj/KERNEL_OBJ 2> /dev/null) dtbs ARCH=arm CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- LOADADDR=0x80008000 KCFLAGS=-mno-android ) && (install -D out/target/product/sabresd_7d/obj/KERNEL_OBJ/arch/arm/boot/zImage  out/target/product/sabresd_7d/obj/KERNEL_OBJ/kernel_img ) && (for dtsplat in imx7d:imx7d-sdb.dtb imx7d-epdc:imx7d-sdb-epdc.dtb; do 		DTS_PLATFORM=\`echo \$dtsplat | cut -d':' -f1\`; 		DTS_BOARD=\`echo \$dtsplat | cut -d':' -f2\`; 		install -D out/target/product/sabresd_7d/obj/KERNEL_OBJ/arch/arm/boot/dts//\$DTS_BOARD out/target/product/sabresd_7d/obj/KERNEL_OBJ/\$DTS_BOARD; 	done )"
+make: Entering directory `/home/vepuri/android/vendor/nxp-opensource/kernel_imx'
+make: Leaving directory `/home/vepuri/android/vendor/nxp-opensource/kernel_imx'
+make: Entering directory `/home/vepuri/android/vendor/nxp-opensource/kernel_imx'
+make[1]: Entering directory `/home/vepuri/android/out/target/product/sabresd_7d/obj/KERNEL_OBJ'
+  CHK     include/config/kernel.release
+  GEN     ./Makefile
+  CHK     include/generated/uapi/linux/version.h
+  Using /home/vepuri/android/vendor/nxp-opensource/kernel_imx as source for kernel
+  CHK     include/generated/utsrelease.h
+  CHK     include/generated/timeconst.h
+  CHK     include/generated/bounds.h
+  CHK     include/generated/asm-offsets.h
+  CALL    /home/vepuri/android/vendor/nxp-opensource/kernel_imx/scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CHK     kernel/config_data.h
+  Building modules, stage 2.
+  Kernel: arch/arm/boot/Image is ready
+  MODPOST 8 modules
+  Kernel: arch/arm/boot/zImage is ready
+make[1]: Leaving directory `/home/vepuri/android/out/target/product/sabresd_7d/obj/KERNEL_OBJ'
+make: Leaving directory `/home/vepuri/android/vendor/nxp-opensource/kernel_imx'
+make: Entering directory `/home/vepuri/android/vendor/nxp-opensource/kernel_imx'
+make[1]: Entering directory `/home/vepuri/android/out/target/product/sabresd_7d/obj/KERNEL_OBJ'
+  CHK     include/config/kernel.release
+  GEN     ./Makefile
+  CHK     include/generated/uapi/linux/version.h
+  Using /home/vepuri/android/vendor/nxp-opensource/kernel_imx as source for kernel
+  CHK     include/generated/utsrelease.h
+  CHK     include/generated/timeconst.h
+  CHK     include/generated/bounds.h
+  CHK     include/generated/asm-offsets.h
+  CALL    /home/vepuri/android/vendor/nxp-opensource/kernel_imx/scripts/checksyscalls.sh
+make[1]: Leaving directory `/home/vepuri/android/out/target/product/sabresd_7d/obj/KERNEL_OBJ'
+make: Leaving directory `/home/vepuri/android/vendor/nxp-opensource/kernel_imx'
+[ 37% 6/16] /bin/bash -c "for dtsplat in imx7d:imx7d-sdb.dtb imx7d-epdc:imx7d-sdb-epdc.dtb; do 		DTS_PLATFORM=\`echo \$dtsplat | cut -d':' -f1\`; 		DTS_BOARD=\`echo \$dtsplat | cut -d':' -f2\`; 		BOOT_IMAGE_BOARD=out/target/product/sabresd_7d/boot-\$DTS_PLATFORM.img; 		out/host/linux-x86/bin/mkbootimg  --kernel out/target/product/sabresd_7d/obj/KERNEL_OBJ/kernel_img --ramdisk out/target/product/sabresd_7d/ramdisk.img --base 0x82800000 --cmdline \"console=ttymxc0,115200 init=/init androidboot.console=ttymxc0 consoleblank=0 androidboot.hardware=freescale buildvariant=userdebug\" --second out/target/product/sabresd_7d/obj/KERNEL_OBJ/\$DTS_BOARD  --output out/target/product/sabresd_7d/boot.img; 		out/host/linux-x86/bin/boot_signer /boot out/target/product/sabresd_7d/boot.img build/target/product/security/verity.pk8 build/target/product/security/verity.x509.pem out/target/product/sabresd_7d/boot.img; 		  size=\$(for i in out/target/product/sabresd_7d/boot.img; do stat --format \"%s\" \"\$i\" | tr -d '\\n'; echo +; done; echo 0); total=\$(( \$( echo \"\$size\" ) )); printname=\$(echo -n \"out/target/product/sabresd_7d/boot.img\" | tr \" \" +); img_blocksize=4224; twoblocks=\$((img_blocksize * 2)); onepct=\$(((((34603008 / 100) - 1) / img_blocksize + 1) * img_blocksize)); reserve=\$((twoblocks > onepct ? twoblocks : onepct)); maxsize=\$((34603008 - reserve)); echo \"\$printname maxsize=\$maxsize blocksize=\$img_blocksize total=\$total reserve=\$reserve\"; if [ \"\$total\" -gt \"\$maxsize\" ]; then echo \"error: \$printname too large (\$total > [34603008 - \$reserve])\"; false; elif [ \"\$total\" -gt \$((maxsize - 32768)) ]; then echo \"WARNING: \$printname approaching size limit (\$total now; limit \$maxsize)\"; fi ; 		cp -f out/target/product/sabresd_7d/boot.img \$BOOT_IMAGE_BOARD; 	done"
+out/target/product/sabresd_7d/boot.img maxsize=34256640 blocksize=4224 total=12092712 reserve=346368
+out/target/product/sabresd_7d/boot.img maxsize=34256640 blocksize=4224 total=12092712 reserve=346368
+[ 43% 7/16] /bin/bash -c "(mkdir -p out/target/product/sabresd_7d/recovery ) && (mkdir -p out/target/product/sabresd_7d/recovery/root/etc out/target/product/sabresd_7d/recovery/root/sdcard out/target/product/sabresd_7d/recovery/root/tmp ) && (echo Copying baseline ramdisk... ) && (rsync -a --exclude=etc --exclude=sdcard --exclude=/root/sepolicy --exclude=/root/plat_file_contexts --exclude=/root/nonplat_file_contexts --exclude=/root/plat_property_contexts --exclude=/root/nonplat_property_contexts --exclude=cache out/target/product/sabresd_7d/root out/target/product/sabresd_7d/recovery ) && (echo Modifying ramdisk contents... ) && (rm -f out/target/product/sabresd_7d/recovery/root/init*.rc ) && (cp -f bootable/recovery/etc/init.rc out/target/product/sabresd_7d/recovery/root/ ) && (cp out/target/product/sabresd_7d/root/init.recovery.*.rc out/target/product/sabresd_7d/recovery/root/ || true ) && (cp out/target/product/sabresd_7d/root/init.freescale.sd.rc out/target/product/sabresd_7d/recovery/root/ || true ) && (cp out/target/product/sabresd_7d/root/init.freescale.emmc.rc out/target/product/sabresd_7d/recovery/root/ || true ) && (mkdir -p out/target/product/sabresd_7d/recovery/root/res ) && (rm -rf out/target/product/sabresd_7d/recovery/root/res/* ) && (cp -rf bootable/recovery/res-xhdpi/* out/target/product/sabresd_7d/recovery/root/res ) && (cp -f bootable/recovery/fonts/12x22.png out/target/product/sabresd_7d/recovery/root/res/images/font.png ) && (cp -f device/fsl/sabresd_7d/fstab.freescale out/target/product/sabresd_7d/recovery/root/etc/recovery.fstab ) && (cp out/target/product/sabresd_7d/obj/PACKAGING/ota_keys_intermediates/keys out/target/product/sabresd_7d/recovery/root/res/keys ) && (cat out/target/product/sabresd_7d/root/default.prop > out/target/product/sabresd_7d/recovery/root/prop.default ) && (cat out/target/product/sabresd_7d/obj/ETC/system_build_prop_intermediates/build.prop >> out/target/product/sabresd_7d/recovery/root/prop.default ) && (ln -sf prop.default out/target/product/sabresd_7d/recovery/root/default.prop ) && (out/host/linux-x86/bin/mkbootfs -d out/target/product/sabresd_7d/system out/target/product/sabresd_7d/recovery/root | out/host/linux-x86/bin/minigzip > out/target/product/sabresd_7d/ramdisk-recovery.img ) && (out/host/linux-x86/bin/mkbootimg  --kernel out/target/product/sabresd_7d/obj/KERNEL_OBJ/kernel_img  --ramdisk out/target/product/sabresd_7d/ramdisk-recovery.img --cmdline \"console=ttymxc0,115200 init=/init androidboot.console=ttymxc0 consoleblank=0 androidboot.hardware=freescale buildvariant=userdebug\" --base 0x82800000 --os_version 8.0.0 --os_patch_level 2017-11-05  --output  out/target/product/sabresd_7d/recovery.img --id > out/target/product/sabresd_7d/recovery.id ) && (out/host/linux-x86/bin/boot_signer /recovery  out/target/product/sabresd_7d/recovery.img build/target/product/security/verity.pk8 build/target/product/security/verity.x509.pem  out/target/product/sabresd_7d/recovery.img ) && (for dtsplat in imx7d:imx7d-sdb.dtb imx7d-epdc:imx7d-sdb-epdc.dtb; do DTS_PLATFORM=\`echo \$dtsplat | cut -d':' -f1\`; DTS_BOARD=\`echo \$dtsplat | cut -d':' -f2\`; RECOVERY_IMAGE_BOARD=out/target/product/sabresd_7d/recovery-\$DTS_PLATFORM.img; out/host/linux-x86/bin/mkbootimg  --kernel out/target/product/sabresd_7d/obj/KERNEL_OBJ/kernel_img  --ramdisk out/target/product/sabresd_7d/ramdisk-recovery.img --cmdline \"console=ttymxc0,115200 init=/init androidboot.console=ttymxc0 consoleblank=0 androidboot.hardware=freescale buildvariant=userdebug\" --base 0x82800000 --second out/target/product/sabresd_7d/obj/KERNEL_OBJ/\$DTS_BOARD  --output  out/target/product/sabresd_7d/recovery.img; if [ true = true ]; then out/host/linux-x86/bin/boot_signer /recovery  out/target/product/sabresd_7d/recovery.img build/target/product/security/verity.pk8 build/target/product/security/verity.x509.pem  out/target/product/sabresd_7d/recovery.img; fi;  @echo \"BOARD_USES_RECOVERY_AS_BOOT and BOARD_AVB_ENABLE are not enabled\" ;  @   size=\$(for i in  out/target/product/sabresd_7d/recovery.img; do stat --format \"%s\" \"\$i\" | tr -d '\\n'; echo +; done; echo 0); total=\$(( \$( echo \"\$size\" ) )); printname=\$(echo -n \" out/target/product/sabresd_7d/recovery.img\" | tr \" \" +); img_blocksize=4224; twoblocks=\$((img_blocksize * 2)); onepct=\$(((((34603008 / 100) - 1) / img_blocksize + 1) * img_blocksize)); reserve=\$((twoblocks > onepct ? twoblocks : onepct)); maxsize=\$((34603008 - reserve)); echo \"\$printname maxsize=\$maxsize blocksize=\$img_blocksize total=\$total reserve=\$reserve\"; if [ \"\$total\" -gt \"\$maxsize\" ]; then echo \"error: \$printname too large (\$total > [34603008 - \$reserve])\"; false; elif [ \"\$total\" -gt \$((maxsize - 32768)) ]; then echo \"WARNING: \$printname approaching size limit (\$total now; limit \$maxsize)\"; fi ; cp -f  out/target/product/sabresd_7d/recovery.img \$RECOVERY_IMAGE_BOARD; done ) && (echo ----- Made recovery image:  out/target/product/sabresd_7d/recovery.img -------- )"
+Copying baseline ramdisk...
+Modifying ramdisk contents...
+cp: cannot stat 'out/target/product/sabresd_7d/root/init.freescale.emmc.rc': No such file or directory
+/bin/bash: @echo: command not found
+/bin/bash: @: command not found
++out/target/product/sabresd_7d/recovery.img maxsize=34256640 blocksize=4224 total=0 reserve=346368
+/bin/bash: @echo: command not found
+/bin/bash: @: command not found
++out/target/product/sabresd_7d/recovery.img maxsize=34256640 blocksize=4224 total=0 reserve=346368
+----- Made recovery image: out/target/product/sabresd_7d/recovery.img --------
+[ 50% 8/16] /bin/bash -c "(cat out/target/product/sabresd_7d/obj/ETC/system_build_prop_intermediates/build.prop > out/target/product/sabresd_7d/system/build.prop ) && (echo ro.expect.recovery_id=\`cat out/target/product/sabresd_7d/recovery.id\` >> out/target/product/sabresd_7d/system/build.prop )"
+[ 56% 9/16] /bin/bash -c "(find out/target/product/sabresd_7d/recovery/root/res -type f | sort | zip -0qrjX out/target/product/sabresd_7d/system/etc/recovery-resource.dat -@ ) && (prebuilts/build-tools/linux-x86/bin/ziptime out/target/product/sabresd_7d/system/etc/recovery-resource.dat )"
+[ 62% 10/16] /bin/bash -c "build/tools/generate-notice-files.py --text-output  out/target/product/sabresd_7d/obj/NOTICE.txt   --html-output  out/target/product/sabresd_7d/obj/NOTICE.html -t \"Notices for files contained in the filesystem images in this directory:\" -s out/target/product/sabresd_7d/obj/NOTICE_FILES/src"
+Combining NOTICE files into text
+Combining NOTICE files into HTML
+[ 68% 11/16] /bin/bash -c "out/host/linux-x86/bin/minigzip -9 < out/target/product/sabresd_7d/obj/NOTICE.html > out/target/product/sabresd_7d/obj/NOTICE.html.gz"
+[ 75% 12/16] /bin/bash -c "(rm -f out/target/product/sabresd_7d/system/etc/NOTICE.html.gz ) && (cp out/target/product/sabresd_7d/obj/NOTICE.html.gz out/target/product/sabresd_7d/system/etc/NOTICE.html.gz )"
+[ 81% 13/16] /bin/bash -c "(mkdir -p out/target/product/sabresd_7d/obj/PACKAGING/recovery_patch_intermediates/ ) && (PATH=out/host/linux-x86/bin:\$PATH out/host/linux-x86/bin/imgdiff out/target/product/sabresd_7d/boot.img out/target/product/sabresd_7d/recovery.img out/target/product/sabresd_7d/obj/PACKAGING/recovery_patch_intermediates/recovery_from_boot.p )"
+chunk 0: type 0 start 0 len 9967626
+chunk 1: type 2 start 9967626 len 4428032
+chunk 2: type 0 start 12041927 len 50785
+Construct patches for 3 chunks...
+patch   0 is 203 bytes (of 9967626)
+patch   1 is 2571027 bytes (of 2074301)
+patch   2 is 615 bytes (of 50785)
+chunk 0: normal   (         0,    9967626)         203
+chunk 1: deflate  (   9967626,    5566624)     2571027  
+chunk 2: normal   (  15534250,      52354)         615
+[ 87% 14/16] /bin/bash -c "(rm -f out/target/product/sabresd_7d/installed-files.txt ) && (out/soong/host/linux-x86/bin/fileslist out/target/product/sabresd_7d/system > out/target/product/sabresd_7d/installed-files.json ) && (build/tools/fileslist_util.py -c out/target/product/sabresd_7d/installed-files.json > out/target/product/sabresd_7d/installed-files.txt )"
+[ 93% 15/16] /bin/bash -c "(if [ -d out/target/product/sabresd_7d/system/vendor ] && [ ! -h out/target/product/sabresd_7d/system/vendor ]; then echo 'Non-symlink out/target/product/sabresd_7d/system/vendor detected!' 1>&2; echo 'You cannot install files to out/target/product/sabresd_7d/system/vendor while building a separate vendor.img!' 1>&2; exit 1; fi ) && (ln -sf /vendor out/target/product/sabresd_7d/system/vendor ) && (mkdir -p out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/ out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates && rm -rf out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"ext_mkuserimg=mkuserimg.sh\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"fs_type=ext4\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"system_size=1610612736\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"cache_size=444596224\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"vendor_fs_type=ext4\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"vendor_size=117440512\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"extfs_sparse_flag=-s\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"squashfs_sparse_flag=-s\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"selinux_fc=out/target/product/sabresd_7d/obj/ETC/file_contexts.bin_intermediates/file_contexts.bin\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"boot_signer=true\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"verity=true\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"verity_key=build/target/product/security/verity\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"verity_signer_cmd=verity_signer\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"verity_fec=true\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"system_verity_block_device=/dev/block/by-name/system\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"skip_fsck=true\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (PATH=out/host/linux-x86/bin/:\$PATH ./build/tools/releasetools/build_image.py out/target/product/sabresd_7d/system out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img out/target/product/sabresd_7d/system || ( echo \"Out of space? the tree size of out/target/product/sabresd_7d/system is (MB): \" 1>&2 ; du -sm out/target/product/sabresd_7d/system 1>&2; if [ \"ext4\" == \"ext4\" ]; then maxsize=1610612736; if [ \"\" == \"true\" ]; then maxsize=\$((maxsize - 4096 * 4096)); fi; echo \"The max is \$(( maxsize / 1048576 )) MB.\" 1>&2 ; else echo \"The max is \$(( 1610612736 / 1048576 )) MB.\" 1>&2 ; fi; mkdir -p out/dist; cp out/target/product/sabresd_7d/installed-files.txt out/dist/installed-files-rescued.txt; exit 1 ) )"
+Running:  build_verity_tree -s 1610612736
+12685312
+Running:  system/extras/verity/build_verity_metadata.py size 1610612736
+32768
+Running:  fec -s 1623330816
+12840960
+Running:  build_verity_tree -s 1597833216
+12587008
+Running:  system/extras/verity/build_verity_metadata.py size 1597833216
+32768
+Running:  fec -s 1610452992
+12742656
+Running:  build_verity_tree -s 1591443456
+12537856
+Running:  system/extras/verity/build_verity_metadata.py size 1591443456
+32768
+Running:  fec -s 1604014080
+12685312
+Running:  build_verity_tree -s 1588248576
+12513280
+Running:  system/extras/verity/build_verity_metadata.py size 1588248576
+32768
+Running:  fec -s 1600794624
+12660736
+Running:  build_verity_tree -s 1586651136
+12500992
+Running:  system/extras/verity/build_verity_metadata.py size 1586651136
+32768
+Running:  fec -s 1599184896
+12652544
+Running:  build_verity_tree -s 1585852416
+12492800
+Running:  system/extras/verity/build_verity_metadata.py size 1585852416
+32768
+Running:  fec -s 1598377984
+12644352
+Running:  build_verity_tree -s 1585451008
+12492800
+Running:  system/extras/verity/build_verity_metadata.py size 1585451008
+32768
+Running:  fec -s 1597976576
+12644352
+Running:  build_verity_tree -s 1585250304
+12488704
+Running:  system/extras/verity/build_verity_metadata.py size 1585250304
+32768
+Running:  fec -s 1597771776
+12636160
+Running:  build_verity_tree -s 1585352704
+12488704
+Running:  system/extras/verity/build_verity_metadata.py size 1585352704
+32768
+Running:  fec -s 1597874176
+12636160
+Running:  build_verity_tree -s 1585401856
+12488704
+Running:  system/extras/verity/build_verity_metadata.py size 1585401856
+32768
+Running:  fec -s 1597923328
+12636160
+Running:  build_verity_tree -s 1585426432
+12488704
+Running:  system/extras/verity/build_verity_metadata.py size 1585426432
+32768
+Running:  fec -s 1597947904
+12636160
+Running:  build_verity_tree -s 1585438720
+12488704
+Running:  system/extras/verity/build_verity_metadata.py size 1585438720
+32768
+Running:  fec -s 1597960192
+12644352
+Running:  build_verity_tree -s 1585446912
+12488704
+Running:  system/extras/verity/build_verity_metadata.py size 1585446912
+32768
+Running:  fec -s 1597968384
+12644352
+Running:  mkuserimg.sh -s out/target/product/sabresd_7d/system out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img ext4 system 1585446912 -D out/target/product/sabresd_7d/system -L system out/target/product/sabresd_7d/obj/ETC/file_contexts.bin_intermediates/file_contexts.bin
+make_ext4fs -s -T -1 -S out/target/product/sabresd_7d/obj/ETC/file_contexts.bin_intermediates/file_contexts.bin -L system -l 1585446912 -a system out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img out/target/product/sabresd_7d/system out/target/product/sabresd_7d/system
+Creating filesystem with parameters:
+    Size: 1585446912
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 8064
+    Inode size: 256
+    Journal blocks: 6048
+    Label: system
+    Blocks: 387072
+    Block groups: 12
+    Reserved block group size: 95
+Created filesystem with 2202/96768 inodes and 168441/387072 blocks
+Running:  build_verity_tree -A aee087a5be3b982978c923f566a94613496b417f2af592639bc80d141e34dfe7 out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img /tmp/tmpCwlQLe_verity_images/verity.img
+a0c4b06ca55192f8c8cf580b32346c966aa8171c49701bd627fe942aec15e65d aee087a5be3b982978c923f566a94613496b417f2af592639bc80d141e34dfe7
+Running:  system/extras/verity/build_verity_metadata.py build 1585446912 /tmp/tmpCwlQLe_verity_images/verity_metadata.img a0c4b06ca55192f8c8cf580b32346c966aa8171c49701bd627fe942aec15e65d aee087a5be3b982978c923f566a94613496b417f2af592639bc80d141e34dfe7 /dev/block/by-name/system verity_signer build/target/product/security/verity.pk8
+['verity_signer', '/tmp/tmpMbE7fN.table', 'build/target/product/security/verity.pk8', '/tmp/tmpyyr8pn.sig']
+appending /tmp/tmpCwlQLe_verity_images/verity_metadata.img to /tmp/tmpCwlQLe_verity_images/verity.img
+Running:  fec -e -p 0 out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img /tmp/tmpCwlQLe_verity_images/verity.img /tmp/tmpCwlQLe_verity_images/verity_fec.img
+encoding RS(255, 253) to '/tmp/tmpCwlQLe_verity_images/verity_fec.img' for input files:
+	1: 'out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img'
+	2: '/tmp/tmpCwlQLe_verity_images/verity.img'
+appending /tmp/tmpCwlQLe_verity_images/verity_fec.img to /tmp/tmpCwlQLe_verity_images/verity.img
+Running:  append2simg out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img /tmp/tmpCwlQLe_verity_images/verity.img
+
+[100% 16/16] /bin/bash -c "(rm -f out/target/product/sabresd_7d/system.img ) && (cp out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img out/target/product/sabresd_7d/system.img ) && (size=\$(for i in out/target/product/sabresd_7d/system.img out/target/product/sabresd_7d/obj/PACKAGING/recovery_patch_intermediates/recovery_from_boot.p; do stat --format \"%s\" \"\$i\" | tr -d '\\n'; echo +; done; echo 0); total=\$(( \$( echo \"\$size\" ) )); printname=\$(echo -n \"out/target/product/sabresd_7d/system.img out/target/product/sabresd_7d/obj/PACKAGING/recovery_patch_intermediates/recovery_from_boot.p\" | tr \" \" +); img_blocksize=4224; twoblocks=\$((img_blocksize * 2)); onepct=\$(((((1660944384 / 100) - 1) / img_blocksize + 1) * img_blocksize)); reserve=\$((twoblocks > onepct ? twoblocks : onepct)); maxsize=\$((1660944384 - reserve)); echo \"\$printname maxsize=\$maxsize blocksize=\$img_blocksize total=\$total reserve=\$reserve\"; if [ \"\$total\" -gt \"\$maxsize\" ]; then echo \"error: \$printname too large (\$total > [1660944384 - \$reserve])\"; false; elif [ \"\$total\" -gt \$((maxsize - 32768)) ]; then echo \"WARNING: \$printname approaching size limit (\$total now; limit \$maxsize)\"; fi )"
+out/target/product/sabresd_7d/system.img+out/target/product/sabresd_7d/obj/PACKAGING/recovery_patch_intermediates/recovery_from_boot.p maxsize=1644331392 blocksize=4224 total=693043133 reserve=16612992
+
+[0;32m#### make completed successfully (05:56 (mm:ss)) ####[00m
+
