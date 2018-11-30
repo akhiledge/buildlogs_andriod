@@ -1,0 +1,84 @@
+including device/asus/fugu/vendorsetup.sh
+including device/fsl/imx6/vendorsetup.sh
+including device/fsl/imx7/vendorsetup.sh
+including device/fsl/imx8/vendorsetup.sh
+including device/generic/car/car-arm64/vendorsetup.sh
+including device/generic/car/car-armv7-a-neon/vendorsetup.sh
+including device/generic/car/car-x86/vendorsetup.sh
+including device/generic/car/car-x86_64/vendorsetup.sh
+including device/generic/car/vendorsetup.sh
+including device/generic/mini-emulator-arm64/vendorsetup.sh
+including device/generic/mini-emulator-armv7-a-neon/vendorsetup.sh
+including device/generic/mini-emulator-mips/vendorsetup.sh
+including device/generic/mini-emulator-mips64/vendorsetup.sh
+including device/generic/mini-emulator-x86/vendorsetup.sh
+including device/generic/mini-emulator-x86_64/vendorsetup.sh
+including device/generic/uml/vendorsetup.sh
+including device/google/dragon/vendorsetup.sh
+including device/google/marlin/vendorsetup.sh
+including device/google/muskie/vendorsetup.sh
+including device/google/taimen/vendorsetup.sh
+including device/huawei/angler/vendorsetup.sh
+including device/lge/bullhead/vendorsetup.sh
+including device/linaro/hikey/vendorsetup.sh
+including vendor/qcom/common/vendorsetup.sh
+including vendor/qcom/proprietary/common/vendorsetup.sh
+including sdk/bash_completion/adb.bash
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.1.0
+TARGET_PRODUCT=sabresd_7d
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_PLATFORM_VERSION=OPM1
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.4.0-34-generic-x86_64-with-Ubuntu-16.04-xenial
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=1.0.0-rfp-rc4
+OUT_DIR=out
+AUX_OS_VARIANT_LIST=
+============================================
+
+INFO: Build Android tree for sabresd_7d
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.1.0
+TARGET_PRODUCT=sabresd_7d
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.4.0-34-generic-x86_64-with-Ubuntu-16.04-xenial
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=1.0.0-rfp-rc4
+OUT_DIR=out
+============================================
+ninja: no work to do.
+ninja: no work to do.
+[ 14% 1/7] /bin/bash -c "(rm -f out/host/linux-x86/obj/EXECUTABLES/art_intermediates/art ) && (cp art/tools/art out/host/linux-x86/obj/EXECUTABLES/art_intermediates/art ) && (chmod +x out/host/linux-x86/obj/EXECUTABLES/art_intermediates/art )"
+[ 28% 2/7] /bin/bash -c "(rm -f out/target/product/sabresd_7d/obj/EXECUTABLES/art_intermediates/art ) && (cp art/tools/art out/target/product/sabresd_7d/obj/EXECUTABLES/art_intermediates/art ) && (chmod +x out/target/product/sabresd_7d/obj/EXECUTABLES/art_intermediates/art )"
+[ 42% 3/7] /bin/bash -c "(rm -f out/target/product/sabresd_7d/system/bin/art ) && (cp out/target/product/sabresd_7d/obj/EXECUTABLES/art_intermediates/art out/target/product/sabresd_7d/system/bin/art )"
+[ 57% 4/7] /bin/bash -c "(rm -f out/host/linux-x86/bin/art ) && (cp out/host/linux-x86/obj/EXECUTABLES/art_intermediates/art out/host/linux-x86/bin/art )"
+[ 71% 5/7] out/soong/.bootstrap/bin/bpglob -o out/soong/.glob/art.glob  "art"
+[ 85% 6/7] out/soong/.bootstrap/bin/bpglob -o out/soong/.glob/vendor/_/_/_/_/_/Android_bp.glob  "vendor/*/*/*/*/*/Android.bp"

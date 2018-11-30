@@ -1,0 +1,83 @@
+including device/asus/fugu/vendorsetup.sh
+including device/generic/car/car-arm64/vendorsetup.sh
+including device/generic/car/car-armv7-a-neon/vendorsetup.sh
+including device/generic/car/car-x86_64/vendorsetup.sh
+including device/generic/car/car-x86/vendorsetup.sh
+including device/generic/car/vendorsetup.sh
+including device/generic/mini-emulator-arm64/vendorsetup.sh
+including device/generic/mini-emulator-armv7-a-neon/vendorsetup.sh
+including device/generic/mini-emulator-mips64/vendorsetup.sh
+including device/generic/mini-emulator-mips/vendorsetup.sh
+including device/generic/mini-emulator-x86_64/vendorsetup.sh
+including device/generic/mini-emulator-x86/vendorsetup.sh
+including device/generic/uml/vendorsetup.sh
+including device/google/dragon/vendorsetup.sh
+including device/google/marlin/vendorsetup.sh
+including device/google/muskie/vendorsetup.sh
+including device/google/taimen/vendorsetup.sh
+including device/huawei/angler/vendorsetup.sh
+including device/lge/bullhead/vendorsetup.sh
+including device/linaro/hikey/vendorsetup.sh
+including device/qcom/common/vendorsetup.sh
+including vendor/qcom/proprietary/common/vendorsetup.sh
+including sdk/bash_completion/adb.bash
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.1.0
+TARGET_PRODUCT=msm8996
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_PLATFORM_VERSION=OPM1
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=kryo
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.4.0-34-generic-x86_64-with-Ubuntu-16.04-xenial
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=OPM1.171019.026
+OUT_DIR=out
+AUX_OS_VARIANT_LIST=
+============================================
+
+INFO: Build Android tree for msm8996
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.1.0
+TARGET_PRODUCT=msm8996
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=kryo
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.4.0-34-generic-x86_64-with-Ubuntu-16.04-xenial
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=OPM1.171019.026
+OUT_DIR=out
+============================================
+[1/2] out/soong/.bootstrap/bin/minibp out/soong/.minibootstrap/build.ninja.in
+[2/2] bootstrap out/soong/.minibootstrap/build.ninja.in
+[1/1] out/soong/.bootstrap/bin/minibp out/soong/.bootstrap/build.ninja
+[1/1] out/soong/.bootstrap/bin/soong_build out/soong/build.ninja
+[ 50% 1/2] out/soong/.bootstrap/bin/bpglob -o out/soong/.glob/art.glob  "art"
+[100% 2/2] out/soong/.bootstrap/bin/soong_build  -t -b out/soong -d out/soong/build.ninja.d -o out/soong/build.ninja Android.bp
+[ 50% 1/2] out/soong/.bootstrap/bin/bpglob -o out/soong/.glob/art.glob  "art"

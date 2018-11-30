@@ -1,0 +1,184 @@
+including device/asus/fugu/vendorsetup.sh
+including device/fsl/imx6/vendorsetup.sh
+including device/fsl/imx7/vendorsetup.sh
+including device/fsl/imx8/vendorsetup.sh
+including device/generic/car/car-arm64/vendorsetup.sh
+including device/generic/car/car-armv7-a-neon/vendorsetup.sh
+including device/generic/car/car-x86_64/vendorsetup.sh
+including device/generic/car/car-x86/vendorsetup.sh
+including device/generic/car/vendorsetup.sh
+including device/generic/mini-emulator-arm64/vendorsetup.sh
+including device/generic/mini-emulator-armv7-a-neon/vendorsetup.sh
+including device/generic/mini-emulator-mips64/vendorsetup.sh
+including device/generic/mini-emulator-mips/vendorsetup.sh
+including device/generic/mini-emulator-x86_64/vendorsetup.sh
+including device/generic/mini-emulator-x86/vendorsetup.sh
+including device/generic/uml/vendorsetup.sh
+including device/google/dragon/vendorsetup.sh
+including device/google/marlin/vendorsetup.sh
+including device/google/muskie/vendorsetup.sh
+including device/google/taimen/vendorsetup.sh
+including device/huawei/angler/vendorsetup.sh
+including device/lge/bullhead/vendorsetup.sh
+including device/linaro/hikey/vendorsetup.sh
+including sdk/bash_completion/adb.bash
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.1.0
+TARGET_PRODUCT=sabresd_7d
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_PLATFORM_VERSION=OPM1
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.4.0-34-generic-x86_64-with-Ubuntu-16.04-xenial
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=1.0.0-rfp-rc4
+OUT_DIR=out
+AUX_OS_VARIANT_LIST=
+============================================
+
+INFO: Build Android tree for sabresd_7d
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=8.1.0
+TARGET_PRODUCT=sabresd_7d
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.4.0-34-generic-x86_64-with-Ubuntu-16.04-xenial
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=1.0.0-rfp-rc4
+OUT_DIR=out
+============================================
+[1/2] out/soong/.bootstrap/bin/minibp out/soong/.minibootstrap/build.ninja.in
+[2/2] bootstrap out/soong/.minibootstrap/build.ninja.in
+[1/1] out/soong/.bootstrap/bin/minibp out/soong/.bootstrap/build.ninja
+removed old ninja-created file out/soong/.glob/vendor/qcom/opensource/_/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/opensource/bluetooth_ext/system_bt_ext/btif/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/opensource/bluetooth_ext/_/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/opensource/bluetooth_ext/system_bt_ext/device/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/opensource/interfaces/camera/device/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/opensource/bluetooth_ext/system_bt_ext/osi/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/opensource/interfaces/_/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/opensource/interfaces/display/config/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/opensource/interfaces/display/config/1_1/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/opensource/interfaces/display/config/1_2/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/opensource/interfaces/wifi/_/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/opensource/interfaces/wifi/supplicant/1_1/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/opensource/interfaces/wifi/supplicant/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/_/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/android-perf/_/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/android-perf/io-p/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/android-perf/iop-hal/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/android-perf/mp-ctl/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/android-perf/perf-hal/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/android-perf/perf-util/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/android-perf/tests/UnitTests/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/android-perf/tests/UnitTests/_/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/dpm/_/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/ims-ship/rcs/interfaces/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/ims-ship/rcs/interfaces/imscmservice/1_1/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/radio/lpa/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/ims-ship/rcs/interfaces/uceservice/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/automotive/vehicle/_/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/_/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/alarm/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/ant/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/automotive/_/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/bluetooth_audio/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/data/latency/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/data/latency/1_0/vts/functional/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/display/color/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/display/color/1_1/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/display/color/1_2/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/display/color/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/display/postproc/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/display/postproc/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/esepowermanager/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/factory/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/fingerprint/_/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/fm/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/gnss/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/gnss/1_0/service/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/gnss/1_1/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/gnss/1_1/service/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/gnss/1_2/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/iop/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/limits/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/perf/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/gnss/1_2/service/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/iop/2_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/qdutils_disp/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/qteeconnector/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/radio/atcmdfwd/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/radio/_/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/radio/config/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/radio/am/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/radio/ims/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/radio/qcrilhook/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/radio/qtiradio/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/radio/uim/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/radio/uim/1_1/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/radio/uim_remote_client/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/radio/uim_remote_server/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/sensorscalibrate/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/tui_comm/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/voiceprint/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/wigig/netperftuner/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/vpp/1_1/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/wigig/_/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/wigig/supptunnel/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/prebuilt_HY11/target/product/msm8996/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/interfaces/wipower/1_0/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/securemsm/QTEEConnector/_/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/securemsm/_/Android_bp.glob because it has no rule to generate it
+removed old ninja-created file out/soong/.glob/vendor/qcom/proprietary/thermal-engine/Android_bp.glob because it has no rule to generate it
+[1/5] glob vendor/*/*/Android.bp
+[2/5] glob device/*/*/Android.bp
+[3/5] glob vendor/*/*/*/Android.bp
+[4/5] glob vendor/*/*/*/*/*/Android.bp
+[1/6] glob device/*/*/Android.bp
+[2/6] glob vendor/*/*/Android.bp
+[3/6] glob vendor/*/*/*/Android.bp
+[4/6] glob vendor/*/*/*/*/*/Android.bp
+[5/5] out/soong/.bootstrap/bin/soong_build out/soong/build.ninja
+FAILED: out/soong/build.ninja 
+out/soong/.bootstrap/bin/soong_build  -t -b out/soong -d out/soong/build.ninja.d -o out/soong/build.ninja Android.bp
+open /home/vamsi/android_source/msm8996/msm8996/vendor/qcom/proprietary/common/config/sdclang.json: no such file or directory
+panic: SDCLANG_PATH can not be empty
+
+goroutine 1 [running]:
+android/soong/cc/config.setSdclangVars()
+	/home/vamsi/android_source/msm8996/msm8996/build/soong/cc/config/global.go:288 +0x835
+android/soong/cc/config.init.2()
+	/home/vamsi/android_source/msm8996/msm8996/build/soong/cc/config/global.go:179 +0xcd6
+android/soong/cc/config.init()
+	/home/vamsi/android_source/msm8996/msm8996/build/soong/cc/config/x86_windows_host.go:226 +0x3cb6
+android/soong/cc.init()
+	/home/vamsi/android_source/msm8996/msm8996/build/soong/cc/kernel_headers.go:51 +0xa0
+main.init()
+	/home/vamsi/android_source/msm8996/msm8996/out/soong/.bootstrap/soong_build/gen/plugin.go:29 +0x6b
+ninja: build stopped: subcommand failed.
