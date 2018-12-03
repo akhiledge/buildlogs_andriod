@@ -78,14 +78,9 @@ ninja: no work to do.
 ninja: no work to do.
 [ 50% 1/2] out/soong/.bootstrap/bin/bpglob -o out/soong/.glob/vendor/_/_/Android_bp.glob  "vendor/*/*/Android.bp"
 [  5% 1/17] /bin/bash -c "(rm -f out/target/product/sabresd_7d/root/fstab.freescale ) && (cp device/fsl/sabresd_7d/fstab.freescale out/target/product/sabresd_7d/root/fstab.freescale )"
-[ 11% 2/17] /bin/bash -c "(prebuilts/sdk/tools/jack-admin install-server prebuilts/sdk/tools/jack-launcher.jar prebuilts/sdk/tools/jack-server-4.11.ALPHA.jar  2>&1 || (exit 0) ) && (JACK_SERVER_VM_ARGUMENTS=\"-Dfile.encoding=UTF-8 -XX:+TieredCompilation\" prebuilts/sdk/tools/jack-admin start-server 2>&1 || exit 0 ) && (prebuilts/sdk/tools/jack-admin update server prebuilts/sdk/tools/jack-server-4.11.ALPHA.jar 4.11.ALPHA 2>&1 || exit 0 ) && (prebuilts/sdk/tools/jack-admin update jack prebuilts/sdk/tools/jacks/jack-4.32.CANDIDATE.jar 4.32.CANDIDATE || exit 47 )"
-Jack server already installed in "/home/vepuri/.jack-server"
-Server is already running
-[ 17% 3/17] /bin/bash -c "out/host/linux-x86/bin/mkbootfs -d out/target/product/sabresd_7d/system out/target/product/sabresd_7d/root | out/host/linux-x86/bin/minigzip > out/target/product/sabresd_7d/ramdisk.img"
-[ 23% 4/17] /bin/bash -c "(make -j2 -C vendor/nxp-opensource/kernel_imx imx_v7_android_defconfig ARCH=arm CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- LOADADDR=0x80008000 KCFLAGS=-mno-android ) && (install -D vendor/nxp-opensource/kernel_imx/.config out/target/product/sabresd_7d/obj/KERNEL_OBJ/.config )"
+[ 11% 2/17] /bin/bash -c "out/host/linux-x86/bin/mkbootfs -d out/target/product/sabresd_7d/system out/target/product/sabresd_7d/root | out/host/linux-x86/bin/minigzip > out/target/product/sabresd_7d/ramdisk.img"
+[ 17% 3/17] /bin/bash -c "(make -j2 -C vendor/nxp-opensource/kernel_imx imx_v7_android_defconfig ARCH=arm CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- LOADADDR=0x80008000 KCFLAGS=-mno-android ) && (install -D vendor/nxp-opensource/kernel_imx/.config out/target/product/sabresd_7d/obj/KERNEL_OBJ/.config )"
 make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/kernel_imx'
-  HOSTCC  scripts/kconfig/conf.o
-  HOSTLD  scripts/kconfig/conf
 arch/arm/configs/imx_v7_android_defconfig:159:warning: override: reassigning to symbol NF_NAT_IPV4
 arch/arm/configs/imx_v7_android_defconfig:366:warning: override: reassigning to symbol SENSORS_FXOS8700
 arch/arm/configs/imx_v7_android_defconfig:367:warning: override: reassigning to symbol SENSORS_FXAS2100X
@@ -94,6 +89,9 @@ arch/arm/configs/imx_v7_android_defconfig:368:warning: override: reassigning to 
 # configuration written to .config
 #
 make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/kernel_imx'
+[ 23% 4/17] /bin/bash -c "(prebuilts/sdk/tools/jack-admin install-server prebuilts/sdk/tools/jack-launcher.jar prebuilts/sdk/tools/jack-server-4.11.ALPHA.jar  2>&1 || (exit 0) ) && (JACK_SERVER_VM_ARGUMENTS=\"-Dfile.encoding=UTF-8 -XX:+TieredCompilation\" prebuilts/sdk/tools/jack-admin start-server 2>&1 || exit 0 ) && (prebuilts/sdk/tools/jack-admin update server prebuilts/sdk/tools/jack-server-4.11.ALPHA.jar 4.11.ALPHA 2>&1 || exit 0 ) && (prebuilts/sdk/tools/jack-admin update jack prebuilts/sdk/tools/jacks/jack-4.32.CANDIDATE.jar 4.32.CANDIDATE || exit 47 )"
+Jack server already installed in "/home/vepuri/.jack-server"
+Server is already running
 [ 29% 5/17] /bin/bash -c "for ubootplat in imx7d:mx7dsabresdandroid_config imx7d-epdc:mx7dsabresdandroid_config; do 		UBOOT_PLATFORM=\`echo \$ubootplat | cut -d':' -f1\`; 		UBOOT_CONFIG=\`echo \$ubootplat | cut -d':' -f2\`; 		make -j2 -C vendor/nxp-opensource/uboot-imx/ distclean CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-; 		make -j2 -C vendor/nxp-opensource/uboot-imx/ O=\$(/home/vepuri/imx7android/android_build/prebuilts/build-tools/linux-x86/bin/ckati --realpath out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ 2> /dev/null) \$UBOOT_CONFIG CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-; 		make -j2 -C vendor/nxp-opensource/uboot-imx/ mrproper CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-; 		make -j2 -C vendor/nxp-opensource/uboot-imx/ O=\$(/home/vepuri/imx7android/android_build/prebuilts/build-tools/linux-x86/bin/ckati --realpath out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ 2> /dev/null) CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- || exit 1; 		install -D out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ/u-boot-dtb.imx out/target/product/sabresd_7d/u-boot-\$UBOOT_PLATFORM.imx; 		if [  = true ]; then 		echo \"build post process\" ; 		 		fi 	done"
 make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
 make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
@@ -133,24 +131,24 @@ make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/p
   HOSTLD  tools/mkenvimage
   HOSTLD  tools/dumpimage
   HOSTLD  tools/mkimage
-  CC      cmd/version.o
-  LD      cmd/built-in.o
   CC      common/main.o
+  CC      cmd/version.o
   CC      common/board_f.o
+  LD      cmd/built-in.o
   LD      common/built-in.o
   CC      drivers/video/cfb_console.o
-  LD      drivers/video/built-in.o
-  LD      drivers/built-in.o
   CC      drivers/usb/gadget/f_fastboot.o
 /home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx/drivers/usb/gadget/f_fastboot.c: In function 'write_backup_gpt':
 /home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx/drivers/usb/gadget/f_fastboot.c:979:2: warning: implicit declaration of function 'write_backup_gpt_partitions' [-Wimplicit-function-declaration]
   if (write_backup_gpt_partitions(dev_desc, interface.transfer_buffer)) {
   ^
+  LD      drivers/video/built-in.o
+  LD      drivers/built-in.o
   LD      drivers/usb/gadget/built-in.o
   CC      lib/efi_loader/helloworld.o
   LD      lib/efi_loader/helloworld.so
-  OBJCOPY lib/efi_loader/helloworld.efi
   CC      lib/smbios.o
+  OBJCOPY lib/efi_loader/helloworld.efi
   CC      lib/display_options.o
   LD      lib/built-in.o
   LD      u-boot
@@ -158,8 +156,8 @@ make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/p
   OBJCOPY u-boot.srec
   SYM     u-boot.sym
   CAT     u-boot-dtb.bin
-  MKIMAGE u-boot-dtb.imx
   COPY    u-boot.bin
+  MKIMAGE u-boot-dtb.imx
   CFGCHK  u-boot.cfg
 make[1]: Leaving directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
 make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
@@ -204,8 +202,8 @@ make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/p
   HOSTLD  tools/mkimage
   CC      cmd/version.o
   CC      common/main.o
-  CC      common/board_f.o
   LD      cmd/built-in.o
+  CC      common/board_f.o
   LD      common/built-in.o
   CC      drivers/video/cfb_console.o
   CC      drivers/usb/gadget/f_fastboot.o
@@ -215,8 +213,8 @@ make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/p
   ^
   LD      drivers/video/built-in.o
   LD      drivers/built-in.o
-  CC      lib/efi_loader/helloworld.o
   LD      drivers/usb/gadget/built-in.o
+  CC      lib/efi_loader/helloworld.o
   LD      lib/efi_loader/helloworld.so
   OBJCOPY lib/efi_loader/helloworld.efi
   CC      lib/smbios.o
@@ -257,62 +255,6 @@ make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/p
   CHK     include/generated/compile.h
   GZIP    kernel/config_data.gz
   CHK     kernel/config_data.h
-  DTC     arch/arm/boot/dts/imx7d-sdb.dtb
-Warning (reg_format): "reg" property in /fxos8700@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /fxas2100x@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /mpl3115@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-  DTC     arch/arm/boot/dts/imx7d-sdb-epdc.dtb
-Warning (reg_format): "reg" property in /fxos8700@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /fxas2100x@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /mpl3115@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-  DTC     arch/arm/boot/dts/imx7d-sdb-gpmi-weim.dtb
-Warning (reg_format): "reg" property in /fxos8700@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /fxas2100x@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /mpl3115@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-  DTC     arch/arm/boot/dts/imx7d-sdb-m4.dtb
-Warning (reg_format): "reg" property in /fxos8700@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /fxas2100x@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /mpl3115@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-  DTC     arch/arm/boot/dts/imx7d-sdb-qspi.dtb
-Warning (reg_format): "reg" property in /fxos8700@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /fxas2100x@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /mpl3115@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-  DTC     arch/arm/boot/dts/imx7d-sdb-mipi-dsi.dtb
-Warning (reg_format): "reg" property in /fxos8700@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /fxas2100x@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /mpl3115@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-  DTC     arch/arm/boot/dts/imx7d-sdb-reva.dtb
-Warning (reg_format): "reg" property in /fxos8700@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /fxas2100x@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /mpl3115@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-  DTC     arch/arm/boot/dts/imx7d-sdb-reva-epdc.dtb
-Warning (reg_format): "reg" property in /fxos8700@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /fxas2100x@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /mpl3115@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-  DTC     arch/arm/boot/dts/imx7d-sdb-reva-gpmi-weim.dtb
-Warning (reg_format): "reg" property in /fxos8700@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /fxas2100x@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /mpl3115@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-  DTC     arch/arm/boot/dts/imx7d-sdb-reva-hdmi-audio.dtb
-  DTC     arch/arm/boot/dts/imx7d-sdb-reva-m4.dtb
-  DTC     arch/arm/boot/dts/imx7d-sdb-reva-qspi.dtb
-Warning (reg_format): "reg" property in /fxos8700@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /fxas2100x@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /mpl3115@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /fxos8700@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /fxas2100x@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /mpl3115@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /fxos8700@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /fxas2100x@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /mpl3115@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-  DTC     arch/arm/boot/dts/imx7d-sdb-reva-touch.dtb
-Warning (reg_format): "reg" property in /fxos8700@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /fxas2100x@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /mpl3115@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-  DTC     arch/arm/boot/dts/imx7d-sdb-reva-wm8960.dtb
-Warning (reg_format): "reg" property in /fxos8700@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /fxas2100x@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
-Warning (reg_format): "reg" property in /mpl3115@0e has invalid length (4 bytes) (#address-cells == 1, #size-cells == 1)
   Building modules, stage 2.
   Kernel: arch/arm/boot/Image is ready
   MODPOST 8 modules
@@ -348,7 +290,12 @@ cp: cannot stat 'out/target/product/sabresd_7d/root/init.freescale.emmc.rc': No 
 ----- Made recovery image: out/target/product/sabresd_7d/recovery.img --------
 [ 52% 9/17] /bin/bash -c "(cat out/target/product/sabresd_7d/obj/ETC/system_build_prop_intermediates/build.prop > out/target/product/sabresd_7d/system/build.prop ) && (echo ro.expect.recovery_id=\`cat out/target/product/sabresd_7d/recovery.id\` >> out/target/product/sabresd_7d/system/build.prop )"
 [ 58% 10/17] /bin/bash -c "(find out/target/product/sabresd_7d/recovery/root/res -type f | sort | zip -0qrjX out/target/product/sabresd_7d/system/etc/recovery-resource.dat -@ ) && (prebuilts/build-tools/linux-x86/bin/ziptime out/target/product/sabresd_7d/system/etc/recovery-resource.dat )"
-[ 64% 11/17] /bin/bash -c "(mkdir -p out/target/product/sabresd_7d/obj/PACKAGING/recovery_patch_intermediates/ ) && (PATH=out/host/linux-x86/bin:\$PATH out/host/linux-x86/bin/imgdiff out/target/product/sabresd_7d/boot.img out/target/product/sabresd_7d/recovery.img out/target/product/sabresd_7d/obj/PACKAGING/recovery_patch_intermediates/recovery_from_boot.p )"
+[ 64% 11/17] /bin/bash -c "build/tools/generate-notice-files.py --text-output  out/target/product/sabresd_7d/obj/NOTICE.txt   --html-output  out/target/product/sabresd_7d/obj/NOTICE.html -t \"Notices for files contained in the filesystem images in this directory:\" -s out/target/product/sabresd_7d/obj/NOTICE_FILES/src"
+Combining NOTICE files into text
+Combining NOTICE files into HTML
+[ 70% 12/17] /bin/bash -c "out/host/linux-x86/bin/minigzip -9 < out/target/product/sabresd_7d/obj/NOTICE.html > out/target/product/sabresd_7d/obj/NOTICE.html.gz"
+[ 76% 13/17] /bin/bash -c "(rm -f out/target/product/sabresd_7d/system/etc/NOTICE.html.gz ) && (cp out/target/product/sabresd_7d/obj/NOTICE.html.gz out/target/product/sabresd_7d/system/etc/NOTICE.html.gz )"
+[ 82% 14/17] /bin/bash -c "(mkdir -p out/target/product/sabresd_7d/obj/PACKAGING/recovery_patch_intermediates/ ) && (PATH=out/host/linux-x86/bin:\$PATH out/host/linux-x86/bin/imgdiff out/target/product/sabresd_7d/boot.img out/target/product/sabresd_7d/recovery.img out/target/product/sabresd_7d/obj/PACKAGING/recovery_patch_intermediates/recovery_from_boot.p )"
 chunk 0: type 0 start 0 len 9969674
 chunk 1: type 2 start 9969674 len 4428032
 chunk 2: type 0 start 12043940 len 50820
@@ -359,11 +306,6 @@ patch   2 is 606 bytes (of 50820)
 chunk 0: normal   (         0,    9969674)         210
 chunk 1: deflate  (   9969674,    5567492)     2572124  
 chunk 2: normal   (  15537166,      51486)         606
-[ 70% 12/17] /bin/bash -c "build/tools/generate-notice-files.py --text-output  out/target/product/sabresd_7d/obj/NOTICE.txt   --html-output  out/target/product/sabresd_7d/obj/NOTICE.html -t \"Notices for files contained in the filesystem images in this directory:\" -s out/target/product/sabresd_7d/obj/NOTICE_FILES/src"
-Combining NOTICE files into text
-Combining NOTICE files into HTML
-[ 76% 13/17] /bin/bash -c "out/host/linux-x86/bin/minigzip -9 < out/target/product/sabresd_7d/obj/NOTICE.html > out/target/product/sabresd_7d/obj/NOTICE.html.gz"
-[ 82% 14/17] /bin/bash -c "(rm -f out/target/product/sabresd_7d/system/etc/NOTICE.html.gz ) && (cp out/target/product/sabresd_7d/obj/NOTICE.html.gz out/target/product/sabresd_7d/system/etc/NOTICE.html.gz )"
 [ 88% 15/17] /bin/bash -c "(rm -f out/target/product/sabresd_7d/installed-files.txt ) && (out/soong/host/linux-x86/bin/fileslist out/target/product/sabresd_7d/system > out/target/product/sabresd_7d/installed-files.json ) && (build/tools/fileslist_util.py -c out/target/product/sabresd_7d/installed-files.json > out/target/product/sabresd_7d/installed-files.txt )"
 [ 94% 16/17] /bin/bash -c "(if [ -d out/target/product/sabresd_7d/system/vendor ] && [ ! -h out/target/product/sabresd_7d/system/vendor ]; then echo 'Non-symlink out/target/product/sabresd_7d/system/vendor detected!' 1>&2; echo 'You cannot install files to out/target/product/sabresd_7d/system/vendor while building a separate vendor.img!' 1>&2; exit 1; fi ) && (ln -sf /vendor out/target/product/sabresd_7d/system/vendor ) && (mkdir -p out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/ out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates && rm -rf out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"ext_mkuserimg=mkuserimg.sh\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"fs_type=ext4\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"system_size=1610612736\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"cache_size=444596224\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"vendor_fs_type=ext4\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"vendor_size=117440512\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"extfs_sparse_flag=-s\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"squashfs_sparse_flag=-s\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"selinux_fc=out/target/product/sabresd_7d/obj/ETC/file_contexts.bin_intermediates/file_contexts.bin\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"boot_signer=true\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"verity=true\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"verity_key=build/target/product/security/verity\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"verity_signer_cmd=verity_signer\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"verity_fec=true\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"system_verity_block_device=/dev/block/by-name/system\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (echo \"skip_fsck=true\" >>  out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt ) && (PATH=out/host/linux-x86/bin/:\$PATH ./build/tools/releasetools/build_image.py out/target/product/sabresd_7d/system out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system_image_info.txt out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img out/target/product/sabresd_7d/system || ( echo \"Out of space? the tree size of out/target/product/sabresd_7d/system is (MB): \" 1>&2 ; du -sm out/target/product/sabresd_7d/system 1>&2; if [ \"ext4\" == \"ext4\" ]; then maxsize=1610612736; if [ \"\" == \"true\" ]; then maxsize=\$((maxsize - 4096 * 4096)); fi; echo \"The max is \$(( maxsize / 1048576 )) MB.\" 1>&2 ; else echo \"The max is \$(( 1610612736 / 1048576 )) MB.\" 1>&2 ; fi; mkdir -p out/dist; cp out/target/product/sabresd_7d/installed-files.txt out/dist/installed-files-rescued.txt; exit 1 ) )"
 Running:  build_verity_tree -s 1610612736
@@ -458,20 +400,20 @@ Creating filesystem with parameters:
     Block groups: 12
     Reserved block group size: 95
 Created filesystem with 2202/96768 inodes and 168441/387072 blocks
-Running:  build_verity_tree -A aee087a5be3b982978c923f566a94613496b417f2af592639bc80d141e34dfe7 out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img /tmp/tmpcWPO3M_verity_images/verity.img
-ea6fc54f64dc1957a3d50dd4a11a20e31c8ae1f4f2b4f01161c1e2ac5c171c50 aee087a5be3b982978c923f566a94613496b417f2af592639bc80d141e34dfe7
-Running:  system/extras/verity/build_verity_metadata.py build 1585446912 /tmp/tmpcWPO3M_verity_images/verity_metadata.img ea6fc54f64dc1957a3d50dd4a11a20e31c8ae1f4f2b4f01161c1e2ac5c171c50 aee087a5be3b982978c923f566a94613496b417f2af592639bc80d141e34dfe7 /dev/block/by-name/system verity_signer build/target/product/security/verity.pk8
-['verity_signer', '/tmp/tmpTQs24Y.table', 'build/target/product/security/verity.pk8', '/tmp/tmphCdUBm.sig']
-appending /tmp/tmpcWPO3M_verity_images/verity_metadata.img to /tmp/tmpcWPO3M_verity_images/verity.img
-Running:  fec -e -p 0 out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img /tmp/tmpcWPO3M_verity_images/verity.img /tmp/tmpcWPO3M_verity_images/verity_fec.img
-encoding RS(255, 253) to '/tmp/tmpcWPO3M_verity_images/verity_fec.img' for input files:
+Running:  build_verity_tree -A aee087a5be3b982978c923f566a94613496b417f2af592639bc80d141e34dfe7 out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img /tmp/tmpuWa3ec_verity_images/verity.img
+3094446192f35ba371377732bdbe085b8d1487f7894c100a04c559fe35270dbd aee087a5be3b982978c923f566a94613496b417f2af592639bc80d141e34dfe7
+Running:  system/extras/verity/build_verity_metadata.py build 1585446912 /tmp/tmpuWa3ec_verity_images/verity_metadata.img 3094446192f35ba371377732bdbe085b8d1487f7894c100a04c559fe35270dbd aee087a5be3b982978c923f566a94613496b417f2af592639bc80d141e34dfe7 /dev/block/by-name/system verity_signer build/target/product/security/verity.pk8
+['verity_signer', '/tmp/tmp6mULcw.table', 'build/target/product/security/verity.pk8', '/tmp/tmpwpNrFB.sig']
+appending /tmp/tmpuWa3ec_verity_images/verity_metadata.img to /tmp/tmpuWa3ec_verity_images/verity.img
+Running:  fec -e -p 0 out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img /tmp/tmpuWa3ec_verity_images/verity.img /tmp/tmpuWa3ec_verity_images/verity_fec.img
+encoding RS(255, 253) to '/tmp/tmpuWa3ec_verity_images/verity_fec.img' for input files:
 	1: 'out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img'
-	2: '/tmp/tmpcWPO3M_verity_images/verity.img'
-appending /tmp/tmpcWPO3M_verity_images/verity_fec.img to /tmp/tmpcWPO3M_verity_images/verity.img
-Running:  append2simg out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img /tmp/tmpcWPO3M_verity_images/verity.img
+	2: '/tmp/tmpuWa3ec_verity_images/verity.img'
+appending /tmp/tmpuWa3ec_verity_images/verity_fec.img to /tmp/tmpuWa3ec_verity_images/verity.img
+Running:  append2simg out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img /tmp/tmpuWa3ec_verity_images/verity.img
 
 [100% 17/17] /bin/bash -c "(rm -f out/target/product/sabresd_7d/system.img ) && (cp out/target/product/sabresd_7d/obj/PACKAGING/systemimage_intermediates/system.img out/target/product/sabresd_7d/system.img ) && (size=\$(for i in out/target/product/sabresd_7d/system.img out/target/product/sabresd_7d/obj/PACKAGING/recovery_patch_intermediates/recovery_from_boot.p; do stat --format \"%s\" \"\$i\" | tr -d '\\n'; echo +; done; echo 0); total=\$(( \$( echo \"\$size\" ) )); printname=\$(echo -n \"out/target/product/sabresd_7d/system.img out/target/product/sabresd_7d/obj/PACKAGING/recovery_patch_intermediates/recovery_from_boot.p\" | tr \" \" +); img_blocksize=4224; twoblocks=\$((img_blocksize * 2)); onepct=\$(((((1660944384 / 100) - 1) / img_blocksize + 1) * img_blocksize)); reserve=\$((twoblocks > onepct ? twoblocks : onepct)); maxsize=\$((1660944384 - reserve)); echo \"\$printname maxsize=\$maxsize blocksize=\$img_blocksize total=\$total reserve=\$reserve\"; if [ \"\$total\" -gt \"\$maxsize\" ]; then echo \"error: \$printname too large (\$total > [1660944384 - \$reserve])\"; false; elif [ \"\$total\" -gt \$((maxsize - 32768)) ]; then echo \"WARNING: \$printname approaching size limit (\$total now; limit \$maxsize)\"; fi )"
 out/target/product/sabresd_7d/system.img+out/target/product/sabresd_7d/obj/PACKAGING/recovery_patch_intermediates/recovery_from_boot.p maxsize=1644331392 blocksize=4224 total=693044228 reserve=16612992
 
-[0;32m#### make completed successfully (05:06 (mm:ss)) ####[00m
+[0;32m#### make completed successfully (02:22 (mm:ss)) ####[00m
 
