@@ -77,314 +77,184 @@ ninja: no work to do.
 [1/2] glob vendor/*/*/Android.bp
 ninja: no work to do.
 [ 50% 1/2] out/soong/.bootstrap/bin/bpglob -o out/soong/.glob/vendor/_/_/Android_bp.glob  "vendor/*/*/Android.bp"
-[  5% 1/17] /bin/bash -c "(rm -f out/target/product/sabresd_7d/root/fstab.freescale ) && (cp device/fsl/sabresd_7d/fstab.freescale out/target/product/sabresd_7d/root/fstab.freescale )"
-[ 11% 2/17] /bin/bash -c "out/host/linux-x86/bin/mkbootfs -d out/target/product/sabresd_7d/system out/target/product/sabresd_7d/root | out/host/linux-x86/bin/minigzip > out/target/product/sabresd_7d/ramdisk.img"
-[ 17% 3/17] /bin/bash -c "(prebuilts/sdk/tools/jack-admin install-server prebuilts/sdk/tools/jack-launcher.jar prebuilts/sdk/tools/jack-server-4.11.ALPHA.jar  2>&1 || (exit 0) ) && (JACK_SERVER_VM_ARGUMENTS=\"-Dfile.encoding=UTF-8 -XX:+TieredCompilation\" prebuilts/sdk/tools/jack-admin start-server 2>&1 || exit 0 ) && (prebuilts/sdk/tools/jack-admin update server prebuilts/sdk/tools/jack-server-4.11.ALPHA.jar 4.11.ALPHA 2>&1 || exit 0 ) && (prebuilts/sdk/tools/jack-admin update jack prebuilts/sdk/tools/jacks/jack-4.32.CANDIDATE.jar 4.32.CANDIDATE || exit 47 )"
+[  6% 1/16] /bin/bash -c "(rm -f out/target/product/sabresd_7d/root/fstab.freescale ) && (cp device/fsl/sabresd_7d/fstab.freescale out/target/product/sabresd_7d/root/fstab.freescale )"
+[ 12% 2/16] /bin/bash -c "out/host/linux-x86/bin/mkbootfs -d out/target/product/sabresd_7d/system out/target/product/sabresd_7d/root | out/host/linux-x86/bin/minigzip > out/target/product/sabresd_7d/ramdisk.img"
+[ 18% 3/16] /bin/bash -c "(prebuilts/sdk/tools/jack-admin install-server prebuilts/sdk/tools/jack-launcher.jar prebuilts/sdk/tools/jack-server-4.11.ALPHA.jar  2>&1 || (exit 0) ) && (JACK_SERVER_VM_ARGUMENTS=\"-Dfile.encoding=UTF-8 -XX:+TieredCompilation\" prebuilts/sdk/tools/jack-admin start-server 2>&1 || exit 0 ) && (prebuilts/sdk/tools/jack-admin update server prebuilts/sdk/tools/jack-server-4.11.ALPHA.jar 4.11.ALPHA 2>&1 || exit 0 ) && (prebuilts/sdk/tools/jack-admin update jack prebuilts/sdk/tools/jacks/jack-4.32.CANDIDATE.jar 4.32.CANDIDATE || exit 47 )"
 Jack server already installed in "/home/vepuri/.jack-server"
 Server is already running
-[ 23% 4/17] /bin/bash -c "(make -j2 -C vendor/nxp-opensource/kernel_imx imx_v7_android_defconfig ARCH=arm CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- LOADADDR=0x80008000 KCFLAGS=-mno-android ) && (install -D vendor/nxp-opensource/kernel_imx/.config out/target/product/sabresd_7d/obj/KERNEL_OBJ/.config )"
-make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/kernel_imx'
-  HOSTCC  scripts/kconfig/conf.o
-  HOSTLD  scripts/kconfig/conf
-#
-# configuration written to .config
-#
-make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/kernel_imx'
-[ 29% 5/17] /bin/bash -c "for ubootplat in imx7d:mx7dsabresdandroid_config imx7d-epdc:mx7dsabresdandroid_config; do 		UBOOT_PLATFORM=\`echo \$ubootplat | cut -d':' -f1\`; 		UBOOT_CONFIG=\`echo \$ubootplat | cut -d':' -f2\`; 		make -j2 -C vendor/nxp-opensource/uboot-imx/ distclean CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-; 		make -j2 -C vendor/nxp-opensource/uboot-imx/ O=\$(/home/vepuri/imx7android/android_build/prebuilts/build-tools/linux-x86/bin/ckati --realpath out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ 2> /dev/null) \$UBOOT_CONFIG CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-; 		make -j2 -C vendor/nxp-opensource/uboot-imx/ mrproper CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-; 		make -j2 -C vendor/nxp-opensource/uboot-imx/ O=\$(/home/vepuri/imx7android/android_build/prebuilts/build-tools/linux-x86/bin/ckati --realpath out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ 2> /dev/null) CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- || exit 1; 		install -D out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ/u-boot-dtb.imx out/target/product/sabresd_7d/u-boot-\$UBOOT_PLATFORM.imx; 		if [  = true ]; then 		echo \"build post process\" ; 		 		fi 	done"
-make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
-make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
-make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
-make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
-  GEN     ./Makefile
-#
-# configuration written to .config
-#
-make[1]: Leaving directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
-make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
-make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
-make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
-make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
-make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
-  GEN     ./Makefile
-scripts/kconfig/conf  --silentoldconfig Kconfig
-  CHK     include/config.h
-  CFG     u-boot.cfg
-  GEN     include/autoconf.mk.dep
-  GEN     include/autoconf.mk
-make[1]: Leaving directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
-make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
-  CHK     include/config/uboot.release
-  GEN     ./Makefile
-  CHK     include/generated/timestamp_autogenerated.h
-  UPD     include/generated/timestamp_autogenerated.h
-  CHK     include/generated/version_autogenerated.h
-  Using /home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx as source for U-Boot
-  CHK     include/generated/generic-asm-offsets.h
-  CHK     include/generated/asm-offsets.h
-  HOSTCC  tools/mkenvimage.o
-  HOSTCC  tools/fit_image.o
-  HOSTCC  tools/image-host.o
-  HOSTCC  tools/dumpimage.o
-  HOSTCC  tools/mkimage.o
-  HOSTLD  tools/mkenvimage
-  HOSTLD  tools/dumpimage
-  HOSTLD  tools/mkimage
-  CC      common/main.o
-  CC      cmd/version.o
-  LD      cmd/built-in.o
-  CC      common/board_f.o
-  LD      common/built-in.o
-  CC      drivers/video/cfb_console.o
-  LD      drivers/video/built-in.o
-  LD      drivers/built-in.o
-  CC      drivers/usb/gadget/f_fastboot.o
-/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx/drivers/usb/gadget/f_fastboot.c: In function 'write_backup_gpt':
-/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx/drivers/usb/gadget/f_fastboot.c:979:2: warning: implicit declaration of function 'write_backup_gpt_partitions' [-Wimplicit-function-declaration]
-  if (write_backup_gpt_partitions(dev_desc, interface.transfer_buffer)) {
-  ^
-  CC      lib/efi_loader/helloworld.o
-  LD      lib/efi_loader/helloworld.so
-  LD      drivers/usb/gadget/built-in.o
-  OBJCOPY lib/efi_loader/helloworld.efi
-  CC      lib/smbios.o
-  CC      lib/display_options.o
-  LD      lib/built-in.o
-  LD      u-boot
-  OBJCOPY u-boot-nodtb.bin
-  OBJCOPY u-boot.srec
-  SYM     u-boot.sym
-  CAT     u-boot-dtb.bin
-  MKIMAGE u-boot-dtb.imx
-  COPY    u-boot.bin
-  CFGCHK  u-boot.cfg
-make[1]: Leaving directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
-make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
-/bin/bash: line 0: [: =: unary operator expected
-make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
-make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
-make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
-make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
-  GEN     ./Makefile
-#
-# configuration written to .config
-#
-make[1]: Leaving directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
-make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
-make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
-make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
-make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
-make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
-  GEN     ./Makefile
-scripts/kconfig/conf  --silentoldconfig Kconfig
-  CHK     include/config.h
-  CFG     u-boot.cfg
-  GEN     include/autoconf.mk.dep
-  GEN     include/autoconf.mk
-make[1]: Leaving directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
-make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
-  CHK     include/config/uboot.release
-  GEN     ./Makefile
-  CHK     include/generated/timestamp_autogenerated.h
-  UPD     include/generated/timestamp_autogenerated.h
-  Using /home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx as source for U-Boot
-  CHK     include/generated/version_autogenerated.h
-  CHK     include/generated/generic-asm-offsets.h
-  CHK     include/generated/asm-offsets.h
-  HOSTCC  tools/mkenvimage.o
-  HOSTCC  tools/fit_image.o
-  HOSTCC  tools/image-host.o
-  HOSTCC  tools/dumpimage.o
-  HOSTCC  tools/mkimage.o
-  HOSTLD  tools/mkenvimage
-  HOSTLD  tools/dumpimage
-  HOSTLD  tools/mkimage
-  CC      cmd/version.o
-  CC      common/main.o
-  LD      cmd/built-in.o
-  CC      common/board_f.o
-  LD      common/built-in.o
-  CC      drivers/video/cfb_console.o
-  CC      drivers/usb/gadget/f_fastboot.o
-/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx/drivers/usb/gadget/f_fastboot.c: In function 'write_backup_gpt':
-/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx/drivers/usb/gadget/f_fastboot.c:979:2: warning: implicit declaration of function 'write_backup_gpt_partitions' [-Wimplicit-function-declaration]
-  if (write_backup_gpt_partitions(dev_desc, interface.transfer_buffer)) {
-  ^
-  LD      drivers/video/built-in.o
-  LD      drivers/built-in.o
-  LD      drivers/usb/gadget/built-in.o
-  CC      lib/efi_loader/helloworld.o
-  CC      lib/smbios.o
-  LD      lib/efi_loader/helloworld.so
-  OBJCOPY lib/efi_loader/helloworld.efi
-  CC      lib/display_options.o
-  LD      lib/built-in.o
-  LD      u-boot
-  OBJCOPY u-boot-nodtb.bin
-  OBJCOPY u-boot.srec
-  SYM     u-boot.sym
-  CAT     u-boot-dtb.bin
-  COPY    u-boot.bin
-  MKIMAGE u-boot-dtb.imx
-  CFGCHK  u-boot.cfg
-make[1]: Leaving directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
-make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
-/bin/bash: line 0: [: =: unary operator expected
-[ 35% 6/17] /bin/bash -c "(make -j2 -C vendor/nxp-opensource/kernel_imx mrproper ) && (make -j2 -C vendor/nxp-opensource/kernel_imx O=\$(/home/vepuri/imx7android/android_build/prebuilts/build-tools/linux-x86/bin/ckati --realpath out/target/product/sabresd_7d/obj/KERNEL_OBJ 2> /dev/null) -j4 ARCH=arm CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- LOADADDR=0x80008000 KCFLAGS=-mno-android ) && (make -j2 -C vendor/nxp-opensource/kernel_imx O=\$(/home/vepuri/imx7android/android_build/prebuilts/build-tools/linux-x86/bin/ckati --realpath out/target/product/sabresd_7d/obj/KERNEL_OBJ 2> /dev/null) dtbs ARCH=arm CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- LOADADDR=0x80008000 KCFLAGS=-mno-android ) && (install -D out/target/product/sabresd_7d/obj/KERNEL_OBJ/arch/arm/boot/zImage  out/target/product/sabresd_7d/obj/KERNEL_OBJ/kernel_img ) && (for dtsplat in imx7d:imx7d-sdb.dtb imx7d-epdc:imx7d-sdb-epdc.dtb; do 		DTS_PLATFORM=\`echo \$dtsplat | cut -d':' -f1\`; 		DTS_BOARD=\`echo \$dtsplat | cut -d':' -f2\`; 		install -D out/target/product/sabresd_7d/obj/KERNEL_OBJ/arch/arm/boot/dts//\$DTS_BOARD out/target/product/sabresd_7d/obj/KERNEL_OBJ/\$DTS_BOARD; 	done )"
+[ 25% 4/16] /bin/bash -c "(make -j2 -C vendor/nxp-opensource/kernel_imx mrproper ) && (make -j2 -C vendor/nxp-opensource/kernel_imx O=\$(/home/vepuri/imx7android/android_build/prebuilts/build-tools/linux-x86/bin/ckati --realpath out/target/product/sabresd_7d/obj/KERNEL_OBJ 2> /dev/null) -j4 ARCH=arm CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- LOADADDR=0x80008000 KCFLAGS=-mno-android ) && (make -j2 -C vendor/nxp-opensource/kernel_imx O=\$(/home/vepuri/imx7android/android_build/prebuilts/build-tools/linux-x86/bin/ckati --realpath out/target/product/sabresd_7d/obj/KERNEL_OBJ 2> /dev/null) dtbs ARCH=arm CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- LOADADDR=0x80008000 KCFLAGS=-mno-android ) && (install -D out/target/product/sabresd_7d/obj/KERNEL_OBJ/arch/arm/boot/zImage  out/target/product/sabresd_7d/obj/KERNEL_OBJ/kernel_img ) && (for dtsplat in imx7d:imx7d-sdb.dtb imx7d-epdc:imx7d-sdb-epdc.dtb; do 		DTS_PLATFORM=\`echo \$dtsplat | cut -d':' -f1\`; 		DTS_BOARD=\`echo \$dtsplat | cut -d':' -f2\`; 		install -D out/target/product/sabresd_7d/obj/KERNEL_OBJ/arch/arm/boot/dts//\$DTS_BOARD out/target/product/sabresd_7d/obj/KERNEL_OBJ/\$DTS_BOARD; 	done )"
 FAILED: out/target/product/sabresd_7d/obj/KERNEL_OBJ/kernel_img 
 /bin/bash -c "(make -j2 -C vendor/nxp-opensource/kernel_imx mrproper ) && (make -j2 -C vendor/nxp-opensource/kernel_imx O=\$(/home/vepuri/imx7android/android_build/prebuilts/build-tools/linux-x86/bin/ckati --realpath out/target/product/sabresd_7d/obj/KERNEL_OBJ 2> /dev/null) -j4 ARCH=arm CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- LOADADDR=0x80008000 KCFLAGS=-mno-android ) && (make -j2 -C vendor/nxp-opensource/kernel_imx O=\$(/home/vepuri/imx7android/android_build/prebuilts/build-tools/linux-x86/bin/ckati --realpath out/target/product/sabresd_7d/obj/KERNEL_OBJ 2> /dev/null) dtbs ARCH=arm CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- LOADADDR=0x80008000 KCFLAGS=-mno-android ) && (install -D out/target/product/sabresd_7d/obj/KERNEL_OBJ/arch/arm/boot/zImage  out/target/product/sabresd_7d/obj/KERNEL_OBJ/kernel_img ) && (for dtsplat in imx7d:imx7d-sdb.dtb imx7d-epdc:imx7d-sdb-epdc.dtb; do 		DTS_PLATFORM=\`echo \$dtsplat | cut -d':' -f1\`; 		DTS_BOARD=\`echo \$dtsplat | cut -d':' -f2\`; 		install -D out/target/product/sabresd_7d/obj/KERNEL_OBJ/arch/arm/boot/dts//\$DTS_BOARD out/target/product/sabresd_7d/obj/KERNEL_OBJ/\$DTS_BOARD; 	done )"
 make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/kernel_imx'
-  CLEAN   scripts/basic
-  CLEAN   scripts/kconfig
-  CLEAN   .config .config.old
 make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/kernel_imx'
 make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/kernel_imx'
-make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/KERNEL_OBJ'
-  GEN     ./Makefile
-scripts/kconfig/conf  --silentoldconfig Kconfig
-make[1]: Leaving directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/KERNEL_OBJ'
 make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/KERNEL_OBJ'
   CHK     include/config/kernel.release
   GEN     ./Makefile
   CHK     include/generated/uapi/linux/version.h
-  HOSTCC  scripts/recordmcount
-  CC      scripts/mod/empty.o
-  CC      scripts/mod/devicetable-offsets.s
-  HOSTCC  scripts/sign-file
-  HOSTCC  scripts/extract-cert
-  GEN     scripts/mod/devicetable-offsets.h
-  MKELF   scripts/mod/elfconfig.h
-  HOSTCC  scripts/mod/modpost.o
-  UPD     include/config/kernel.release
   Using /home/vepuri/imx7android/android_build/vendor/nxp-opensource/kernel_imx as source for kernel
-  HOSTCC  scripts/insert-sys-cert
-  HOSTCC  scripts/mod/file2alias.o
-  HOSTCC  scripts/mod/sumversion.o
   CHK     include/generated/utsrelease.h
-  UPD     include/generated/utsrelease.h
-  HOSTLD  scripts/mod/modpost
   CHK     include/generated/timeconst.h
-  CC      kernel/bounds.s
-  UPD     include/generated/timeconst.h
   CHK     include/generated/bounds.h
-  UPD     include/generated/bounds.h
-  CC      arch/arm/kernel/asm-offsets.s
-  GEN     scripts/gdb/linux/constants.py
   CHK     include/generated/asm-offsets.h
-  UPD     include/generated/asm-offsets.h
   CALL    /home/vepuri/imx7android/android_build/vendor/nxp-opensource/kernel_imx/scripts/checksyscalls.sh
-  AS      usr/initramfs_data.o
-  LD      usr/built-in.o
-  CC      arch/arm/common/firmware.o
-  CC      arch/arm/mm/dma-mapping.o
-  CC      init/main.o
-  LD      arch/arm/common/built-in.o
   CHK     include/generated/compile.h
-  UPD     include/generated/compile.h
-  CC      arch/arm/kernel/elf.o
-  CC      arch/arm/probes/decode.o
-  CC      arch/arm/probes/decode-arm.o
-  AS      arch/arm/kernel/entry-common.o
-  CC      arch/arm/kernel/irq.o
-  CC      arch/arm/probes/kprobes/core.o
-  CC      arch/arm/mm/extable.o
-  CC      arch/arm/kernel/opcodes.o
-  CC      arch/arm/mm/fault.o
-  CC      arch/arm/probes/kprobes/actions-common.o
-  CC      arch/arm/kernel/process.o
-  CC      arch/arm/mm/init.o
-  CC      arch/arm/probes/kprobes/checkers-common.o
-  CC      arch/arm/probes/kprobes/actions-arm.o
-  CC      init/do_mounts.o
-  CC      arch/arm/probes/kprobes/checkers-arm.o
-  CC      arch/arm/kernel/ptrace.o
-  CC      arch/arm/probes/kprobes/opt-arm.o
-  CC      arch/arm/mm/iomap.o
-  LD      arch/arm/probes/kprobes/built-in.o
-  CC      arch/arm/probes/uprobes/core.o
-  CC      arch/arm/kernel/reboot.o
-  CC      arch/arm/mm/fault-armv.o
-  CC      arch/arm/probes/uprobes/actions-arm.o
-  LD      arch/arm/probes/uprobes/built-in.o
-  CC      arch/arm/mm/flush.o
-  LD      arch/arm/probes/built-in.o
-  CC      arch/arm/net/bpf_jit_32.o
-  CC      arch/arm/kernel/return_address.o
-  CC      arch/arm/mm/idmap.o
-  CC      arch/arm/kernel/setup.o
-  CC      arch/arm/mm/ioremap.o
-  CC      init/do_mounts_rd.o
-  CC      arch/arm/mm/mmap.o
-  CC      init/do_mounts_initrd.o
-  CC      arch/arm/kernel/signal.o
-  LD      arch/arm/net/built-in.o
-  CC      arch/arm/mm/pgd.o
-  LD      arch/arm/crypto/built-in.o
-  CC      init/do_mounts_md.o
-  CC      arch/arm/mm/mmu.o
-  AS      arch/arm/kernel/sigreturn_codes.o
-  CC      arch/arm/mach-imx/cpu.o
-  CC      arch/arm/kernel/stacktrace.o
-  CC      init/do_mounts_dm.o
-  CC      arch/arm/kernel/sys_arm.o
-  CC      arch/arm/mach-imx/system.o
-  CC      arch/arm/mach-imx/irq-common.o
-  CC      arch/arm/mm/pageattr.o
-  CC      init/noinitramfs.o
-  CC      arch/arm/kernel/time.o
-  CC      arch/arm/mm/proc-syms.o
-  CC      arch/arm/mach-imx/common.o
-  CC      init/initramfs.o
-  CC      arch/arm/kernel/traps.o
-  CC      arch/arm/mm/alignment.o
-  CC      arch/arm/mach-imx/cpuidle-imx7d.o
-  CC      init/calibrate.o
-  CC      init/init_task.o
-/home/vepuri/imx7android/android_build/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld: internal error in relocate_special_relocatable, at /usr/local/google/buildbot/src/android/gcc/toolchain/build/../binutils/binutils-2.25/gold/arm.cc:10544
-make[2]: *** [arch/arm/kernel/traps.o] Error 1
-make[1]: *** [arch/arm/kernel] Error 2
-make[1]: *** Waiting for unfinished jobs....
-  AS      arch/arm/mach-imx/imx7d_low_power_idle.o
-  AS      arch/arm/mm/abort-ev7.o
-  CC      arch/arm/mach-imx/anatop.o
-  AS      arch/arm/mm/pabort-v7.o
-  AS      arch/arm/mm/cache-v7.o
-  CC      arch/arm/mm/copypage-v6.o
-  CC      arch/arm/mach-imx/gpcv2.o
-  CC      arch/arm/mach-imx/mmdc.o
-  CC      arch/arm/mm/context.o
-  CC      init/version.o
-  CC      arch/arm/mach-imx/ddrc.o
-  CC      arch/arm/mach-imx/src.o
-  AS      arch/arm/mm/tlb-v7.o
-  LD      init/mounts.o
-  LD      init/built-in.o
-  AS      arch/arm/mm/proc-v7.o
-  CC      arch/arm/mm/l2c-common.o
-  CC      arch/arm/mm/cache-l2x0.o
-  AS      arch/arm/mm/l2c-l2x0-resume.o
-  CC      arch/arm/mach-imx/mu.o
-  AS      arch/arm/mach-imx/headsmp.o
-  CC      arch/arm/mach-imx/platsmp.o
-  CC      arch/arm/mach-imx/hotplug.o
-  CC      arch/arm/mach-imx/busfreq_lpddr2.o
-  CC      arch/arm/mach-imx/busfreq-imx.o
-  CC      arch/arm/mach-imx/busfreq_ddr3.o
   LD      arch/arm/mm/built-in.o
 /home/vepuri/imx7android/android_build/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld: internal error in relocate_special_relocatable, at /usr/local/google/buildbot/src/android/gcc/toolchain/build/../binutils/binutils-2.25/gold/arm.cc:10544
 make[2]: *** [arch/arm/mm/built-in.o] Error 1
 make[1]: *** [arch/arm/mm] Error 2
-  CC      arch/arm/mach-imx/mach-imx7d.o
-  AS      arch/arm/mach-imx/suspend-imx7.o
-  CC      arch/arm/mach-imx/pm-imx7.o
-  AS      arch/arm/mach-imx/ddr3_freq_imx7d.o
-  AS      arch/arm/mach-imx/smp_wfe.o
-  AS      arch/arm/mach-imx/lpddr3_freq_imx.o
-  CC      arch/arm/mach-imx/devices/devices.o
-  CC      arch/arm/mach-imx/devices/platform-gpio-mxc.o
-  CC      arch/arm/mach-imx/devices/platform-imx-dma.o
-  LD      arch/arm/mach-imx/devices/built-in.o
-  LD      arch/arm/mach-imx/built-in.o
-make[1]: Leaving directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/KERNEL_OBJ'
+make[1]: *** Waiting for unfinished jobs....
+  CC      arch/arm/kernel/traps.o
+  CC      arch/arm/kernel/atags_parse.o
+  CC      arch/arm/kernel/atags_proc.o
+  AS      arch/arm/kernel/entry-armv.o
+  CC      arch/arm/kernel/cpuidle.o
+  CC      arch/arm/kernel/armksyms.o
+  CC      arch/arm/kernel/module.o
+/home/vepuri/imx7android/android_build/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld: internal error in relocate_special_relocatable, at /usr/local/google/buildbot/src/android/gcc/toolchain/build/../binutils/binutils-2.25/gold/arm.cc:10544
+make[2]: *** [arch/arm/kernel/traps.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [arch/arm/kernel] Error 2
+make[1]: *** wait: No child processes.  Stop.
 make: *** [sub-make] Error 2
 make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/kernel_imx'
+[ 31% 5/16] /bin/bash -c "for ubootplat in imx7d:mx7dsabresdandroid_config imx7d-epdc:mx7dsabresdandroid_config; do 		UBOOT_PLATFORM=\`echo \$ubootplat | cut -d':' -f1\`; 		UBOOT_CONFIG=\`echo \$ubootplat | cut -d':' -f2\`; 		make -j2 -C vendor/nxp-opensource/uboot-imx/ distclean CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-; 		make -j2 -C vendor/nxp-opensource/uboot-imx/ O=\$(/home/vepuri/imx7android/android_build/prebuilts/build-tools/linux-x86/bin/ckati --realpath out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ 2> /dev/null) \$UBOOT_CONFIG CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-; 		make -j2 -C vendor/nxp-opensource/uboot-imx/ mrproper CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-; 		make -j2 -C vendor/nxp-opensource/uboot-imx/ O=\$(/home/vepuri/imx7android/android_build/prebuilts/build-tools/linux-x86/bin/ckati --realpath out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ 2> /dev/null) CROSS_COMPILE=\`pwd\`/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi- || exit 1; 		install -D out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ/u-boot-dtb.imx out/target/product/sabresd_7d/u-boot-\$UBOOT_PLATFORM.imx; 		if [  = true ]; then 		echo \"build post process\" ; 		 		fi 	done"
+make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
+make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
+make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
+make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+  GEN     ./Makefile
+#
+# configuration written to .config
+#
+make[1]: Leaving directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
+make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
+make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
+make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
+make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+  GEN     ./Makefile
+scripts/kconfig/conf  --silentoldconfig Kconfig
+  CHK     include/config.h
+  CFG     u-boot.cfg
+  GEN     include/autoconf.mk.dep
+  GEN     include/autoconf.mk
+make[1]: Leaving directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+  CHK     include/config/uboot.release
+  GEN     ./Makefile
+  CHK     include/generated/timestamp_autogenerated.h
+  UPD     include/generated/timestamp_autogenerated.h
+  Using /home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx as source for U-Boot
+  CHK     include/generated/version_autogenerated.h
+  CHK     include/generated/generic-asm-offsets.h
+  CHK     include/generated/asm-offsets.h
+  HOSTCC  tools/mkenvimage.o
+  HOSTCC  tools/fit_image.o
+  HOSTCC  tools/image-host.o
+  HOSTCC  tools/dumpimage.o
+  HOSTCC  tools/mkimage.o
+  HOSTLD  tools/mkenvimage
+  HOSTLD  tools/dumpimage
+  HOSTLD  tools/mkimage
+  CC      cmd/version.o
+  CC      common/main.o
+  CC      common/board_f.o
+  LD      cmd/built-in.o
+  LD      common/built-in.o
+  CC      drivers/video/cfb_console.o
+  CC      drivers/usb/gadget/f_fastboot.o
+/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx/drivers/usb/gadget/f_fastboot.c: In function 'write_backup_gpt':
+/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx/drivers/usb/gadget/f_fastboot.c:979:2: warning: implicit declaration of function 'write_backup_gpt_partitions' [-Wimplicit-function-declaration]
+  if (write_backup_gpt_partitions(dev_desc, interface.transfer_buffer)) {
+  ^
+  LD      drivers/video/built-in.o
+  LD      drivers/built-in.o
+  LD      drivers/usb/gadget/built-in.o
+  CC      lib/efi_loader/helloworld.o
+  CC      lib/smbios.o
+  LD      lib/efi_loader/helloworld.so
+  OBJCOPY lib/efi_loader/helloworld.efi
+  CC      lib/display_options.o
+  LD      lib/built-in.o
+  LD      u-boot
+  OBJCOPY u-boot-nodtb.bin
+  OBJCOPY u-boot.srec
+  SYM     u-boot.sym
+  CAT     u-boot-dtb.bin
+  COPY    u-boot.bin
+  MKIMAGE u-boot-dtb.imx
+  CFGCHK  u-boot.cfg
+make[1]: Leaving directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
+/bin/bash: line 0: [: =: unary operator expected
+make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
+make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
+make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
+make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+  GEN     ./Makefile
+#
+# configuration written to .config
+#
+make[1]: Leaving directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
+make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
+make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
+make: Entering directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
+make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+  GEN     ./Makefile
+scripts/kconfig/conf  --silentoldconfig Kconfig
+  CHK     include/config.h
+  CFG     u-boot.cfg
+  GEN     include/autoconf.mk.dep
+  GEN     include/autoconf.mk
+make[1]: Leaving directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+make[1]: Entering directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+  CHK     include/config/uboot.release
+  GEN     ./Makefile
+  CHK     include/generated/timestamp_autogenerated.h
+  UPD     include/generated/timestamp_autogenerated.h
+  Using /home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx as source for U-Boot
+  CHK     include/generated/version_autogenerated.h
+  CHK     include/generated/generic-asm-offsets.h
+  CHK     include/generated/asm-offsets.h
+  HOSTCC  tools/mkenvimage.o
+  HOSTCC  tools/fit_image.o
+  HOSTCC  tools/image-host.o
+  HOSTCC  tools/dumpimage.o
+  HOSTCC  tools/mkimage.o
+  HOSTLD  tools/mkenvimage
+  HOSTLD  tools/dumpimage
+  HOSTLD  tools/mkimage
+  CC      cmd/version.o
+  CC      common/main.o
+  CC      common/board_f.o
+  LD      cmd/built-in.o
+  LD      common/built-in.o
+  CC      drivers/video/cfb_console.o
+  CC      drivers/usb/gadget/f_fastboot.o
+/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx/drivers/usb/gadget/f_fastboot.c: In function 'write_backup_gpt':
+/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx/drivers/usb/gadget/f_fastboot.c:979:2: warning: implicit declaration of function 'write_backup_gpt_partitions' [-Wimplicit-function-declaration]
+  if (write_backup_gpt_partitions(dev_desc, interface.transfer_buffer)) {
+  ^
+  LD      drivers/video/built-in.o
+  LD      drivers/built-in.o
+  CC      lib/efi_loader/helloworld.o
+  LD      drivers/usb/gadget/built-in.o
+  LD      lib/efi_loader/helloworld.so
+  OBJCOPY lib/efi_loader/helloworld.efi
+  CC      lib/smbios.o
+  CC      lib/display_options.o
+  LD      lib/built-in.o
+  LD      u-boot
+  OBJCOPY u-boot-nodtb.bin
+  OBJCOPY u-boot.srec
+  SYM     u-boot.sym
+  CAT     u-boot-dtb.bin
+  COPY    u-boot.bin
+  MKIMAGE u-boot-dtb.imx
+  CFGCHK  u-boot.cfg
+make[1]: Leaving directory `/home/vepuri/imx7android/android_build/out/target/product/sabresd_7d/obj/BOOTLOADER_OBJ'
+make: Leaving directory `/home/vepuri/imx7android/android_build/vendor/nxp-opensource/uboot-imx'
+/bin/bash: line 0: [: =: unary operator expected
 ninja: build stopped: subcommand failed.
